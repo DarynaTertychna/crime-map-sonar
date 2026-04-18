@@ -23,7 +23,7 @@ load_dotenv()
 
 CLEANED_CSV_PATH = "data/cleaned_crime_data.csv"
 
-
+# tests
 def load_cleaned_data():
     df = pd.read_csv(CLEANED_CSV_PATH)
 
