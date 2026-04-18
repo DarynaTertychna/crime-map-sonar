@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+pydantic
+passlib[bcrypt]
+python-jose
+python-multipart
+pandas
+shapely
+python-dotenv
+httpx
+pytest
+pytest-cov
+psycopg2-binary
+ollama
