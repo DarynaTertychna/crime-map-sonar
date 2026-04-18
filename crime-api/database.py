@@ -1,12 +1,16 @@
+import os
+from dotenv import load_dotenv
 import psycopg2
 from psycopg2.extras import RealDictCursor
 
+load_dotenv()
+
 DB_CONFIG = {
-    "host": "localhost",
-    "port": 5432,
-    "dbname": "crime_map",
-    "user": "postgres",
-    "password": "edward12",
+    "host": os.getenv("DB_HOST"),
+    "port": int(os.getenv("DB_PORT", 5432)),
+    "dbname": os.getenv("DB_NAME"),
+    "user": os.getenv("DB_USER"),
+    "password": os.getenv("DB_PASSWORD"),
 }
 
 
