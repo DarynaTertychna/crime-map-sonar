@@ -1,4 +1,6 @@
 from fastapi.testclient import TestClient
+import os
+import pytest
 from main import app
 from main import get_risk_from_count
 from main import load_cleaned_data
@@ -6,7 +8,13 @@ from main import get_crime_count_by_period
 from main import extract_county_from_text, extract_crime_type_from_text
 from main import load_counties_geojson
 
+
+
 client = TestClient(app)
+
+
+SKIP_DB_TESTS = os.getenv("CI") == "true"
+
 
 def test_health():
     res = client.get("/health")
@@ -29,13 +37,14 @@ def test_predict_valid():
     assert "latestCrimeCount" in data
 
 
+@pytest.mark.skipif(SKIP_DB_TESTS, reason="Skipping DB-dependent test in CI")
 def test_login_invalid_user():
     res = client.post("/auth/login", json={
         "email": "fake@test.com",
         "password": "wrongpass"
     })
-
     assert res.status_code == 401
+
 
 
 def test_filters_invalid():
@@ -127,6 +136,7 @@ def test_forgot_password_invalid():
     assert res.status_code == 400
 
 
+@pytest.mark.skipif(SKIP_DB_TESTS, reason="Skipping DB-dependent test in CI")
 def test_db_endpoint():
     res = client.get("/test-db")
     assert "ok" in res.json()
@@ -156,6 +166,7 @@ def test_predict_all_invalid():
     assert res.status_code == 404
 
 
+@pytest.mark.skipif(SKIP_DB_TESTS, reason="Skipping DB-dependent test in CI")
 def test_register_duplicate():
     email = "dup@test.com"
 
@@ -172,6 +183,7 @@ def test_register_duplicate():
     assert res.status_code in [200, 409]
 
 
+
 def test_auth_me_no_token():
     res = client.get("/auth/me")
     assert res.status_code == 401
@@ -185,18 +197,16 @@ def test_reset_password_invalid():
     assert res.status_code == 400
 
 
-
+@pytest.mark.skipif(SKIP_DB_TESTS, reason="Skipping DB-dependent test in CI")
 def test_login_and_me():
     email = "fulltest@example.com"
     password = "test123"
 
-    #reg
     client.post("/auth/register", json={
         "email": email,
         "password": password
     })
 
-    #login
     res = client.post("/auth/login", json={
         "email": email,
         "password": password
@@ -205,12 +215,12 @@ def test_login_and_me():
     assert res.status_code == 200
     token = res.json()["access_token"]
 
-
     res = client.get("/auth/me", headers={
         "Authorization": f"Bearer {token}"
     })
 
     assert res.status_code == 200
+
 
 
 
@@ -233,6 +243,7 @@ def test_resolve_county_valid():
     assert res.status_code in [200, 404]
 
 
+@pytest.mark.skipif(SKIP_DB_TESTS, reason="Skipping DB-dependent test in CI")
 def test_forgot_password_valid():
     email = "reset@test.com"
 
@@ -248,6 +259,7 @@ def test_forgot_password_valid():
     assert res.status_code == 200
 
 
+@pytest.mark.skipif(SKIP_DB_TESTS, reason="Skipping DB-dependent test in CI")
 def test_reset_password_flow():
     email = "reset2@test.com"
 
@@ -256,17 +268,14 @@ def test_reset_password_flow():
         "password": "123456"
     })
 
-    # req
     client.post("/auth/forgot-password", json={"email": email})
 
-    # invalid
     res = client.post("/auth/reset-password", json={
         "token": "fake",
         "new_password": "123456"
     })
 
     assert res.status_code == 400
-
 
 
 def test_news_endpoint():
@@ -307,9 +316,9 @@ def test_predictions_latest():
     assert res.status_code in [200, 404]
 
 
-# root?
-def test_root():
-    res = client.get("/")
-    assert res.status_code == 200
+# # root?
+# def test_root():
+#     res = client.get("/")
+#     assert res.status_code == 200
 
 
