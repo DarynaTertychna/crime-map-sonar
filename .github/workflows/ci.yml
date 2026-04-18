@@ -3,7 +3,7 @@ name: CI + SonarCloud
 on:
   push:
     branches:
-      - iteration_7
+      - main
   pull_request:
 
 jobs:
