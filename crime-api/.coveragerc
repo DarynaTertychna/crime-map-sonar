@@ -1,0 +1,6 @@
+[run]
+omit =
+    train_model.py
+    services/*
+    stats_service.py
+    */venv/*

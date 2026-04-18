@@ -1,0 +1,9 @@
+.env
+crime-api/.env
+crime-map/.env
+venv/
+__pycache__/
+node_modules/
+*.pyc
+*.log
+.DS_Store

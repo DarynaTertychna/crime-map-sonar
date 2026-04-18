@@ -1,0 +1,4369 @@
+Quarter,year,county,crime_type,crime_count
+2019Q1,2019,Carlow,Assault,54
+2019Q1,2019,Carlow,Burglary,36
+2019Q1,2019,Carlow,Damage to Property,40
+2019Q1,2019,Carlow,Drug Offences,78
+2019Q1,2019,Carlow,Fraud,24
+2019Q1,2019,Carlow,Theft,141
+2019Q1,2019,Cavan,Assault,94
+2019Q1,2019,Cavan,Burglary,54
+2019Q1,2019,Cavan,Damage to Property,68
+2019Q1,2019,Cavan,Drug Offences,38
+2019Q1,2019,Cavan,Fraud,24
+2019Q1,2019,Cavan,Theft,100
+2019Q1,2019,Clare,Assault,97
+2019Q1,2019,Clare,Burglary,55
+2019Q1,2019,Clare,Damage to Property,91
+2019Q1,2019,Clare,Drug Offences,113
+2019Q1,2019,Clare,Fraud,38
+2019Q1,2019,Clare,Theft,200
+2019Q1,2019,Cork,Assault,541
+2019Q1,2019,Cork,Burglary,214
+2019Q1,2019,Cork,Damage to Property,536
+2019Q1,2019,Cork,Drug Offences,512
+2019Q1,2019,Cork,Fraud,153
+2019Q1,2019,Cork,Theft,1332
+2019Q1,2019,Donegal,Assault,191
+2019Q1,2019,Donegal,Burglary,61
+2019Q1,2019,Donegal,Damage to Property,148
+2019Q1,2019,Donegal,Drug Offences,74
+2019Q1,2019,Donegal,Fraud,59
+2019Q1,2019,Donegal,Theft,173
+2019Q1,2019,Dublin,Assault,1794
+2019Q1,2019,Dublin,Burglary,2013
+2019Q1,2019,Dublin,Damage to Property,2416
+2019Q1,2019,Dublin,Drug Offences,1793
+2019Q1,2019,Dublin,Fraud,832
+2019Q1,2019,Dublin,Theft,8814
+2019Q1,2019,Galway,Assault,201
+2019Q1,2019,Galway,Burglary,109
+2019Q1,2019,Galway,Damage to Property,196
+2019Q1,2019,Galway,Drug Offences,128
+2019Q1,2019,Galway,Fraud,84
+2019Q1,2019,Galway,Theft,441
+2019Q1,2019,Kerry,Assault,175
+2019Q1,2019,Kerry,Burglary,52
+2019Q1,2019,Kerry,Damage to Property,98
+2019Q1,2019,Kerry,Drug Offences,180
+2019Q1,2019,Kerry,Fraud,55
+2019Q1,2019,Kerry,Theft,236
+2019Q1,2019,Kildare,Assault,203
+2019Q1,2019,Kildare,Burglary,296
+2019Q1,2019,Kildare,Damage to Property,173
+2019Q1,2019,Kildare,Drug Offences,164
+2019Q1,2019,Kildare,Fraud,81
+2019Q1,2019,Kildare,Theft,610
+2019Q1,2019,Kilkenny,Assault,54
+2019Q1,2019,Kilkenny,Burglary,36
+2019Q1,2019,Kilkenny,Damage to Property,40
+2019Q1,2019,Kilkenny,Drug Offences,78
+2019Q1,2019,Kilkenny,Fraud,24
+2019Q1,2019,Kilkenny,Theft,141
+2019Q1,2019,Laois,Assault,101
+2019Q1,2019,Laois,Burglary,48
+2019Q1,2019,Laois,Damage to Property,72
+2019Q1,2019,Laois,Drug Offences,68
+2019Q1,2019,Laois,Fraud,26
+2019Q1,2019,Laois,Theft,173
+2019Q1,2019,Leitrim,Assault,48
+2019Q1,2019,Leitrim,Burglary,26
+2019Q1,2019,Leitrim,Damage to Property,54
+2019Q1,2019,Leitrim,Drug Offences,42
+2019Q1,2019,Leitrim,Fraud,10
+2019Q1,2019,Leitrim,Theft,80
+2019Q1,2019,Limerick,Assault,247
+2019Q1,2019,Limerick,Burglary,204
+2019Q1,2019,Limerick,Damage to Property,287
+2019Q1,2019,Limerick,Drug Offences,171
+2019Q1,2019,Limerick,Fraud,70
+2019Q1,2019,Limerick,Theft,703
+2019Q1,2019,Longford,Assault,54
+2019Q1,2019,Longford,Burglary,34
+2019Q1,2019,Longford,Damage to Property,37
+2019Q1,2019,Longford,Drug Offences,26
+2019Q1,2019,Longford,Fraud,17
+2019Q1,2019,Longford,Theft,82
+2019Q1,2019,Louth,Assault,168
+2019Q1,2019,Louth,Burglary,124
+2019Q1,2019,Louth,Damage to Property,219
+2019Q1,2019,Louth,Drug Offences,193
+2019Q1,2019,Louth,Fraud,55
+2019Q1,2019,Louth,Theft,375
+2019Q1,2019,Mayo,Assault,109
+2019Q1,2019,Mayo,Burglary,38
+2019Q1,2019,Mayo,Damage to Property,69
+2019Q1,2019,Mayo,Drug Offences,28
+2019Q1,2019,Mayo,Fraud,29
+2019Q1,2019,Mayo,Theft,152
+2019Q1,2019,Meath,Assault,156
+2019Q1,2019,Meath,Burglary,114
+2019Q1,2019,Meath,Damage to Property,142
+2019Q1,2019,Meath,Drug Offences,108
+2019Q1,2019,Meath,Fraud,54
+2019Q1,2019,Meath,Theft,464
+2019Q1,2019,Monaghan,Assault,94
+2019Q1,2019,Monaghan,Burglary,54
+2019Q1,2019,Monaghan,Damage to Property,68
+2019Q1,2019,Monaghan,Drug Offences,38
+2019Q1,2019,Monaghan,Fraud,24
+2019Q1,2019,Monaghan,Theft,100
+2019Q1,2019,Offaly,Assault,101
+2019Q1,2019,Offaly,Burglary,48
+2019Q1,2019,Offaly,Damage to Property,72
+2019Q1,2019,Offaly,Drug Offences,68
+2019Q1,2019,Offaly,Fraud,26
+2019Q1,2019,Offaly,Theft,173
+2019Q1,2019,Roscommon,Assault,54
+2019Q1,2019,Roscommon,Burglary,34
+2019Q1,2019,Roscommon,Damage to Property,37
+2019Q1,2019,Roscommon,Drug Offences,26
+2019Q1,2019,Roscommon,Fraud,17
+2019Q1,2019,Roscommon,Theft,82
+2019Q1,2019,Sligo,Assault,48
+2019Q1,2019,Sligo,Burglary,26
+2019Q1,2019,Sligo,Damage to Property,54
+2019Q1,2019,Sligo,Drug Offences,42
+2019Q1,2019,Sligo,Fraud,10
+2019Q1,2019,Sligo,Theft,80
+2019Q1,2019,Tipperary,Assault,129
+2019Q1,2019,Tipperary,Burglary,108
+2019Q1,2019,Tipperary,Damage to Property,97
+2019Q1,2019,Tipperary,Drug Offences,146
+2019Q1,2019,Tipperary,Fraud,70
+2019Q1,2019,Tipperary,Theft,278
+2019Q1,2019,Waterford,Assault,135
+2019Q1,2019,Waterford,Burglary,74
+2019Q1,2019,Waterford,Damage to Property,146
+2019Q1,2019,Waterford,Drug Offences,156
+2019Q1,2019,Waterford,Fraud,32
+2019Q1,2019,Waterford,Theft,380
+2019Q1,2019,Westmeath,Assault,111
+2019Q1,2019,Westmeath,Burglary,66
+2019Q1,2019,Westmeath,Damage to Property,88
+2019Q1,2019,Westmeath,Drug Offences,72
+2019Q1,2019,Westmeath,Fraud,39
+2019Q1,2019,Westmeath,Theft,236
+2019Q1,2019,Wexford,Assault,141
+2019Q1,2019,Wexford,Burglary,133
+2019Q1,2019,Wexford,Damage to Property,155
+2019Q1,2019,Wexford,Drug Offences,136
+2019Q1,2019,Wexford,Fraud,44
+2019Q1,2019,Wexford,Theft,252
+2019Q1,2019,Wicklow,Assault,127
+2019Q1,2019,Wicklow,Burglary,153
+2019Q1,2019,Wicklow,Damage to Property,136
+2019Q1,2019,Wicklow,Drug Offences,108
+2019Q1,2019,Wicklow,Fraud,40
+2019Q1,2019,Wicklow,Theft,438
+2019Q2,2019,Carlow,Assault,50
+2019Q2,2019,Carlow,Burglary,36
+2019Q2,2019,Carlow,Damage to Property,42
+2019Q2,2019,Carlow,Drug Offences,79
+2019Q2,2019,Carlow,Fraud,18
+2019Q2,2019,Carlow,Theft,165
+2019Q2,2019,Cavan,Assault,92
+2019Q2,2019,Cavan,Burglary,48
+2019Q2,2019,Cavan,Damage to Property,74
+2019Q2,2019,Cavan,Drug Offences,44
+2019Q2,2019,Cavan,Fraud,26
+2019Q2,2019,Cavan,Theft,117
+2019Q2,2019,Clare,Assault,103
+2019Q2,2019,Clare,Burglary,52
+2019Q2,2019,Clare,Damage to Property,105
+2019Q2,2019,Clare,Drug Offences,89
+2019Q2,2019,Clare,Fraud,35
+2019Q2,2019,Clare,Theft,208
+2019Q2,2019,Cork,Assault,579
+2019Q2,2019,Cork,Burglary,200
+2019Q2,2019,Cork,Damage to Property,503
+2019Q2,2019,Cork,Drug Offences,474
+2019Q2,2019,Cork,Fraud,149
+2019Q2,2019,Cork,Theft,1324
+2019Q2,2019,Donegal,Assault,221
+2019Q2,2019,Donegal,Burglary,52
+2019Q2,2019,Donegal,Damage to Property,158
+2019Q2,2019,Donegal,Drug Offences,164
+2019Q2,2019,Donegal,Fraud,28
+2019Q2,2019,Donegal,Theft,190
+2019Q2,2019,Dublin,Assault,1877
+2019Q2,2019,Dublin,Burglary,1771
+2019Q2,2019,Dublin,Damage to Property,2152
+2019Q2,2019,Dublin,Drug Offences,2326
+2019Q2,2019,Dublin,Fraud,912
+2019Q2,2019,Dublin,Theft,9076
+2019Q2,2019,Galway,Assault,233
+2019Q2,2019,Galway,Burglary,108
+2019Q2,2019,Galway,Damage to Property,202
+2019Q2,2019,Galway,Drug Offences,147
+2019Q2,2019,Galway,Fraud,99
+2019Q2,2019,Galway,Theft,580
+2019Q2,2019,Kerry,Assault,195
+2019Q2,2019,Kerry,Burglary,62
+2019Q2,2019,Kerry,Damage to Property,90
+2019Q2,2019,Kerry,Drug Offences,166
+2019Q2,2019,Kerry,Fraud,36
+2019Q2,2019,Kerry,Theft,253
+2019Q2,2019,Kildare,Assault,192
+2019Q2,2019,Kildare,Burglary,183
+2019Q2,2019,Kildare,Damage to Property,178
+2019Q2,2019,Kildare,Drug Offences,147
+2019Q2,2019,Kildare,Fraud,70
+2019Q2,2019,Kildare,Theft,670
+2019Q2,2019,Kilkenny,Assault,50
+2019Q2,2019,Kilkenny,Burglary,36
+2019Q2,2019,Kilkenny,Damage to Property,42
+2019Q2,2019,Kilkenny,Drug Offences,79
+2019Q2,2019,Kilkenny,Fraud,18
+2019Q2,2019,Kilkenny,Theft,165
+2019Q2,2019,Laois,Assault,115
+2019Q2,2019,Laois,Burglary,56
+2019Q2,2019,Laois,Damage to Property,92
+2019Q2,2019,Laois,Drug Offences,74
+2019Q2,2019,Laois,Fraud,30
+2019Q2,2019,Laois,Theft,176
+2019Q2,2019,Leitrim,Assault,46
+2019Q2,2019,Leitrim,Burglary,30
+2019Q2,2019,Leitrim,Damage to Property,52
+2019Q2,2019,Leitrim,Drug Offences,30
+2019Q2,2019,Leitrim,Fraud,10
+2019Q2,2019,Leitrim,Theft,96
+2019Q2,2019,Limerick,Assault,233
+2019Q2,2019,Limerick,Burglary,192
+2019Q2,2019,Limerick,Damage to Property,288
+2019Q2,2019,Limerick,Drug Offences,231
+2019Q2,2019,Limerick,Fraud,83
+2019Q2,2019,Limerick,Theft,721
+2019Q2,2019,Longford,Assault,64
+2019Q2,2019,Longford,Burglary,32
+2019Q2,2019,Longford,Damage to Property,44
+2019Q2,2019,Longford,Drug Offences,38
+2019Q2,2019,Longford,Fraud,15
+2019Q2,2019,Longford,Theft,62
+2019Q2,2019,Louth,Assault,191
+2019Q2,2019,Louth,Burglary,129
+2019Q2,2019,Louth,Damage to Property,198
+2019Q2,2019,Louth,Drug Offences,163
+2019Q2,2019,Louth,Fraud,55
+2019Q2,2019,Louth,Theft,500
+2019Q2,2019,Mayo,Assault,102
+2019Q2,2019,Mayo,Burglary,36
+2019Q2,2019,Mayo,Damage to Property,80
+2019Q2,2019,Mayo,Drug Offences,32
+2019Q2,2019,Mayo,Fraud,32
+2019Q2,2019,Mayo,Theft,192
+2019Q2,2019,Meath,Assault,136
+2019Q2,2019,Meath,Burglary,142
+2019Q2,2019,Meath,Damage to Property,167
+2019Q2,2019,Meath,Drug Offences,177
+2019Q2,2019,Meath,Fraud,53
+2019Q2,2019,Meath,Theft,580
+2019Q2,2019,Monaghan,Assault,92
+2019Q2,2019,Monaghan,Burglary,48
+2019Q2,2019,Monaghan,Damage to Property,74
+2019Q2,2019,Monaghan,Drug Offences,44
+2019Q2,2019,Monaghan,Fraud,26
+2019Q2,2019,Monaghan,Theft,117
+2019Q2,2019,Offaly,Assault,115
+2019Q2,2019,Offaly,Burglary,56
+2019Q2,2019,Offaly,Damage to Property,92
+2019Q2,2019,Offaly,Drug Offences,74
+2019Q2,2019,Offaly,Fraud,30
+2019Q2,2019,Offaly,Theft,176
+2019Q2,2019,Roscommon,Assault,64
+2019Q2,2019,Roscommon,Burglary,32
+2019Q2,2019,Roscommon,Damage to Property,44
+2019Q2,2019,Roscommon,Drug Offences,38
+2019Q2,2019,Roscommon,Fraud,15
+2019Q2,2019,Roscommon,Theft,62
+2019Q2,2019,Sligo,Assault,46
+2019Q2,2019,Sligo,Burglary,30
+2019Q2,2019,Sligo,Damage to Property,52
+2019Q2,2019,Sligo,Drug Offences,30
+2019Q2,2019,Sligo,Fraud,10
+2019Q2,2019,Sligo,Theft,96
+2019Q2,2019,Tipperary,Assault,141
+2019Q2,2019,Tipperary,Burglary,89
+2019Q2,2019,Tipperary,Damage to Property,146
+2019Q2,2019,Tipperary,Drug Offences,157
+2019Q2,2019,Tipperary,Fraud,32
+2019Q2,2019,Tipperary,Theft,290
+2019Q2,2019,Waterford,Assault,160
+2019Q2,2019,Waterford,Burglary,92
+2019Q2,2019,Waterford,Damage to Property,146
+2019Q2,2019,Waterford,Drug Offences,201
+2019Q2,2019,Waterford,Fraud,42
+2019Q2,2019,Waterford,Theft,467
+2019Q2,2019,Westmeath,Assault,96
+2019Q2,2019,Westmeath,Burglary,65
+2019Q2,2019,Westmeath,Damage to Property,75
+2019Q2,2019,Westmeath,Drug Offences,944
+2019Q2,2019,Westmeath,Fraud,35
+2019Q2,2019,Westmeath,Theft,241
+2019Q2,2019,Wexford,Assault,127
+2019Q2,2019,Wexford,Burglary,92
+2019Q2,2019,Wexford,Damage to Property,142
+2019Q2,2019,Wexford,Drug Offences,110
+2019Q2,2019,Wexford,Fraud,36
+2019Q2,2019,Wexford,Theft,263
+2019Q2,2019,Wicklow,Assault,120
+2019Q2,2019,Wicklow,Burglary,165
+2019Q2,2019,Wicklow,Damage to Property,153
+2019Q2,2019,Wicklow,Drug Offences,159
+2019Q2,2019,Wicklow,Fraud,40
+2019Q2,2019,Wicklow,Theft,451
+2019Q3,2019,Carlow,Assault,60
+2019Q3,2019,Carlow,Burglary,42
+2019Q3,2019,Carlow,Damage to Property,62
+2019Q3,2019,Carlow,Drug Offences,65
+2019Q3,2019,Carlow,Fraud,16
+2019Q3,2019,Carlow,Theft,173
+2019Q3,2019,Cavan,Assault,105
+2019Q3,2019,Cavan,Burglary,48
+2019Q3,2019,Cavan,Damage to Property,76
+2019Q3,2019,Cavan,Drug Offences,45
+2019Q3,2019,Cavan,Fraud,28
+2019Q3,2019,Cavan,Theft,146
+2019Q3,2019,Clare,Assault,100
+2019Q3,2019,Clare,Burglary,51
+2019Q3,2019,Clare,Damage to Property,121
+2019Q3,2019,Clare,Drug Offences,52
+2019Q3,2019,Clare,Fraud,50
+2019Q3,2019,Clare,Theft,214
+2019Q3,2019,Cork,Assault,622
+2019Q3,2019,Cork,Burglary,212
+2019Q3,2019,Cork,Damage to Property,481
+2019Q3,2019,Cork,Drug Offences,535
+2019Q3,2019,Cork,Fraud,173
+2019Q3,2019,Cork,Theft,1249
+2019Q3,2019,Donegal,Assault,240
+2019Q3,2019,Donegal,Burglary,84
+2019Q3,2019,Donegal,Damage to Property,144
+2019Q3,2019,Donegal,Drug Offences,98
+2019Q3,2019,Donegal,Fraud,55
+2019Q3,2019,Donegal,Theft,199
+2019Q3,2019,Dublin,Assault,1932
+2019Q3,2019,Dublin,Burglary,1642
+2019Q3,2019,Dublin,Damage to Property,2107
+2019Q3,2019,Dublin,Drug Offences,2337
+2019Q3,2019,Dublin,Fraud,973
+2019Q3,2019,Dublin,Theft,9706
+2019Q3,2019,Galway,Assault,279
+2019Q3,2019,Galway,Burglary,154
+2019Q3,2019,Galway,Damage to Property,236
+2019Q3,2019,Galway,Drug Offences,168
+2019Q3,2019,Galway,Fraud,82
+2019Q3,2019,Galway,Theft,572
+2019Q3,2019,Kerry,Assault,175
+2019Q3,2019,Kerry,Burglary,85
+2019Q3,2019,Kerry,Damage to Property,108
+2019Q3,2019,Kerry,Drug Offences,180
+2019Q3,2019,Kerry,Fraud,56
+2019Q3,2019,Kerry,Theft,296
+2019Q3,2019,Kildare,Assault,190
+2019Q3,2019,Kildare,Burglary,227
+2019Q3,2019,Kildare,Damage to Property,167
+2019Q3,2019,Kildare,Drug Offences,303
+2019Q3,2019,Kildare,Fraud,85
+2019Q3,2019,Kildare,Theft,631
+2019Q3,2019,Kilkenny,Assault,60
+2019Q3,2019,Kilkenny,Burglary,42
+2019Q3,2019,Kilkenny,Damage to Property,62
+2019Q3,2019,Kilkenny,Drug Offences,65
+2019Q3,2019,Kilkenny,Fraud,16
+2019Q3,2019,Kilkenny,Theft,173
+2019Q3,2019,Laois,Assault,114
+2019Q3,2019,Laois,Burglary,51
+2019Q3,2019,Laois,Damage to Property,106
+2019Q3,2019,Laois,Drug Offences,316
+2019Q3,2019,Laois,Fraud,26
+2019Q3,2019,Laois,Theft,200
+2019Q3,2019,Leitrim,Assault,54
+2019Q3,2019,Leitrim,Burglary,22
+2019Q3,2019,Leitrim,Damage to Property,62
+2019Q3,2019,Leitrim,Drug Offences,31
+2019Q3,2019,Leitrim,Fraud,12
+2019Q3,2019,Leitrim,Theft,96
+2019Q3,2019,Limerick,Assault,223
+2019Q3,2019,Limerick,Burglary,181
+2019Q3,2019,Limerick,Damage to Property,261
+2019Q3,2019,Limerick,Drug Offences,195
+2019Q3,2019,Limerick,Fraud,71
+2019Q3,2019,Limerick,Theft,717
+2019Q3,2019,Longford,Assault,68
+2019Q3,2019,Longford,Burglary,36
+2019Q3,2019,Longford,Damage to Property,36
+2019Q3,2019,Longford,Drug Offences,40
+2019Q3,2019,Longford,Fraud,17
+2019Q3,2019,Longford,Theft,65
+2019Q3,2019,Louth,Assault,166
+2019Q3,2019,Louth,Burglary,145
+2019Q3,2019,Louth,Damage to Property,219
+2019Q3,2019,Louth,Drug Offences,216
+2019Q3,2019,Louth,Fraud,57
+2019Q3,2019,Louth,Theft,487
+2019Q3,2019,Mayo,Assault,115
+2019Q3,2019,Mayo,Burglary,52
+2019Q3,2019,Mayo,Damage to Property,97
+2019Q3,2019,Mayo,Drug Offences,41
+2019Q3,2019,Mayo,Fraud,39
+2019Q3,2019,Mayo,Theft,197
+2019Q3,2019,Meath,Assault,166
+2019Q3,2019,Meath,Burglary,153
+2019Q3,2019,Meath,Damage to Property,169
+2019Q3,2019,Meath,Drug Offences,101
+2019Q3,2019,Meath,Fraud,43
+2019Q3,2019,Meath,Theft,522
+2019Q3,2019,Monaghan,Assault,105
+2019Q3,2019,Monaghan,Burglary,48
+2019Q3,2019,Monaghan,Damage to Property,76
+2019Q3,2019,Monaghan,Drug Offences,45
+2019Q3,2019,Monaghan,Fraud,28
+2019Q3,2019,Monaghan,Theft,146
+2019Q3,2019,Offaly,Assault,114
+2019Q3,2019,Offaly,Burglary,51
+2019Q3,2019,Offaly,Damage to Property,106
+2019Q3,2019,Offaly,Drug Offences,316
+2019Q3,2019,Offaly,Fraud,26
+2019Q3,2019,Offaly,Theft,200
+2019Q3,2019,Roscommon,Assault,68
+2019Q3,2019,Roscommon,Burglary,36
+2019Q3,2019,Roscommon,Damage to Property,36
+2019Q3,2019,Roscommon,Drug Offences,40
+2019Q3,2019,Roscommon,Fraud,17
+2019Q3,2019,Roscommon,Theft,65
+2019Q3,2019,Sligo,Assault,54
+2019Q3,2019,Sligo,Burglary,22
+2019Q3,2019,Sligo,Damage to Property,62
+2019Q3,2019,Sligo,Drug Offences,31
+2019Q3,2019,Sligo,Fraud,12
+2019Q3,2019,Sligo,Theft,96
+2019Q3,2019,Tipperary,Assault,142
+2019Q3,2019,Tipperary,Burglary,93
+2019Q3,2019,Tipperary,Damage to Property,124
+2019Q3,2019,Tipperary,Drug Offences,99
+2019Q3,2019,Tipperary,Fraud,37
+2019Q3,2019,Tipperary,Theft,281
+2019Q3,2019,Waterford,Assault,177
+2019Q3,2019,Waterford,Burglary,108
+2019Q3,2019,Waterford,Damage to Property,209
+2019Q3,2019,Waterford,Drug Offences,224
+2019Q3,2019,Waterford,Fraud,49
+2019Q3,2019,Waterford,Theft,467
+2019Q3,2019,Westmeath,Assault,121
+2019Q3,2019,Westmeath,Burglary,90
+2019Q3,2019,Westmeath,Damage to Property,127
+2019Q3,2019,Westmeath,Drug Offences,72
+2019Q3,2019,Westmeath,Fraud,30
+2019Q3,2019,Westmeath,Theft,290
+2019Q3,2019,Wexford,Assault,132
+2019Q3,2019,Wexford,Burglary,125
+2019Q3,2019,Wexford,Damage to Property,159
+2019Q3,2019,Wexford,Drug Offences,80
+2019Q3,2019,Wexford,Fraud,33
+2019Q3,2019,Wexford,Theft,231
+2019Q3,2019,Wicklow,Assault,138
+2019Q3,2019,Wicklow,Burglary,205
+2019Q3,2019,Wicklow,Damage to Property,147
+2019Q3,2019,Wicklow,Drug Offences,155
+2019Q3,2019,Wicklow,Fraud,52
+2019Q3,2019,Wicklow,Theft,473
+2019Q4,2019,Carlow,Assault,61
+2019Q4,2019,Carlow,Burglary,64
+2019Q4,2019,Carlow,Damage to Property,50
+2019Q4,2019,Carlow,Drug Offences,78
+2019Q4,2019,Carlow,Fraud,23
+2019Q4,2019,Carlow,Theft,144
+2019Q4,2019,Cavan,Assault,90
+2019Q4,2019,Cavan,Burglary,58
+2019Q4,2019,Cavan,Damage to Property,78
+2019Q4,2019,Cavan,Drug Offences,42
+2019Q4,2019,Cavan,Fraud,28
+2019Q4,2019,Cavan,Theft,102
+2019Q4,2019,Clare,Assault,120
+2019Q4,2019,Clare,Burglary,61
+2019Q4,2019,Clare,Damage to Property,119
+2019Q4,2019,Clare,Drug Offences,79
+2019Q4,2019,Clare,Fraud,38
+2019Q4,2019,Clare,Theft,185
+2019Q4,2019,Cork,Assault,600
+2019Q4,2019,Cork,Burglary,189
+2019Q4,2019,Cork,Damage to Property,479
+2019Q4,2019,Cork,Drug Offences,464
+2019Q4,2019,Cork,Fraud,138
+2019Q4,2019,Cork,Theft,1304
+2019Q4,2019,Donegal,Assault,215
+2019Q4,2019,Donegal,Burglary,62
+2019Q4,2019,Donegal,Damage to Property,158
+2019Q4,2019,Donegal,Drug Offences,123
+2019Q4,2019,Donegal,Fraud,59
+2019Q4,2019,Donegal,Theft,143
+2019Q4,2019,Dublin,Assault,1876
+2019Q4,2019,Dublin,Burglary,2297
+2019Q4,2019,Dublin,Damage to Property,2191
+2019Q4,2019,Dublin,Drug Offences,1900
+2019Q4,2019,Dublin,Fraud,807
+2019Q4,2019,Dublin,Theft,9445
+2019Q4,2019,Galway,Assault,260
+2019Q4,2019,Galway,Burglary,160
+2019Q4,2019,Galway,Damage to Property,218
+2019Q4,2019,Galway,Drug Offences,117
+2019Q4,2019,Galway,Fraud,88
+2019Q4,2019,Galway,Theft,480
+2019Q4,2019,Kerry,Assault,194
+2019Q4,2019,Kerry,Burglary,58
+2019Q4,2019,Kerry,Damage to Property,103
+2019Q4,2019,Kerry,Drug Offences,180
+2019Q4,2019,Kerry,Fraud,43
+2019Q4,2019,Kerry,Theft,267
+2019Q4,2019,Kildare,Assault,166
+2019Q4,2019,Kildare,Burglary,278
+2019Q4,2019,Kildare,Damage to Property,155
+2019Q4,2019,Kildare,Drug Offences,174
+2019Q4,2019,Kildare,Fraud,102
+2019Q4,2019,Kildare,Theft,489
+2019Q4,2019,Kilkenny,Assault,61
+2019Q4,2019,Kilkenny,Burglary,64
+2019Q4,2019,Kilkenny,Damage to Property,50
+2019Q4,2019,Kilkenny,Drug Offences,78
+2019Q4,2019,Kilkenny,Fraud,23
+2019Q4,2019,Kilkenny,Theft,144
+2019Q4,2019,Laois,Assault,79
+2019Q4,2019,Laois,Burglary,62
+2019Q4,2019,Laois,Damage to Property,83
+2019Q4,2019,Laois,Drug Offences,60
+2019Q4,2019,Laois,Fraud,35
+2019Q4,2019,Laois,Theft,153
+2019Q4,2019,Leitrim,Assault,58
+2019Q4,2019,Leitrim,Burglary,27
+2019Q4,2019,Leitrim,Damage to Property,50
+2019Q4,2019,Leitrim,Drug Offences,32
+2019Q4,2019,Leitrim,Fraud,17
+2019Q4,2019,Leitrim,Theft,70
+2019Q4,2019,Limerick,Assault,249
+2019Q4,2019,Limerick,Burglary,233
+2019Q4,2019,Limerick,Damage to Property,269
+2019Q4,2019,Limerick,Drug Offences,184
+2019Q4,2019,Limerick,Fraud,78
+2019Q4,2019,Limerick,Theft,849
+2019Q4,2019,Longford,Assault,48
+2019Q4,2019,Longford,Burglary,18
+2019Q4,2019,Longford,Damage to Property,40
+2019Q4,2019,Longford,Drug Offences,28
+2019Q4,2019,Longford,Fraud,18
+2019Q4,2019,Longford,Theft,73
+2019Q4,2019,Louth,Assault,181
+2019Q4,2019,Louth,Burglary,118
+2019Q4,2019,Louth,Damage to Property,199
+2019Q4,2019,Louth,Drug Offences,176
+2019Q4,2019,Louth,Fraud,50
+2019Q4,2019,Louth,Theft,409
+2019Q4,2019,Mayo,Assault,106
+2019Q4,2019,Mayo,Burglary,43
+2019Q4,2019,Mayo,Damage to Property,84
+2019Q4,2019,Mayo,Drug Offences,65
+2019Q4,2019,Mayo,Fraud,22
+2019Q4,2019,Mayo,Theft,163
+2019Q4,2019,Meath,Assault,139
+2019Q4,2019,Meath,Burglary,161
+2019Q4,2019,Meath,Damage to Property,146
+2019Q4,2019,Meath,Drug Offences,92
+2019Q4,2019,Meath,Fraud,83
+2019Q4,2019,Meath,Theft,468
+2019Q4,2019,Monaghan,Assault,90
+2019Q4,2019,Monaghan,Burglary,58
+2019Q4,2019,Monaghan,Damage to Property,78
+2019Q4,2019,Monaghan,Drug Offences,42
+2019Q4,2019,Monaghan,Fraud,28
+2019Q4,2019,Monaghan,Theft,102
+2019Q4,2019,Offaly,Assault,79
+2019Q4,2019,Offaly,Burglary,62
+2019Q4,2019,Offaly,Damage to Property,83
+2019Q4,2019,Offaly,Drug Offences,60
+2019Q4,2019,Offaly,Fraud,35
+2019Q4,2019,Offaly,Theft,153
+2019Q4,2019,Roscommon,Assault,48
+2019Q4,2019,Roscommon,Burglary,18
+2019Q4,2019,Roscommon,Damage to Property,40
+2019Q4,2019,Roscommon,Drug Offences,28
+2019Q4,2019,Roscommon,Fraud,18
+2019Q4,2019,Roscommon,Theft,73
+2019Q4,2019,Sligo,Assault,58
+2019Q4,2019,Sligo,Burglary,27
+2019Q4,2019,Sligo,Damage to Property,50
+2019Q4,2019,Sligo,Drug Offences,32
+2019Q4,2019,Sligo,Fraud,17
+2019Q4,2019,Sligo,Theft,70
+2019Q4,2019,Tipperary,Assault,154
+2019Q4,2019,Tipperary,Burglary,113
+2019Q4,2019,Tipperary,Damage to Property,125
+2019Q4,2019,Tipperary,Drug Offences,115
+2019Q4,2019,Tipperary,Fraud,51
+2019Q4,2019,Tipperary,Theft,221
+2019Q4,2019,Waterford,Assault,170
+2019Q4,2019,Waterford,Burglary,94
+2019Q4,2019,Waterford,Damage to Property,156
+2019Q4,2019,Waterford,Drug Offences,176
+2019Q4,2019,Waterford,Fraud,41
+2019Q4,2019,Waterford,Theft,386
+2019Q4,2019,Westmeath,Assault,121
+2019Q4,2019,Westmeath,Burglary,91
+2019Q4,2019,Westmeath,Damage to Property,113
+2019Q4,2019,Westmeath,Drug Offences,92
+2019Q4,2019,Westmeath,Fraud,51
+2019Q4,2019,Westmeath,Theft,256
+2019Q4,2019,Wexford,Assault,127
+2019Q4,2019,Wexford,Burglary,128
+2019Q4,2019,Wexford,Damage to Property,143
+2019Q4,2019,Wexford,Drug Offences,84
+2019Q4,2019,Wexford,Fraud,45
+2019Q4,2019,Wexford,Theft,232
+2019Q4,2019,Wicklow,Assault,101
+2019Q4,2019,Wicklow,Burglary,155
+2019Q4,2019,Wicklow,Damage to Property,166
+2019Q4,2019,Wicklow,Drug Offences,149
+2019Q4,2019,Wicklow,Fraud,35
+2019Q4,2019,Wicklow,Theft,453
+2020Q1,2020,Carlow,Assault,39
+2020Q1,2020,Carlow,Burglary,40
+2020Q1,2020,Carlow,Damage to Property,44
+2020Q1,2020,Carlow,Drug Offences,80
+2020Q1,2020,Carlow,Fraud,20
+2020Q1,2020,Carlow,Theft,105
+2020Q1,2020,Cavan,Assault,72
+2020Q1,2020,Cavan,Burglary,62
+2020Q1,2020,Cavan,Damage to Property,61
+2020Q1,2020,Cavan,Drug Offences,46
+2020Q1,2020,Cavan,Fraud,24
+2020Q1,2020,Cavan,Theft,115
+2020Q1,2020,Clare,Assault,102
+2020Q1,2020,Clare,Burglary,69
+2020Q1,2020,Clare,Damage to Property,91
+2020Q1,2020,Clare,Drug Offences,109
+2020Q1,2020,Clare,Fraud,39
+2020Q1,2020,Clare,Theft,184
+2020Q1,2020,Cork,Assault,472
+2020Q1,2020,Cork,Burglary,190
+2020Q1,2020,Cork,Damage to Property,442
+2020Q1,2020,Cork,Drug Offences,488
+2020Q1,2020,Cork,Fraud,166
+2020Q1,2020,Cork,Theft,1066
+2020Q1,2020,Donegal,Assault,180
+2020Q1,2020,Donegal,Burglary,51
+2020Q1,2020,Donegal,Damage to Property,128
+2020Q1,2020,Donegal,Drug Offences,90
+2020Q1,2020,Donegal,Fraud,52
+2020Q1,2020,Donegal,Theft,152
+2020Q1,2020,Dublin,Assault,1728
+2020Q1,2020,Dublin,Burglary,1821
+2020Q1,2020,Dublin,Damage to Property,2086
+2020Q1,2020,Dublin,Drug Offences,2337
+2020Q1,2020,Dublin,Fraud,879
+2020Q1,2020,Dublin,Theft,7977
+2020Q1,2020,Galway,Assault,218
+2020Q1,2020,Galway,Burglary,150
+2020Q1,2020,Galway,Damage to Property,206
+2020Q1,2020,Galway,Drug Offences,104
+2020Q1,2020,Galway,Fraud,90
+2020Q1,2020,Galway,Theft,496
+2020Q1,2020,Kerry,Assault,130
+2020Q1,2020,Kerry,Burglary,55
+2020Q1,2020,Kerry,Damage to Property,80
+2020Q1,2020,Kerry,Drug Offences,140
+2020Q1,2020,Kerry,Fraud,49
+2020Q1,2020,Kerry,Theft,211
+2020Q1,2020,Kildare,Assault,159
+2020Q1,2020,Kildare,Burglary,152
+2020Q1,2020,Kildare,Damage to Property,175
+2020Q1,2020,Kildare,Drug Offences,190
+2020Q1,2020,Kildare,Fraud,77
+2020Q1,2020,Kildare,Theft,481
+2020Q1,2020,Kilkenny,Assault,39
+2020Q1,2020,Kilkenny,Burglary,40
+2020Q1,2020,Kilkenny,Damage to Property,44
+2020Q1,2020,Kilkenny,Drug Offences,80
+2020Q1,2020,Kilkenny,Fraud,20
+2020Q1,2020,Kilkenny,Theft,105
+2020Q1,2020,Laois,Assault,74
+2020Q1,2020,Laois,Burglary,50
+2020Q1,2020,Laois,Damage to Property,68
+2020Q1,2020,Laois,Drug Offences,86
+2020Q1,2020,Laois,Fraud,31
+2020Q1,2020,Laois,Theft,158
+2020Q1,2020,Leitrim,Assault,43
+2020Q1,2020,Leitrim,Burglary,32
+2020Q1,2020,Leitrim,Damage to Property,40
+2020Q1,2020,Leitrim,Drug Offences,32
+2020Q1,2020,Leitrim,Fraud,22
+2020Q1,2020,Leitrim,Theft,86
+2020Q1,2020,Limerick,Assault,184
+2020Q1,2020,Limerick,Burglary,228
+2020Q1,2020,Limerick,Damage to Property,240
+2020Q1,2020,Limerick,Drug Offences,174
+2020Q1,2020,Limerick,Fraud,78
+2020Q1,2020,Limerick,Theft,786
+2020Q1,2020,Longford,Assault,50
+2020Q1,2020,Longford,Burglary,21
+2020Q1,2020,Longford,Damage to Property,30
+2020Q1,2020,Longford,Drug Offences,30
+2020Q1,2020,Longford,Fraud,12
+2020Q1,2020,Longford,Theft,72
+2020Q1,2020,Louth,Assault,154
+2020Q1,2020,Louth,Burglary,103
+2020Q1,2020,Louth,Damage to Property,177
+2020Q1,2020,Louth,Drug Offences,220
+2020Q1,2020,Louth,Fraud,72
+2020Q1,2020,Louth,Theft,423
+2020Q1,2020,Mayo,Assault,97
+2020Q1,2020,Mayo,Burglary,21
+2020Q1,2020,Mayo,Damage to Property,67
+2020Q1,2020,Mayo,Drug Offences,86
+2020Q1,2020,Mayo,Fraud,39
+2020Q1,2020,Mayo,Theft,136
+2020Q1,2020,Meath,Assault,140
+2020Q1,2020,Meath,Burglary,151
+2020Q1,2020,Meath,Damage to Property,150
+2020Q1,2020,Meath,Drug Offences,123
+2020Q1,2020,Meath,Fraud,47
+2020Q1,2020,Meath,Theft,512
+2020Q1,2020,Monaghan,Assault,72
+2020Q1,2020,Monaghan,Burglary,62
+2020Q1,2020,Monaghan,Damage to Property,61
+2020Q1,2020,Monaghan,Drug Offences,46
+2020Q1,2020,Monaghan,Fraud,24
+2020Q1,2020,Monaghan,Theft,115
+2020Q1,2020,Offaly,Assault,74
+2020Q1,2020,Offaly,Burglary,50
+2020Q1,2020,Offaly,Damage to Property,68
+2020Q1,2020,Offaly,Drug Offences,86
+2020Q1,2020,Offaly,Fraud,31
+2020Q1,2020,Offaly,Theft,158
+2020Q1,2020,Roscommon,Assault,50
+2020Q1,2020,Roscommon,Burglary,21
+2020Q1,2020,Roscommon,Damage to Property,30
+2020Q1,2020,Roscommon,Drug Offences,30
+2020Q1,2020,Roscommon,Fraud,12
+2020Q1,2020,Roscommon,Theft,72
+2020Q1,2020,Sligo,Assault,43
+2020Q1,2020,Sligo,Burglary,32
+2020Q1,2020,Sligo,Damage to Property,40
+2020Q1,2020,Sligo,Drug Offences,32
+2020Q1,2020,Sligo,Fraud,22
+2020Q1,2020,Sligo,Theft,86
+2020Q1,2020,Tipperary,Assault,104
+2020Q1,2020,Tipperary,Burglary,100
+2020Q1,2020,Tipperary,Damage to Property,106
+2020Q1,2020,Tipperary,Drug Offences,148
+2020Q1,2020,Tipperary,Fraud,34
+2020Q1,2020,Tipperary,Theft,286
+2020Q1,2020,Waterford,Assault,152
+2020Q1,2020,Waterford,Burglary,86
+2020Q1,2020,Waterford,Damage to Property,156
+2020Q1,2020,Waterford,Drug Offences,185
+2020Q1,2020,Waterford,Fraud,41
+2020Q1,2020,Waterford,Theft,335
+2020Q1,2020,Westmeath,Assault,96
+2020Q1,2020,Westmeath,Burglary,58
+2020Q1,2020,Westmeath,Damage to Property,109
+2020Q1,2020,Westmeath,Drug Offences,103
+2020Q1,2020,Westmeath,Fraud,43
+2020Q1,2020,Westmeath,Theft,206
+2020Q1,2020,Wexford,Assault,124
+2020Q1,2020,Wexford,Burglary,123
+2020Q1,2020,Wexford,Damage to Property,153
+2020Q1,2020,Wexford,Drug Offences,93
+2020Q1,2020,Wexford,Fraud,62
+2020Q1,2020,Wexford,Theft,208
+2020Q1,2020,Wicklow,Assault,86
+2020Q1,2020,Wicklow,Burglary,107
+2020Q1,2020,Wicklow,Damage to Property,139
+2020Q1,2020,Wicklow,Drug Offences,144
+2020Q1,2020,Wicklow,Fraud,38
+2020Q1,2020,Wicklow,Theft,343
+2020Q2,2020,Carlow,Assault,39
+2020Q2,2020,Carlow,Burglary,20
+2020Q2,2020,Carlow,Damage to Property,54
+2020Q2,2020,Carlow,Drug Offences,81
+2020Q2,2020,Carlow,Fraud,17
+2020Q2,2020,Carlow,Theft,90
+2020Q2,2020,Cavan,Assault,82
+2020Q2,2020,Cavan,Burglary,19
+2020Q2,2020,Cavan,Damage to Property,63
+2020Q2,2020,Cavan,Drug Offences,72
+2020Q2,2020,Cavan,Fraud,28
+2020Q2,2020,Cavan,Theft,67
+2020Q2,2020,Clare,Assault,86
+2020Q2,2020,Clare,Burglary,24
+2020Q2,2020,Clare,Damage to Property,86
+2020Q2,2020,Clare,Drug Offences,128
+2020Q2,2020,Clare,Fraud,43
+2020Q2,2020,Clare,Theft,134
+2020Q2,2020,Cork,Assault,461
+2020Q2,2020,Cork,Burglary,143
+2020Q2,2020,Cork,Damage to Property,401
+2020Q2,2020,Cork,Drug Offences,659
+2020Q2,2020,Cork,Fraud,175
+2020Q2,2020,Cork,Theft,854
+2020Q2,2020,Donegal,Assault,145
+2020Q2,2020,Donegal,Burglary,34
+2020Q2,2020,Donegal,Damage to Property,132
+2020Q2,2020,Donegal,Drug Offences,170
+2020Q2,2020,Donegal,Fraud,52
+2020Q2,2020,Donegal,Theft,120
+2020Q2,2020,Dublin,Assault,1615
+2020Q2,2020,Dublin,Burglary,746
+2020Q2,2020,Dublin,Damage to Property,1680
+2020Q2,2020,Dublin,Drug Offences,2893
+2020Q2,2020,Dublin,Fraud,822
+2020Q2,2020,Dublin,Theft,5519
+2020Q2,2020,Galway,Assault,242
+2020Q2,2020,Galway,Burglary,77
+2020Q2,2020,Galway,Damage to Property,205
+2020Q2,2020,Galway,Drug Offences,156
+2020Q2,2020,Galway,Fraud,93
+2020Q2,2020,Galway,Theft,350
+2020Q2,2020,Kerry,Assault,139
+2020Q2,2020,Kerry,Burglary,29
+2020Q2,2020,Kerry,Damage to Property,98
+2020Q2,2020,Kerry,Drug Offences,195
+2020Q2,2020,Kerry,Fraud,49
+2020Q2,2020,Kerry,Theft,167
+2020Q2,2020,Kildare,Assault,166
+2020Q2,2020,Kildare,Burglary,65
+2020Q2,2020,Kildare,Damage to Property,120
+2020Q2,2020,Kildare,Drug Offences,217
+2020Q2,2020,Kildare,Fraud,73
+2020Q2,2020,Kildare,Theft,339
+2020Q2,2020,Kilkenny,Assault,39
+2020Q2,2020,Kilkenny,Burglary,20
+2020Q2,2020,Kilkenny,Damage to Property,54
+2020Q2,2020,Kilkenny,Drug Offences,81
+2020Q2,2020,Kilkenny,Fraud,17
+2020Q2,2020,Kilkenny,Theft,90
+2020Q2,2020,Laois,Assault,90
+2020Q2,2020,Laois,Burglary,32
+2020Q2,2020,Laois,Damage to Property,88
+2020Q2,2020,Laois,Drug Offences,97
+2020Q2,2020,Laois,Fraud,30
+2020Q2,2020,Laois,Theft,161
+2020Q2,2020,Leitrim,Assault,38
+2020Q2,2020,Leitrim,Burglary,14
+2020Q2,2020,Leitrim,Damage to Property,44
+2020Q2,2020,Leitrim,Drug Offences,64
+2020Q2,2020,Leitrim,Fraud,12
+2020Q2,2020,Leitrim,Theft,60
+2020Q2,2020,Limerick,Assault,188
+2020Q2,2020,Limerick,Burglary,113
+2020Q2,2020,Limerick,Damage to Property,212
+2020Q2,2020,Limerick,Drug Offences,281
+2020Q2,2020,Limerick,Fraud,77
+2020Q2,2020,Limerick,Theft,589
+2020Q2,2020,Longford,Assault,54
+2020Q2,2020,Longford,Burglary,11
+2020Q2,2020,Longford,Damage to Property,31
+2020Q2,2020,Longford,Drug Offences,34
+2020Q2,2020,Longford,Fraud,21
+2020Q2,2020,Longford,Theft,72
+2020Q2,2020,Louth,Assault,194
+2020Q2,2020,Louth,Burglary,84
+2020Q2,2020,Louth,Damage to Property,207
+2020Q2,2020,Louth,Drug Offences,297
+2020Q2,2020,Louth,Fraud,66
+2020Q2,2020,Louth,Theft,282
+2020Q2,2020,Mayo,Assault,95
+2020Q2,2020,Mayo,Burglary,21
+2020Q2,2020,Mayo,Damage to Property,96
+2020Q2,2020,Mayo,Drug Offences,89
+2020Q2,2020,Mayo,Fraud,44
+2020Q2,2020,Mayo,Theft,89
+2020Q2,2020,Meath,Assault,141
+2020Q2,2020,Meath,Burglary,56
+2020Q2,2020,Meath,Damage to Property,108
+2020Q2,2020,Meath,Drug Offences,154
+2020Q2,2020,Meath,Fraud,96
+2020Q2,2020,Meath,Theft,335
+2020Q2,2020,Monaghan,Assault,82
+2020Q2,2020,Monaghan,Burglary,19
+2020Q2,2020,Monaghan,Damage to Property,63
+2020Q2,2020,Monaghan,Drug Offences,72
+2020Q2,2020,Monaghan,Fraud,28
+2020Q2,2020,Monaghan,Theft,67
+2020Q2,2020,Offaly,Assault,90
+2020Q2,2020,Offaly,Burglary,32
+2020Q2,2020,Offaly,Damage to Property,88
+2020Q2,2020,Offaly,Drug Offences,97
+2020Q2,2020,Offaly,Fraud,30
+2020Q2,2020,Offaly,Theft,161
+2020Q2,2020,Roscommon,Assault,54
+2020Q2,2020,Roscommon,Burglary,11
+2020Q2,2020,Roscommon,Damage to Property,31
+2020Q2,2020,Roscommon,Drug Offences,34
+2020Q2,2020,Roscommon,Fraud,21
+2020Q2,2020,Roscommon,Theft,72
+2020Q2,2020,Sligo,Assault,38
+2020Q2,2020,Sligo,Burglary,14
+2020Q2,2020,Sligo,Damage to Property,44
+2020Q2,2020,Sligo,Drug Offences,64
+2020Q2,2020,Sligo,Fraud,12
+2020Q2,2020,Sligo,Theft,60
+2020Q2,2020,Tipperary,Assault,138
+2020Q2,2020,Tipperary,Burglary,35
+2020Q2,2020,Tipperary,Damage to Property,109
+2020Q2,2020,Tipperary,Drug Offences,244
+2020Q2,2020,Tipperary,Fraud,42
+2020Q2,2020,Tipperary,Theft,199
+2020Q2,2020,Waterford,Assault,147
+2020Q2,2020,Waterford,Burglary,43
+2020Q2,2020,Waterford,Damage to Property,109
+2020Q2,2020,Waterford,Drug Offences,185
+2020Q2,2020,Waterford,Fraud,44
+2020Q2,2020,Waterford,Theft,204
+2020Q2,2020,Westmeath,Assault,87
+2020Q2,2020,Westmeath,Burglary,28
+2020Q2,2020,Westmeath,Damage to Property,85
+2020Q2,2020,Westmeath,Drug Offences,112
+2020Q2,2020,Westmeath,Fraud,38
+2020Q2,2020,Westmeath,Theft,118
+2020Q2,2020,Wexford,Assault,118
+2020Q2,2020,Wexford,Burglary,81
+2020Q2,2020,Wexford,Damage to Property,132
+2020Q2,2020,Wexford,Drug Offences,95
+2020Q2,2020,Wexford,Fraud,28
+2020Q2,2020,Wexford,Theft,208
+2020Q2,2020,Wicklow,Assault,79
+2020Q2,2020,Wicklow,Burglary,43
+2020Q2,2020,Wicklow,Damage to Property,110
+2020Q2,2020,Wicklow,Drug Offences,234
+2020Q2,2020,Wicklow,Fraud,47
+2020Q2,2020,Wicklow,Theft,222
+2020Q3,2020,Carlow,Assault,54
+2020Q3,2020,Carlow,Burglary,30
+2020Q3,2020,Carlow,Damage to Property,51
+2020Q3,2020,Carlow,Drug Offences,88
+2020Q3,2020,Carlow,Fraud,22
+2020Q3,2020,Carlow,Theft,127
+2020Q3,2020,Cavan,Assault,89
+2020Q3,2020,Cavan,Burglary,26
+2020Q3,2020,Cavan,Damage to Property,60
+2020Q3,2020,Cavan,Drug Offences,72
+2020Q3,2020,Cavan,Fraud,24
+2020Q3,2020,Cavan,Theft,78
+2020Q3,2020,Clare,Assault,84
+2020Q3,2020,Clare,Burglary,39
+2020Q3,2020,Clare,Damage to Property,132
+2020Q3,2020,Clare,Drug Offences,116
+2020Q3,2020,Clare,Fraud,39
+2020Q3,2020,Clare,Theft,211
+2020Q3,2020,Cork,Assault,521
+2020Q3,2020,Cork,Burglary,161
+2020Q3,2020,Cork,Damage to Property,472
+2020Q3,2020,Cork,Drug Offences,714
+2020Q3,2020,Cork,Fraud,187
+2020Q3,2020,Cork,Theft,986
+2020Q3,2020,Donegal,Assault,178
+2020Q3,2020,Donegal,Burglary,26
+2020Q3,2020,Donegal,Damage to Property,177
+2020Q3,2020,Donegal,Drug Offences,133
+2020Q3,2020,Donegal,Fraud,46
+2020Q3,2020,Donegal,Theft,127
+2020Q3,2020,Dublin,Assault,1787
+2020Q3,2020,Dublin,Burglary,1309
+2020Q3,2020,Dublin,Damage to Property,2152
+2020Q3,2020,Dublin,Drug Offences,2306
+2020Q3,2020,Dublin,Fraud,827
+2020Q3,2020,Dublin,Theft,7747
+2020Q3,2020,Galway,Assault,276
+2020Q3,2020,Galway,Burglary,109
+2020Q3,2020,Galway,Damage to Property,195
+2020Q3,2020,Galway,Drug Offences,170
+2020Q3,2020,Galway,Fraud,100
+2020Q3,2020,Galway,Theft,449
+2020Q3,2020,Kerry,Assault,194
+2020Q3,2020,Kerry,Burglary,46
+2020Q3,2020,Kerry,Damage to Property,102
+2020Q3,2020,Kerry,Drug Offences,116
+2020Q3,2020,Kerry,Fraud,53
+2020Q3,2020,Kerry,Theft,185
+2020Q3,2020,Kildare,Assault,167
+2020Q3,2020,Kildare,Burglary,116
+2020Q3,2020,Kildare,Damage to Property,176
+2020Q3,2020,Kildare,Drug Offences,185
+2020Q3,2020,Kildare,Fraud,65
+2020Q3,2020,Kildare,Theft,486
+2020Q3,2020,Kilkenny,Assault,54
+2020Q3,2020,Kilkenny,Burglary,30
+2020Q3,2020,Kilkenny,Damage to Property,51
+2020Q3,2020,Kilkenny,Drug Offences,88
+2020Q3,2020,Kilkenny,Fraud,22
+2020Q3,2020,Kilkenny,Theft,127
+2020Q3,2020,Laois,Assault,94
+2020Q3,2020,Laois,Burglary,25
+2020Q3,2020,Laois,Damage to Property,84
+2020Q3,2020,Laois,Drug Offences,82
+2020Q3,2020,Laois,Fraud,28
+2020Q3,2020,Laois,Theft,136
+2020Q3,2020,Leitrim,Assault,40
+2020Q3,2020,Leitrim,Burglary,20
+2020Q3,2020,Leitrim,Damage to Property,54
+2020Q3,2020,Leitrim,Drug Offences,27
+2020Q3,2020,Leitrim,Fraud,12
+2020Q3,2020,Leitrim,Theft,72
+2020Q3,2020,Limerick,Assault,210
+2020Q3,2020,Limerick,Burglary,115
+2020Q3,2020,Limerick,Damage to Property,215
+2020Q3,2020,Limerick,Drug Offences,211
+2020Q3,2020,Limerick,Fraud,69
+2020Q3,2020,Limerick,Theft,693
+2020Q3,2020,Longford,Assault,44
+2020Q3,2020,Longford,Burglary,12
+2020Q3,2020,Longford,Damage to Property,34
+2020Q3,2020,Longford,Drug Offences,40
+2020Q3,2020,Longford,Fraud,20
+2020Q3,2020,Longford,Theft,81
+2020Q3,2020,Louth,Assault,204
+2020Q3,2020,Louth,Burglary,100
+2020Q3,2020,Louth,Damage to Property,201
+2020Q3,2020,Louth,Drug Offences,206
+2020Q3,2020,Louth,Fraud,57
+2020Q3,2020,Louth,Theft,378
+2020Q3,2020,Mayo,Assault,110
+2020Q3,2020,Mayo,Burglary,35
+2020Q3,2020,Mayo,Damage to Property,83
+2020Q3,2020,Mayo,Drug Offences,77
+2020Q3,2020,Mayo,Fraud,37
+2020Q3,2020,Mayo,Theft,148
+2020Q3,2020,Meath,Assault,152
+2020Q3,2020,Meath,Burglary,100
+2020Q3,2020,Meath,Damage to Property,170
+2020Q3,2020,Meath,Drug Offences,104
+2020Q3,2020,Meath,Fraud,55
+2020Q3,2020,Meath,Theft,514
+2020Q3,2020,Monaghan,Assault,89
+2020Q3,2020,Monaghan,Burglary,26
+2020Q3,2020,Monaghan,Damage to Property,60
+2020Q3,2020,Monaghan,Drug Offences,72
+2020Q3,2020,Monaghan,Fraud,24
+2020Q3,2020,Monaghan,Theft,78
+2020Q3,2020,Offaly,Assault,94
+2020Q3,2020,Offaly,Burglary,25
+2020Q3,2020,Offaly,Damage to Property,84
+2020Q3,2020,Offaly,Drug Offences,82
+2020Q3,2020,Offaly,Fraud,28
+2020Q3,2020,Offaly,Theft,136
+2020Q3,2020,Roscommon,Assault,44
+2020Q3,2020,Roscommon,Burglary,12
+2020Q3,2020,Roscommon,Damage to Property,34
+2020Q3,2020,Roscommon,Drug Offences,40
+2020Q3,2020,Roscommon,Fraud,20
+2020Q3,2020,Roscommon,Theft,81
+2020Q3,2020,Sligo,Assault,40
+2020Q3,2020,Sligo,Burglary,20
+2020Q3,2020,Sligo,Damage to Property,54
+2020Q3,2020,Sligo,Drug Offences,27
+2020Q3,2020,Sligo,Fraud,12
+2020Q3,2020,Sligo,Theft,72
+2020Q3,2020,Tipperary,Assault,134
+2020Q3,2020,Tipperary,Burglary,69
+2020Q3,2020,Tipperary,Damage to Property,104
+2020Q3,2020,Tipperary,Drug Offences,176
+2020Q3,2020,Tipperary,Fraud,33
+2020Q3,2020,Tipperary,Theft,286
+2020Q3,2020,Waterford,Assault,212
+2020Q3,2020,Waterford,Burglary,50
+2020Q3,2020,Waterford,Damage to Property,183
+2020Q3,2020,Waterford,Drug Offences,182
+2020Q3,2020,Waterford,Fraud,47
+2020Q3,2020,Waterford,Theft,329
+2020Q3,2020,Westmeath,Assault,122
+2020Q3,2020,Westmeath,Burglary,31
+2020Q3,2020,Westmeath,Damage to Property,86
+2020Q3,2020,Westmeath,Drug Offences,87
+2020Q3,2020,Westmeath,Fraud,35
+2020Q3,2020,Westmeath,Theft,171
+2020Q3,2020,Wexford,Assault,147
+2020Q3,2020,Wexford,Burglary,89
+2020Q3,2020,Wexford,Damage to Property,137
+2020Q3,2020,Wexford,Drug Offences,109
+2020Q3,2020,Wexford,Fraud,53
+2020Q3,2020,Wexford,Theft,262
+2020Q3,2020,Wicklow,Assault,102
+2020Q3,2020,Wicklow,Burglary,117
+2020Q3,2020,Wicklow,Damage to Property,153
+2020Q3,2020,Wicklow,Drug Offences,154
+2020Q3,2020,Wicklow,Fraud,46
+2020Q3,2020,Wicklow,Theft,404
+2020Q4,2020,Carlow,Assault,68
+2020Q4,2020,Carlow,Burglary,27
+2020Q4,2020,Carlow,Damage to Property,50
+2020Q4,2020,Carlow,Drug Offences,81
+2020Q4,2020,Carlow,Fraud,24
+2020Q4,2020,Carlow,Theft,90
+2020Q4,2020,Cavan,Assault,80
+2020Q4,2020,Cavan,Burglary,20
+2020Q4,2020,Cavan,Damage to Property,71
+2020Q4,2020,Cavan,Drug Offences,52
+2020Q4,2020,Cavan,Fraud,30
+2020Q4,2020,Cavan,Theft,64
+2020Q4,2020,Clare,Assault,51
+2020Q4,2020,Clare,Burglary,46
+2020Q4,2020,Clare,Damage to Property,103
+2020Q4,2020,Clare,Drug Offences,83
+2020Q4,2020,Clare,Fraud,37
+2020Q4,2020,Clare,Theft,164
+2020Q4,2020,Cork,Assault,494
+2020Q4,2020,Cork,Burglary,93
+2020Q4,2020,Cork,Damage to Property,380
+2020Q4,2020,Cork,Drug Offences,663
+2020Q4,2020,Cork,Fraud,129
+2020Q4,2020,Cork,Theft,793
+2020Q4,2020,Donegal,Assault,158
+2020Q4,2020,Donegal,Burglary,28
+2020Q4,2020,Donegal,Damage to Property,123
+2020Q4,2020,Donegal,Drug Offences,143
+2020Q4,2020,Donegal,Fraud,53
+2020Q4,2020,Donegal,Theft,131
+2020Q4,2020,Dublin,Assault,1542
+2020Q4,2020,Dublin,Burglary,1268
+2020Q4,2020,Dublin,Damage to Property,1935
+2020Q4,2020,Dublin,Drug Offences,2094
+2020Q4,2020,Dublin,Fraud,767
+2020Q4,2020,Dublin,Theft,6409
+2020Q4,2020,Galway,Assault,204
+2020Q4,2020,Galway,Burglary,77
+2020Q4,2020,Galway,Damage to Property,167
+2020Q4,2020,Galway,Drug Offences,107
+2020Q4,2020,Galway,Fraud,85
+2020Q4,2020,Galway,Theft,343
+2020Q4,2020,Kerry,Assault,121
+2020Q4,2020,Kerry,Burglary,50
+2020Q4,2020,Kerry,Damage to Property,89
+2020Q4,2020,Kerry,Drug Offences,120
+2020Q4,2020,Kerry,Fraud,47
+2020Q4,2020,Kerry,Theft,173
+2020Q4,2020,Kildare,Assault,175
+2020Q4,2020,Kildare,Burglary,101
+2020Q4,2020,Kildare,Damage to Property,146
+2020Q4,2020,Kildare,Drug Offences,193
+2020Q4,2020,Kildare,Fraud,84
+2020Q4,2020,Kildare,Theft,355
+2020Q4,2020,Kilkenny,Assault,68
+2020Q4,2020,Kilkenny,Burglary,27
+2020Q4,2020,Kilkenny,Damage to Property,50
+2020Q4,2020,Kilkenny,Drug Offences,81
+2020Q4,2020,Kilkenny,Fraud,24
+2020Q4,2020,Kilkenny,Theft,90
+2020Q4,2020,Laois,Assault,77
+2020Q4,2020,Laois,Burglary,28
+2020Q4,2020,Laois,Damage to Property,72
+2020Q4,2020,Laois,Drug Offences,94
+2020Q4,2020,Laois,Fraud,28
+2020Q4,2020,Laois,Theft,124
+2020Q4,2020,Leitrim,Assault,40
+2020Q4,2020,Leitrim,Burglary,13
+2020Q4,2020,Leitrim,Damage to Property,30
+2020Q4,2020,Leitrim,Drug Offences,38
+2020Q4,2020,Leitrim,Fraud,16
+2020Q4,2020,Leitrim,Theft,47
+2020Q4,2020,Limerick,Assault,203
+2020Q4,2020,Limerick,Burglary,120
+2020Q4,2020,Limerick,Damage to Property,282
+2020Q4,2020,Limerick,Drug Offences,210
+2020Q4,2020,Limerick,Fraud,75
+2020Q4,2020,Limerick,Theft,621
+2020Q4,2020,Longford,Assault,32
+2020Q4,2020,Longford,Burglary,14
+2020Q4,2020,Longford,Damage to Property,39
+2020Q4,2020,Longford,Drug Offences,34
+2020Q4,2020,Longford,Fraud,23
+2020Q4,2020,Longford,Theft,64
+2020Q4,2020,Louth,Assault,157
+2020Q4,2020,Louth,Burglary,73
+2020Q4,2020,Louth,Damage to Property,177
+2020Q4,2020,Louth,Drug Offences,197
+2020Q4,2020,Louth,Fraud,50
+2020Q4,2020,Louth,Theft,305
+2020Q4,2020,Mayo,Assault,77
+2020Q4,2020,Mayo,Burglary,25
+2020Q4,2020,Mayo,Damage to Property,68
+2020Q4,2020,Mayo,Drug Offences,72
+2020Q4,2020,Mayo,Fraud,38
+2020Q4,2020,Mayo,Theft,142
+2020Q4,2020,Meath,Assault,136
+2020Q4,2020,Meath,Burglary,88
+2020Q4,2020,Meath,Damage to Property,170
+2020Q4,2020,Meath,Drug Offences,146
+2020Q4,2020,Meath,Fraud,59
+2020Q4,2020,Meath,Theft,361
+2020Q4,2020,Monaghan,Assault,80
+2020Q4,2020,Monaghan,Burglary,20
+2020Q4,2020,Monaghan,Damage to Property,71
+2020Q4,2020,Monaghan,Drug Offences,52
+2020Q4,2020,Monaghan,Fraud,30
+2020Q4,2020,Monaghan,Theft,64
+2020Q4,2020,Offaly,Assault,77
+2020Q4,2020,Offaly,Burglary,28
+2020Q4,2020,Offaly,Damage to Property,72
+2020Q4,2020,Offaly,Drug Offences,94
+2020Q4,2020,Offaly,Fraud,28
+2020Q4,2020,Offaly,Theft,124
+2020Q4,2020,Roscommon,Assault,32
+2020Q4,2020,Roscommon,Burglary,14
+2020Q4,2020,Roscommon,Damage to Property,39
+2020Q4,2020,Roscommon,Drug Offences,34
+2020Q4,2020,Roscommon,Fraud,23
+2020Q4,2020,Roscommon,Theft,64
+2020Q4,2020,Sligo,Assault,40
+2020Q4,2020,Sligo,Burglary,13
+2020Q4,2020,Sligo,Damage to Property,30
+2020Q4,2020,Sligo,Drug Offences,38
+2020Q4,2020,Sligo,Fraud,16
+2020Q4,2020,Sligo,Theft,47
+2020Q4,2020,Tipperary,Assault,142
+2020Q4,2020,Tipperary,Burglary,72
+2020Q4,2020,Tipperary,Damage to Property,126
+2020Q4,2020,Tipperary,Drug Offences,167
+2020Q4,2020,Tipperary,Fraud,37
+2020Q4,2020,Tipperary,Theft,235
+2020Q4,2020,Waterford,Assault,118
+2020Q4,2020,Waterford,Burglary,47
+2020Q4,2020,Waterford,Damage to Property,172
+2020Q4,2020,Waterford,Drug Offences,243
+2020Q4,2020,Waterford,Fraud,65
+2020Q4,2020,Waterford,Theft,213
+2020Q4,2020,Westmeath,Assault,84
+2020Q4,2020,Westmeath,Burglary,31
+2020Q4,2020,Westmeath,Damage to Property,86
+2020Q4,2020,Westmeath,Drug Offences,90
+2020Q4,2020,Westmeath,Fraud,30
+2020Q4,2020,Westmeath,Theft,163
+2020Q4,2020,Wexford,Assault,138
+2020Q4,2020,Wexford,Burglary,78
+2020Q4,2020,Wexford,Damage to Property,121
+2020Q4,2020,Wexford,Drug Offences,117
+2020Q4,2020,Wexford,Fraud,37
+2020Q4,2020,Wexford,Theft,191
+2020Q4,2020,Wicklow,Assault,110
+2020Q4,2020,Wicklow,Burglary,55
+2020Q4,2020,Wicklow,Damage to Property,109
+2020Q4,2020,Wicklow,Drug Offences,126
+2020Q4,2020,Wicklow,Fraud,51
+2020Q4,2020,Wicklow,Theft,266
+2021Q1,2021,Carlow,Assault,40
+2021Q1,2021,Carlow,Burglary,28
+2021Q1,2021,Carlow,Damage to Property,42
+2021Q1,2021,Carlow,Drug Offences,88
+2021Q1,2021,Carlow,Fraud,41
+2021Q1,2021,Carlow,Theft,81
+2021Q1,2021,Cavan,Assault,64
+2021Q1,2021,Cavan,Burglary,18
+2021Q1,2021,Cavan,Damage to Property,63
+2021Q1,2021,Cavan,Drug Offences,51
+2021Q1,2021,Cavan,Fraud,48
+2021Q1,2021,Cavan,Theft,74
+2021Q1,2021,Clare,Assault,97
+2021Q1,2021,Clare,Burglary,30
+2021Q1,2021,Clare,Damage to Property,98
+2021Q1,2021,Clare,Drug Offences,73
+2021Q1,2021,Clare,Fraud,72
+2021Q1,2021,Clare,Theft,168
+2021Q1,2021,Cork,Assault,435
+2021Q1,2021,Cork,Burglary,88
+2021Q1,2021,Cork,Damage to Property,385
+2021Q1,2021,Cork,Drug Offences,876
+2021Q1,2021,Cork,Fraud,309
+2021Q1,2021,Cork,Theft,607
+2021Q1,2021,Donegal,Assault,153
+2021Q1,2021,Donegal,Burglary,27
+2021Q1,2021,Donegal,Damage to Property,123
+2021Q1,2021,Donegal,Drug Offences,158
+2021Q1,2021,Donegal,Fraud,92
+2021Q1,2021,Donegal,Theft,107
+2021Q1,2021,Dublin,Assault,1462
+2021Q1,2021,Dublin,Burglary,840
+2021Q1,2021,Dublin,Damage to Property,1828
+2021Q1,2021,Dublin,Drug Offences,2299
+2021Q1,2021,Dublin,Fraud,1417
+2021Q1,2021,Dublin,Theft,5314
+2021Q1,2021,Galway,Assault,171
+2021Q1,2021,Galway,Burglary,76
+2021Q1,2021,Galway,Damage to Property,145
+2021Q1,2021,Galway,Drug Offences,139
+2021Q1,2021,Galway,Fraud,188
+2021Q1,2021,Galway,Theft,287
+2021Q1,2021,Kerry,Assault,120
+2021Q1,2021,Kerry,Burglary,14
+2021Q1,2021,Kerry,Damage to Property,72
+2021Q1,2021,Kerry,Drug Offences,132
+2021Q1,2021,Kerry,Fraud,83
+2021Q1,2021,Kerry,Theft,177
+2021Q1,2021,Kildare,Assault,159
+2021Q1,2021,Kildare,Burglary,92
+2021Q1,2021,Kildare,Damage to Property,124
+2021Q1,2021,Kildare,Drug Offences,204
+2021Q1,2021,Kildare,Fraud,139
+2021Q1,2021,Kildare,Theft,318
+2021Q1,2021,Kilkenny,Assault,40
+2021Q1,2021,Kilkenny,Burglary,28
+2021Q1,2021,Kilkenny,Damage to Property,42
+2021Q1,2021,Kilkenny,Drug Offences,88
+2021Q1,2021,Kilkenny,Fraud,41
+2021Q1,2021,Kilkenny,Theft,81
+2021Q1,2021,Laois,Assault,71
+2021Q1,2021,Laois,Burglary,24
+2021Q1,2021,Laois,Damage to Property,64
+2021Q1,2021,Laois,Drug Offences,78
+2021Q1,2021,Laois,Fraud,53
+2021Q1,2021,Laois,Theft,109
+2021Q1,2021,Leitrim,Assault,28
+2021Q1,2021,Leitrim,Burglary,14
+2021Q1,2021,Leitrim,Damage to Property,40
+2021Q1,2021,Leitrim,Drug Offences,31
+2021Q1,2021,Leitrim,Fraud,38
+2021Q1,2021,Leitrim,Theft,46
+2021Q1,2021,Limerick,Assault,157
+2021Q1,2021,Limerick,Burglary,85
+2021Q1,2021,Limerick,Damage to Property,294
+2021Q1,2021,Limerick,Drug Offences,253
+2021Q1,2021,Limerick,Fraud,110
+2021Q1,2021,Limerick,Theft,511
+2021Q1,2021,Longford,Assault,37
+2021Q1,2021,Longford,Burglary,10
+2021Q1,2021,Longford,Damage to Property,32
+2021Q1,2021,Longford,Drug Offences,70
+2021Q1,2021,Longford,Fraud,36
+2021Q1,2021,Longford,Theft,42
+2021Q1,2021,Louth,Assault,131
+2021Q1,2021,Louth,Burglary,77
+2021Q1,2021,Louth,Damage to Property,168
+2021Q1,2021,Louth,Drug Offences,221
+2021Q1,2021,Louth,Fraud,74
+2021Q1,2021,Louth,Theft,271
+2021Q1,2021,Mayo,Assault,84
+2021Q1,2021,Mayo,Burglary,22
+2021Q1,2021,Mayo,Damage to Property,68
+2021Q1,2021,Mayo,Drug Offences,94
+2021Q1,2021,Mayo,Fraud,77
+2021Q1,2021,Mayo,Theft,100
+2021Q1,2021,Meath,Assault,99
+2021Q1,2021,Meath,Burglary,77
+2021Q1,2021,Meath,Damage to Property,110
+2021Q1,2021,Meath,Drug Offences,168
+2021Q1,2021,Meath,Fraud,148
+2021Q1,2021,Meath,Theft,282
+2021Q1,2021,Monaghan,Assault,64
+2021Q1,2021,Monaghan,Burglary,18
+2021Q1,2021,Monaghan,Damage to Property,63
+2021Q1,2021,Monaghan,Drug Offences,51
+2021Q1,2021,Monaghan,Fraud,48
+2021Q1,2021,Monaghan,Theft,74
+2021Q1,2021,Offaly,Assault,71
+2021Q1,2021,Offaly,Burglary,24
+2021Q1,2021,Offaly,Damage to Property,64
+2021Q1,2021,Offaly,Drug Offences,78
+2021Q1,2021,Offaly,Fraud,53
+2021Q1,2021,Offaly,Theft,109
+2021Q1,2021,Roscommon,Assault,37
+2021Q1,2021,Roscommon,Burglary,10
+2021Q1,2021,Roscommon,Damage to Property,32
+2021Q1,2021,Roscommon,Drug Offences,70
+2021Q1,2021,Roscommon,Fraud,36
+2021Q1,2021,Roscommon,Theft,42
+2021Q1,2021,Sligo,Assault,28
+2021Q1,2021,Sligo,Burglary,14
+2021Q1,2021,Sligo,Damage to Property,40
+2021Q1,2021,Sligo,Drug Offences,31
+2021Q1,2021,Sligo,Fraud,38
+2021Q1,2021,Sligo,Theft,46
+2021Q1,2021,Tipperary,Assault,127
+2021Q1,2021,Tipperary,Burglary,68
+2021Q1,2021,Tipperary,Damage to Property,91
+2021Q1,2021,Tipperary,Drug Offences,204
+2021Q1,2021,Tipperary,Fraud,63
+2021Q1,2021,Tipperary,Theft,217
+2021Q1,2021,Waterford,Assault,123
+2021Q1,2021,Waterford,Burglary,39
+2021Q1,2021,Waterford,Damage to Property,106
+2021Q1,2021,Waterford,Drug Offences,257
+2021Q1,2021,Waterford,Fraud,54
+2021Q1,2021,Waterford,Theft,178
+2021Q1,2021,Westmeath,Assault,81
+2021Q1,2021,Westmeath,Burglary,36
+2021Q1,2021,Westmeath,Damage to Property,80
+2021Q1,2021,Westmeath,Drug Offences,112
+2021Q1,2021,Westmeath,Fraud,57
+2021Q1,2021,Westmeath,Theft,165
+2021Q1,2021,Wexford,Assault,89
+2021Q1,2021,Wexford,Burglary,82
+2021Q1,2021,Wexford,Damage to Property,106
+2021Q1,2021,Wexford,Drug Offences,104
+2021Q1,2021,Wexford,Fraud,84
+2021Q1,2021,Wexford,Theft,199
+2021Q1,2021,Wicklow,Assault,78
+2021Q1,2021,Wicklow,Burglary,76
+2021Q1,2021,Wicklow,Damage to Property,103
+2021Q1,2021,Wicklow,Drug Offences,195
+2021Q1,2021,Wicklow,Fraud,74
+2021Q1,2021,Wicklow,Theft,201
+2021Q2,2021,Carlow,Assault,50
+2021Q2,2021,Carlow,Burglary,16
+2021Q2,2021,Carlow,Damage to Property,52
+2021Q2,2021,Carlow,Drug Offences,84
+2021Q2,2021,Carlow,Fraud,45
+2021Q2,2021,Carlow,Theft,94
+2021Q2,2021,Cavan,Assault,90
+2021Q2,2021,Cavan,Burglary,24
+2021Q2,2021,Cavan,Damage to Property,58
+2021Q2,2021,Cavan,Drug Offences,41
+2021Q2,2021,Cavan,Fraud,66
+2021Q2,2021,Cavan,Theft,88
+2021Q2,2021,Clare,Assault,86
+2021Q2,2021,Clare,Burglary,22
+2021Q2,2021,Clare,Damage to Property,85
+2021Q2,2021,Clare,Drug Offences,77
+2021Q2,2021,Clare,Fraud,99
+2021Q2,2021,Clare,Theft,136
+2021Q2,2021,Cork,Assault,480
+2021Q2,2021,Cork,Burglary,124
+2021Q2,2021,Cork,Damage to Property,476
+2021Q2,2021,Cork,Drug Offences,679
+2021Q2,2021,Cork,Fraud,418
+2021Q2,2021,Cork,Theft,693
+2021Q2,2021,Donegal,Assault,169
+2021Q2,2021,Donegal,Burglary,15
+2021Q2,2021,Donegal,Damage to Property,163
+2021Q2,2021,Donegal,Drug Offences,96
+2021Q2,2021,Donegal,Fraud,102
+2021Q2,2021,Donegal,Theft,95
+2021Q2,2021,Dublin,Assault,1678
+2021Q2,2021,Dublin,Burglary,709
+2021Q2,2021,Dublin,Damage to Property,1751
+2021Q2,2021,Dublin,Drug Offences,2115
+2021Q2,2021,Dublin,Fraud,1478
+2021Q2,2021,Dublin,Theft,5785
+2021Q2,2021,Galway,Assault,268
+2021Q2,2021,Galway,Burglary,77
+2021Q2,2021,Galway,Damage to Property,166
+2021Q2,2021,Galway,Drug Offences,141
+2021Q2,2021,Galway,Fraud,226
+2021Q2,2021,Galway,Theft,339
+2021Q2,2021,Kerry,Assault,151
+2021Q2,2021,Kerry,Burglary,46
+2021Q2,2021,Kerry,Damage to Property,98
+2021Q2,2021,Kerry,Drug Offences,142
+2021Q2,2021,Kerry,Fraud,95
+2021Q2,2021,Kerry,Theft,158
+2021Q2,2021,Kildare,Assault,213
+2021Q2,2021,Kildare,Burglary,91
+2021Q2,2021,Kildare,Damage to Property,147
+2021Q2,2021,Kildare,Drug Offences,268
+2021Q2,2021,Kildare,Fraud,159
+2021Q2,2021,Kildare,Theft,398
+2021Q2,2021,Kilkenny,Assault,50
+2021Q2,2021,Kilkenny,Burglary,16
+2021Q2,2021,Kilkenny,Damage to Property,52
+2021Q2,2021,Kilkenny,Drug Offences,84
+2021Q2,2021,Kilkenny,Fraud,45
+2021Q2,2021,Kilkenny,Theft,94
+2021Q2,2021,Laois,Assault,100
+2021Q2,2021,Laois,Burglary,44
+2021Q2,2021,Laois,Damage to Property,68
+2021Q2,2021,Laois,Drug Offences,72
+2021Q2,2021,Laois,Fraud,51
+2021Q2,2021,Laois,Theft,110
+2021Q2,2021,Leitrim,Assault,52
+2021Q2,2021,Leitrim,Burglary,16
+2021Q2,2021,Leitrim,Damage to Property,46
+2021Q2,2021,Leitrim,Drug Offences,29
+2021Q2,2021,Leitrim,Fraud,28
+2021Q2,2021,Leitrim,Theft,46
+2021Q2,2021,Limerick,Assault,200
+2021Q2,2021,Limerick,Burglary,87
+2021Q2,2021,Limerick,Damage to Property,320
+2021Q2,2021,Limerick,Drug Offences,252
+2021Q2,2021,Limerick,Fraud,159
+2021Q2,2021,Limerick,Theft,578
+2021Q2,2021,Longford,Assault,47
+2021Q2,2021,Longford,Burglary,20
+2021Q2,2021,Longford,Damage to Property,31
+2021Q2,2021,Longford,Drug Offences,46
+2021Q2,2021,Longford,Fraud,36
+2021Q2,2021,Longford,Theft,62
+2021Q2,2021,Louth,Assault,180
+2021Q2,2021,Louth,Burglary,74
+2021Q2,2021,Louth,Damage to Property,206
+2021Q2,2021,Louth,Drug Offences,246
+2021Q2,2021,Louth,Fraud,152
+2021Q2,2021,Louth,Theft,325
+2021Q2,2021,Mayo,Assault,107
+2021Q2,2021,Mayo,Burglary,17
+2021Q2,2021,Mayo,Damage to Property,78
+2021Q2,2021,Mayo,Drug Offences,87
+2021Q2,2021,Mayo,Fraud,90
+2021Q2,2021,Mayo,Theft,108
+2021Q2,2021,Meath,Assault,154
+2021Q2,2021,Meath,Burglary,83
+2021Q2,2021,Meath,Damage to Property,142
+2021Q2,2021,Meath,Drug Offences,131
+2021Q2,2021,Meath,Fraud,177
+2021Q2,2021,Meath,Theft,356
+2021Q2,2021,Monaghan,Assault,90
+2021Q2,2021,Monaghan,Burglary,24
+2021Q2,2021,Monaghan,Damage to Property,58
+2021Q2,2021,Monaghan,Drug Offences,41
+2021Q2,2021,Monaghan,Fraud,66
+2021Q2,2021,Monaghan,Theft,88
+2021Q2,2021,Offaly,Assault,100
+2021Q2,2021,Offaly,Burglary,44
+2021Q2,2021,Offaly,Damage to Property,68
+2021Q2,2021,Offaly,Drug Offences,72
+2021Q2,2021,Offaly,Fraud,51
+2021Q2,2021,Offaly,Theft,110
+2021Q2,2021,Roscommon,Assault,47
+2021Q2,2021,Roscommon,Burglary,20
+2021Q2,2021,Roscommon,Damage to Property,31
+2021Q2,2021,Roscommon,Drug Offences,46
+2021Q2,2021,Roscommon,Fraud,36
+2021Q2,2021,Roscommon,Theft,62
+2021Q2,2021,Sligo,Assault,52
+2021Q2,2021,Sligo,Burglary,16
+2021Q2,2021,Sligo,Damage to Property,46
+2021Q2,2021,Sligo,Drug Offences,29
+2021Q2,2021,Sligo,Fraud,28
+2021Q2,2021,Sligo,Theft,46
+2021Q2,2021,Tipperary,Assault,147
+2021Q2,2021,Tipperary,Burglary,56
+2021Q2,2021,Tipperary,Damage to Property,120
+2021Q2,2021,Tipperary,Drug Offences,227
+2021Q2,2021,Tipperary,Fraud,83
+2021Q2,2021,Tipperary,Theft,244
+2021Q2,2021,Waterford,Assault,209
+2021Q2,2021,Waterford,Burglary,55
+2021Q2,2021,Waterford,Damage to Property,147
+2021Q2,2021,Waterford,Drug Offences,263
+2021Q2,2021,Waterford,Fraud,93
+2021Q2,2021,Waterford,Theft,260
+2021Q2,2021,Westmeath,Assault,112
+2021Q2,2021,Westmeath,Burglary,60
+2021Q2,2021,Westmeath,Damage to Property,97
+2021Q2,2021,Westmeath,Drug Offences,60
+2021Q2,2021,Westmeath,Fraud,88
+2021Q2,2021,Westmeath,Theft,164
+2021Q2,2021,Wexford,Assault,159
+2021Q2,2021,Wexford,Burglary,73
+2021Q2,2021,Wexford,Damage to Property,153
+2021Q2,2021,Wexford,Drug Offences,110
+2021Q2,2021,Wexford,Fraud,126
+2021Q2,2021,Wexford,Theft,233
+2021Q2,2021,Wicklow,Assault,98
+2021Q2,2021,Wicklow,Burglary,65
+2021Q2,2021,Wicklow,Damage to Property,131
+2021Q2,2021,Wicklow,Drug Offences,195
+2021Q2,2021,Wicklow,Fraud,99
+2021Q2,2021,Wicklow,Theft,269
+2021Q3,2021,Carlow,Assault,69
+2021Q3,2021,Carlow,Burglary,20
+2021Q3,2021,Carlow,Damage to Property,49
+2021Q3,2021,Carlow,Drug Offences,64
+2021Q3,2021,Carlow,Fraud,56
+2021Q3,2021,Carlow,Theft,118
+2021Q3,2021,Cavan,Assault,103
+2021Q3,2021,Cavan,Burglary,22
+2021Q3,2021,Cavan,Damage to Property,64
+2021Q3,2021,Cavan,Drug Offences,35
+2021Q3,2021,Cavan,Fraud,72
+2021Q3,2021,Cavan,Theft,74
+2021Q3,2021,Clare,Assault,106
+2021Q3,2021,Clare,Burglary,40
+2021Q3,2021,Clare,Damage to Property,102
+2021Q3,2021,Clare,Drug Offences,62
+2021Q3,2021,Clare,Fraud,90
+2021Q3,2021,Clare,Theft,194
+2021Q3,2021,Cork,Assault,639
+2021Q3,2021,Cork,Burglary,120
+2021Q3,2021,Cork,Damage to Property,466
+2021Q3,2021,Cork,Drug Offences,493
+2021Q3,2021,Cork,Fraud,442
+2021Q3,2021,Cork,Theft,891
+2021Q3,2021,Donegal,Assault,226
+2021Q3,2021,Donegal,Burglary,23
+2021Q3,2021,Donegal,Damage to Property,141
+2021Q3,2021,Donegal,Drug Offences,98
+2021Q3,2021,Donegal,Fraud,105
+2021Q3,2021,Donegal,Theft,102
+2021Q3,2021,Dublin,Assault,1789
+2021Q3,2021,Dublin,Burglary,906
+2021Q3,2021,Dublin,Damage to Property,2011
+2021Q3,2021,Dublin,Drug Offences,1635
+2021Q3,2021,Dublin,Fraud,1430
+2021Q3,2021,Dublin,Theft,6736
+2021Q3,2021,Galway,Assault,340
+2021Q3,2021,Galway,Burglary,73
+2021Q3,2021,Galway,Damage to Property,186
+2021Q3,2021,Galway,Drug Offences,101
+2021Q3,2021,Galway,Fraud,260
+2021Q3,2021,Galway,Theft,428
+2021Q3,2021,Kerry,Assault,163
+2021Q3,2021,Kerry,Burglary,41
+2021Q3,2021,Kerry,Damage to Property,104
+2021Q3,2021,Kerry,Drug Offences,131
+2021Q3,2021,Kerry,Fraud,133
+2021Q3,2021,Kerry,Theft,212
+2021Q3,2021,Kildare,Assault,199
+2021Q3,2021,Kildare,Burglary,92
+2021Q3,2021,Kildare,Damage to Property,163
+2021Q3,2021,Kildare,Drug Offences,187
+2021Q3,2021,Kildare,Fraud,159
+2021Q3,2021,Kildare,Theft,418
+2021Q3,2021,Kilkenny,Assault,69
+2021Q3,2021,Kilkenny,Burglary,20
+2021Q3,2021,Kilkenny,Damage to Property,49
+2021Q3,2021,Kilkenny,Drug Offences,64
+2021Q3,2021,Kilkenny,Fraud,56
+2021Q3,2021,Kilkenny,Theft,118
+2021Q3,2021,Laois,Assault,98
+2021Q3,2021,Laois,Burglary,27
+2021Q3,2021,Laois,Damage to Property,80
+2021Q3,2021,Laois,Drug Offences,56
+2021Q3,2021,Laois,Fraud,66
+2021Q3,2021,Laois,Theft,138
+2021Q3,2021,Leitrim,Assault,48
+2021Q3,2021,Leitrim,Burglary,17
+2021Q3,2021,Leitrim,Damage to Property,36
+2021Q3,2021,Leitrim,Drug Offences,24
+2021Q3,2021,Leitrim,Fraud,34
+2021Q3,2021,Leitrim,Theft,48
+2021Q3,2021,Limerick,Assault,273
+2021Q3,2021,Limerick,Burglary,129
+2021Q3,2021,Limerick,Damage to Property,280
+2021Q3,2021,Limerick,Drug Offences,190
+2021Q3,2021,Limerick,Fraud,201
+2021Q3,2021,Limerick,Theft,801
+2021Q3,2021,Longford,Assault,53
+2021Q3,2021,Longford,Burglary,19
+2021Q3,2021,Longford,Damage to Property,41
+2021Q3,2021,Longford,Drug Offences,39
+2021Q3,2021,Longford,Fraud,38
+2021Q3,2021,Longford,Theft,41
+2021Q3,2021,Louth,Assault,209
+2021Q3,2021,Louth,Burglary,65
+2021Q3,2021,Louth,Damage to Property,200
+2021Q3,2021,Louth,Drug Offences,178
+2021Q3,2021,Louth,Fraud,117
+2021Q3,2021,Louth,Theft,377
+2021Q3,2021,Mayo,Assault,127
+2021Q3,2021,Mayo,Burglary,29
+2021Q3,2021,Mayo,Damage to Property,84
+2021Q3,2021,Mayo,Drug Offences,56
+2021Q3,2021,Mayo,Fraud,113
+2021Q3,2021,Mayo,Theft,137
+2021Q3,2021,Meath,Assault,155
+2021Q3,2021,Meath,Burglary,59
+2021Q3,2021,Meath,Damage to Property,150
+2021Q3,2021,Meath,Drug Offences,105
+2021Q3,2021,Meath,Fraud,140
+2021Q3,2021,Meath,Theft,371
+2021Q3,2021,Monaghan,Assault,103
+2021Q3,2021,Monaghan,Burglary,22
+2021Q3,2021,Monaghan,Damage to Property,64
+2021Q3,2021,Monaghan,Drug Offences,35
+2021Q3,2021,Monaghan,Fraud,72
+2021Q3,2021,Monaghan,Theft,74
+2021Q3,2021,Offaly,Assault,98
+2021Q3,2021,Offaly,Burglary,27
+2021Q3,2021,Offaly,Damage to Property,80
+2021Q3,2021,Offaly,Drug Offences,56
+2021Q3,2021,Offaly,Fraud,66
+2021Q3,2021,Offaly,Theft,138
+2021Q3,2021,Roscommon,Assault,53
+2021Q3,2021,Roscommon,Burglary,19
+2021Q3,2021,Roscommon,Damage to Property,41
+2021Q3,2021,Roscommon,Drug Offences,39
+2021Q3,2021,Roscommon,Fraud,38
+2021Q3,2021,Roscommon,Theft,41
+2021Q3,2021,Sligo,Assault,48
+2021Q3,2021,Sligo,Burglary,17
+2021Q3,2021,Sligo,Damage to Property,36
+2021Q3,2021,Sligo,Drug Offences,24
+2021Q3,2021,Sligo,Fraud,34
+2021Q3,2021,Sligo,Theft,48
+2021Q3,2021,Tipperary,Assault,150
+2021Q3,2021,Tipperary,Burglary,52
+2021Q3,2021,Tipperary,Damage to Property,100
+2021Q3,2021,Tipperary,Drug Offences,149
+2021Q3,2021,Tipperary,Fraud,119
+2021Q3,2021,Tipperary,Theft,237
+2021Q3,2021,Waterford,Assault,207
+2021Q3,2021,Waterford,Burglary,54
+2021Q3,2021,Waterford,Damage to Property,161
+2021Q3,2021,Waterford,Drug Offences,209
+2021Q3,2021,Waterford,Fraud,100
+2021Q3,2021,Waterford,Theft,343
+2021Q3,2021,Westmeath,Assault,131
+2021Q3,2021,Westmeath,Burglary,39
+2021Q3,2021,Westmeath,Damage to Property,66
+2021Q3,2021,Westmeath,Drug Offences,58
+2021Q3,2021,Westmeath,Fraud,92
+2021Q3,2021,Westmeath,Theft,183
+2021Q3,2021,Wexford,Assault,176
+2021Q3,2021,Wexford,Burglary,106
+2021Q3,2021,Wexford,Damage to Property,120
+2021Q3,2021,Wexford,Drug Offences,61
+2021Q3,2021,Wexford,Fraud,121
+2021Q3,2021,Wexford,Theft,261
+2021Q3,2021,Wicklow,Assault,99
+2021Q3,2021,Wicklow,Burglary,63
+2021Q3,2021,Wicklow,Damage to Property,101
+2021Q3,2021,Wicklow,Drug Offences,131
+2021Q3,2021,Wicklow,Fraud,125
+2021Q3,2021,Wicklow,Theft,283
+2021Q4,2021,Carlow,Assault,54
+2021Q4,2021,Carlow,Burglary,41
+2021Q4,2021,Carlow,Damage to Property,57
+2021Q4,2021,Carlow,Drug Offences,55
+2021Q4,2021,Carlow,Fraud,72
+2021Q4,2021,Carlow,Theft,97
+2021Q4,2021,Cavan,Assault,102
+2021Q4,2021,Cavan,Burglary,33
+2021Q4,2021,Cavan,Damage to Property,59
+2021Q4,2021,Cavan,Drug Offences,38
+2021Q4,2021,Cavan,Fraud,60
+2021Q4,2021,Cavan,Theft,92
+2021Q4,2021,Clare,Assault,98
+2021Q4,2021,Clare,Burglary,44
+2021Q4,2021,Clare,Damage to Property,90
+2021Q4,2021,Clare,Drug Offences,50
+2021Q4,2021,Clare,Fraud,114
+2021Q4,2021,Clare,Theft,177
+2021Q4,2021,Cork,Assault,612
+2021Q4,2021,Cork,Burglary,136
+2021Q4,2021,Cork,Damage to Property,459
+2021Q4,2021,Cork,Drug Offences,530
+2021Q4,2021,Cork,Fraud,503
+2021Q4,2021,Cork,Theft,794
+2021Q4,2021,Donegal,Assault,185
+2021Q4,2021,Donegal,Burglary,58
+2021Q4,2021,Donegal,Damage to Property,142
+2021Q4,2021,Donegal,Drug Offences,79
+2021Q4,2021,Donegal,Fraud,139
+2021Q4,2021,Donegal,Theft,119
+2021Q4,2021,Dublin,Assault,1803
+2021Q4,2021,Dublin,Burglary,1132
+2021Q4,2021,Dublin,Damage to Property,2109
+2021Q4,2021,Dublin,Drug Offences,1494
+2021Q4,2021,Dublin,Fraud,1864
+2021Q4,2021,Dublin,Theft,7382
+2021Q4,2021,Galway,Assault,271
+2021Q4,2021,Galway,Burglary,132
+2021Q4,2021,Galway,Damage to Property,193
+2021Q4,2021,Galway,Drug Offences,90
+2021Q4,2021,Galway,Fraud,329
+2021Q4,2021,Galway,Theft,433
+2021Q4,2021,Kerry,Assault,143
+2021Q4,2021,Kerry,Burglary,32
+2021Q4,2021,Kerry,Damage to Property,107
+2021Q4,2021,Kerry,Drug Offences,129
+2021Q4,2021,Kerry,Fraud,133
+2021Q4,2021,Kerry,Theft,150
+2021Q4,2021,Kildare,Assault,201
+2021Q4,2021,Kildare,Burglary,115
+2021Q4,2021,Kildare,Damage to Property,179
+2021Q4,2021,Kildare,Drug Offences,179
+2021Q4,2021,Kildare,Fraud,195
+2021Q4,2021,Kildare,Theft,466
+2021Q4,2021,Kilkenny,Assault,54
+2021Q4,2021,Kilkenny,Burglary,41
+2021Q4,2021,Kilkenny,Damage to Property,57
+2021Q4,2021,Kilkenny,Drug Offences,55
+2021Q4,2021,Kilkenny,Fraud,72
+2021Q4,2021,Kilkenny,Theft,97
+2021Q4,2021,Laois,Assault,104
+2021Q4,2021,Laois,Burglary,60
+2021Q4,2021,Laois,Damage to Property,76
+2021Q4,2021,Laois,Drug Offences,52
+2021Q4,2021,Laois,Fraud,84
+2021Q4,2021,Laois,Theft,127
+2021Q4,2021,Leitrim,Assault,52
+2021Q4,2021,Leitrim,Burglary,24
+2021Q4,2021,Leitrim,Damage to Property,31
+2021Q4,2021,Leitrim,Drug Offences,24
+2021Q4,2021,Leitrim,Fraud,46
+2021Q4,2021,Leitrim,Theft,66
+2021Q4,2021,Limerick,Assault,296
+2021Q4,2021,Limerick,Burglary,134
+2021Q4,2021,Limerick,Damage to Property,285
+2021Q4,2021,Limerick,Drug Offences,133
+2021Q4,2021,Limerick,Fraud,222
+2021Q4,2021,Limerick,Theft,867
+2021Q4,2021,Longford,Assault,44
+2021Q4,2021,Longford,Burglary,32
+2021Q4,2021,Longford,Damage to Property,41
+2021Q4,2021,Longford,Drug Offences,32
+2021Q4,2021,Longford,Fraud,58
+2021Q4,2021,Longford,Theft,51
+2021Q4,2021,Louth,Assault,187
+2021Q4,2021,Louth,Burglary,79
+2021Q4,2021,Louth,Damage to Property,203
+2021Q4,2021,Louth,Drug Offences,150
+2021Q4,2021,Louth,Fraud,140
+2021Q4,2021,Louth,Theft,371
+2021Q4,2021,Mayo,Assault,159
+2021Q4,2021,Mayo,Burglary,38
+2021Q4,2021,Mayo,Damage to Property,98
+2021Q4,2021,Mayo,Drug Offences,39
+2021Q4,2021,Mayo,Fraud,136
+2021Q4,2021,Mayo,Theft,123
+2021Q4,2021,Meath,Assault,140
+2021Q4,2021,Meath,Burglary,102
+2021Q4,2021,Meath,Damage to Property,148
+2021Q4,2021,Meath,Drug Offences,101
+2021Q4,2021,Meath,Fraud,180
+2021Q4,2021,Meath,Theft,287
+2021Q4,2021,Monaghan,Assault,102
+2021Q4,2021,Monaghan,Burglary,33
+2021Q4,2021,Monaghan,Damage to Property,59
+2021Q4,2021,Monaghan,Drug Offences,38
+2021Q4,2021,Monaghan,Fraud,60
+2021Q4,2021,Monaghan,Theft,92
+2021Q4,2021,Offaly,Assault,104
+2021Q4,2021,Offaly,Burglary,60
+2021Q4,2021,Offaly,Damage to Property,76
+2021Q4,2021,Offaly,Drug Offences,52
+2021Q4,2021,Offaly,Fraud,84
+2021Q4,2021,Offaly,Theft,127
+2021Q4,2021,Roscommon,Assault,44
+2021Q4,2021,Roscommon,Burglary,32
+2021Q4,2021,Roscommon,Damage to Property,41
+2021Q4,2021,Roscommon,Drug Offences,32
+2021Q4,2021,Roscommon,Fraud,58
+2021Q4,2021,Roscommon,Theft,51
+2021Q4,2021,Sligo,Assault,52
+2021Q4,2021,Sligo,Burglary,24
+2021Q4,2021,Sligo,Damage to Property,31
+2021Q4,2021,Sligo,Drug Offences,24
+2021Q4,2021,Sligo,Fraud,46
+2021Q4,2021,Sligo,Theft,66
+2021Q4,2021,Tipperary,Assault,142
+2021Q4,2021,Tipperary,Burglary,72
+2021Q4,2021,Tipperary,Damage to Property,118
+2021Q4,2021,Tipperary,Drug Offences,149
+2021Q4,2021,Tipperary,Fraud,146
+2021Q4,2021,Tipperary,Theft,233
+2021Q4,2021,Waterford,Assault,200
+2021Q4,2021,Waterford,Burglary,37
+2021Q4,2021,Waterford,Damage to Property,147
+2021Q4,2021,Waterford,Drug Offences,181
+2021Q4,2021,Waterford,Fraud,123
+2021Q4,2021,Waterford,Theft,301
+2021Q4,2021,Westmeath,Assault,118
+2021Q4,2021,Westmeath,Burglary,57
+2021Q4,2021,Westmeath,Damage to Property,101
+2021Q4,2021,Westmeath,Drug Offences,60
+2021Q4,2021,Westmeath,Fraud,104
+2021Q4,2021,Westmeath,Theft,194
+2021Q4,2021,Wexford,Assault,140
+2021Q4,2021,Wexford,Burglary,77
+2021Q4,2021,Wexford,Damage to Property,159
+2021Q4,2021,Wexford,Drug Offences,86
+2021Q4,2021,Wexford,Fraud,221
+2021Q4,2021,Wexford,Theft,254
+2021Q4,2021,Wicklow,Assault,82
+2021Q4,2021,Wicklow,Burglary,54
+2021Q4,2021,Wicklow,Damage to Property,97
+2021Q4,2021,Wicklow,Drug Offences,102
+2021Q4,2021,Wicklow,Fraud,173
+2021Q4,2021,Wicklow,Theft,237
+2022Q1,2022,Carlow,Assault,70
+2022Q1,2022,Carlow,Burglary,28
+2022Q1,2022,Carlow,Damage to Property,60
+2022Q1,2022,Carlow,Drug Offences,51
+2022Q1,2022,Carlow,Fraud,42
+2022Q1,2022,Carlow,Theft,133
+2022Q1,2022,Cavan,Assault,110
+2022Q1,2022,Cavan,Burglary,36
+2022Q1,2022,Cavan,Damage to Property,62
+2022Q1,2022,Cavan,Drug Offences,36
+2022Q1,2022,Cavan,Fraud,54
+2022Q1,2022,Cavan,Theft,102
+2022Q1,2022,Clare,Assault,94
+2022Q1,2022,Clare,Burglary,39
+2022Q1,2022,Clare,Damage to Property,97
+2022Q1,2022,Clare,Drug Offences,50
+2022Q1,2022,Clare,Fraud,64
+2022Q1,2022,Clare,Theft,163
+2022Q1,2022,Cork,Assault,658
+2022Q1,2022,Cork,Burglary,121
+2022Q1,2022,Cork,Damage to Property,441
+2022Q1,2022,Cork,Drug Offences,507
+2022Q1,2022,Cork,Fraud,401
+2022Q1,2022,Cork,Theft,944
+2022Q1,2022,Donegal,Assault,225
+2022Q1,2022,Donegal,Burglary,32
+2022Q1,2022,Donegal,Damage to Property,150
+2022Q1,2022,Donegal,Drug Offences,65
+2022Q1,2022,Donegal,Fraud,104
+2022Q1,2022,Donegal,Theft,121
+2022Q1,2022,Dublin,Assault,1845
+2022Q1,2022,Dublin,Burglary,1115
+2022Q1,2022,Dublin,Damage to Property,2221
+2022Q1,2022,Dublin,Drug Offences,1576
+2022Q1,2022,Dublin,Fraud,1521
+2022Q1,2022,Dublin,Theft,7593
+2022Q1,2022,Galway,Assault,311
+2022Q1,2022,Galway,Burglary,99
+2022Q1,2022,Galway,Damage to Property,190
+2022Q1,2022,Galway,Drug Offences,97
+2022Q1,2022,Galway,Fraud,206
+2022Q1,2022,Galway,Theft,457
+2022Q1,2022,Kerry,Assault,193
+2022Q1,2022,Kerry,Burglary,38
+2022Q1,2022,Kerry,Damage to Property,87
+2022Q1,2022,Kerry,Drug Offences,154
+2022Q1,2022,Kerry,Fraud,88
+2022Q1,2022,Kerry,Theft,151
+2022Q1,2022,Kildare,Assault,227
+2022Q1,2022,Kildare,Burglary,129
+2022Q1,2022,Kildare,Damage to Property,174
+2022Q1,2022,Kildare,Drug Offences,192
+2022Q1,2022,Kildare,Fraud,143
+2022Q1,2022,Kildare,Theft,483
+2022Q1,2022,Kilkenny,Assault,70
+2022Q1,2022,Kilkenny,Burglary,28
+2022Q1,2022,Kilkenny,Damage to Property,60
+2022Q1,2022,Kilkenny,Drug Offences,51
+2022Q1,2022,Kilkenny,Fraud,42
+2022Q1,2022,Kilkenny,Theft,133
+2022Q1,2022,Laois,Assault,106
+2022Q1,2022,Laois,Burglary,52
+2022Q1,2022,Laois,Damage to Property,81
+2022Q1,2022,Laois,Drug Offences,44
+2022Q1,2022,Laois,Fraud,62
+2022Q1,2022,Laois,Theft,182
+2022Q1,2022,Leitrim,Assault,51
+2022Q1,2022,Leitrim,Burglary,8
+2022Q1,2022,Leitrim,Damage to Property,30
+2022Q1,2022,Leitrim,Drug Offences,27
+2022Q1,2022,Leitrim,Fraud,32
+2022Q1,2022,Leitrim,Theft,52
+2022Q1,2022,Limerick,Assault,260
+2022Q1,2022,Limerick,Burglary,131
+2022Q1,2022,Limerick,Damage to Property,238
+2022Q1,2022,Limerick,Drug Offences,129
+2022Q1,2022,Limerick,Fraud,189
+2022Q1,2022,Limerick,Theft,828
+2022Q1,2022,Longford,Assault,59
+2022Q1,2022,Longford,Burglary,26
+2022Q1,2022,Longford,Damage to Property,40
+2022Q1,2022,Longford,Drug Offences,20
+2022Q1,2022,Longford,Fraud,42
+2022Q1,2022,Longford,Theft,56
+2022Q1,2022,Louth,Assault,196
+2022Q1,2022,Louth,Burglary,85
+2022Q1,2022,Louth,Damage to Property,162
+2022Q1,2022,Louth,Drug Offences,167
+2022Q1,2022,Louth,Fraud,99
+2022Q1,2022,Louth,Theft,350
+2022Q1,2022,Mayo,Assault,131
+2022Q1,2022,Mayo,Burglary,38
+2022Q1,2022,Mayo,Damage to Property,65
+2022Q1,2022,Mayo,Drug Offences,31
+2022Q1,2022,Mayo,Fraud,100
+2022Q1,2022,Mayo,Theft,134
+2022Q1,2022,Meath,Assault,138
+2022Q1,2022,Meath,Burglary,121
+2022Q1,2022,Meath,Damage to Property,120
+2022Q1,2022,Meath,Drug Offences,70
+2022Q1,2022,Meath,Fraud,135
+2022Q1,2022,Meath,Theft,361
+2022Q1,2022,Monaghan,Assault,110
+2022Q1,2022,Monaghan,Burglary,36
+2022Q1,2022,Monaghan,Damage to Property,62
+2022Q1,2022,Monaghan,Drug Offences,36
+2022Q1,2022,Monaghan,Fraud,54
+2022Q1,2022,Monaghan,Theft,102
+2022Q1,2022,Offaly,Assault,106
+2022Q1,2022,Offaly,Burglary,52
+2022Q1,2022,Offaly,Damage to Property,81
+2022Q1,2022,Offaly,Drug Offences,44
+2022Q1,2022,Offaly,Fraud,62
+2022Q1,2022,Offaly,Theft,182
+2022Q1,2022,Roscommon,Assault,59
+2022Q1,2022,Roscommon,Burglary,26
+2022Q1,2022,Roscommon,Damage to Property,40
+2022Q1,2022,Roscommon,Drug Offences,20
+2022Q1,2022,Roscommon,Fraud,42
+2022Q1,2022,Roscommon,Theft,56
+2022Q1,2022,Sligo,Assault,51
+2022Q1,2022,Sligo,Burglary,8
+2022Q1,2022,Sligo,Damage to Property,30
+2022Q1,2022,Sligo,Drug Offences,27
+2022Q1,2022,Sligo,Fraud,32
+2022Q1,2022,Sligo,Theft,52
+2022Q1,2022,Tipperary,Assault,179
+2022Q1,2022,Tipperary,Burglary,85
+2022Q1,2022,Tipperary,Damage to Property,127
+2022Q1,2022,Tipperary,Drug Offences,131
+2022Q1,2022,Tipperary,Fraud,83
+2022Q1,2022,Tipperary,Theft,298
+2022Q1,2022,Waterford,Assault,157
+2022Q1,2022,Waterford,Burglary,50
+2022Q1,2022,Waterford,Damage to Property,157
+2022Q1,2022,Waterford,Drug Offences,158
+2022Q1,2022,Waterford,Fraud,82
+2022Q1,2022,Waterford,Theft,286
+2022Q1,2022,Westmeath,Assault,125
+2022Q1,2022,Westmeath,Burglary,58
+2022Q1,2022,Westmeath,Damage to Property,84
+2022Q1,2022,Westmeath,Drug Offences,61
+2022Q1,2022,Westmeath,Fraud,75
+2022Q1,2022,Westmeath,Theft,233
+2022Q1,2022,Wexford,Assault,157
+2022Q1,2022,Wexford,Burglary,64
+2022Q1,2022,Wexford,Damage to Property,134
+2022Q1,2022,Wexford,Drug Offences,96
+2022Q1,2022,Wexford,Fraud,105
+2022Q1,2022,Wexford,Theft,213
+2022Q1,2022,Wicklow,Assault,108
+2022Q1,2022,Wicklow,Burglary,83
+2022Q1,2022,Wicklow,Damage to Property,111
+2022Q1,2022,Wicklow,Drug Offences,64
+2022Q1,2022,Wicklow,Fraud,87
+2022Q1,2022,Wicklow,Theft,268
+2022Q2,2022,Carlow,Assault,72
+2022Q2,2022,Carlow,Burglary,37
+2022Q2,2022,Carlow,Damage to Property,54
+2022Q2,2022,Carlow,Drug Offences,52
+2022Q2,2022,Carlow,Fraud,31
+2022Q2,2022,Carlow,Theft,164
+2022Q2,2022,Cavan,Assault,96
+2022Q2,2022,Cavan,Burglary,22
+2022Q2,2022,Cavan,Damage to Property,62
+2022Q2,2022,Cavan,Drug Offences,39
+2022Q2,2022,Cavan,Fraud,42
+2022Q2,2022,Cavan,Theft,91
+2022Q2,2022,Clare,Assault,125
+2022Q2,2022,Clare,Burglary,39
+2022Q2,2022,Clare,Damage to Property,104
+2022Q2,2022,Clare,Drug Offences,35
+2022Q2,2022,Clare,Fraud,48
+2022Q2,2022,Clare,Theft,195
+2022Q2,2022,Cork,Assault,692
+2022Q2,2022,Cork,Burglary,135
+2022Q2,2022,Cork,Damage to Property,505
+2022Q2,2022,Cork,Drug Offences,478
+2022Q2,2022,Cork,Fraud,323
+2022Q2,2022,Cork,Theft,1328
+2022Q2,2022,Donegal,Assault,250
+2022Q2,2022,Donegal,Burglary,23
+2022Q2,2022,Donegal,Damage to Property,149
+2022Q2,2022,Donegal,Drug Offences,118
+2022Q2,2022,Donegal,Fraud,57
+2022Q2,2022,Donegal,Theft,137
+2022Q2,2022,Dublin,Assault,1905
+2022Q2,2022,Dublin,Burglary,1021
+2022Q2,2022,Dublin,Damage to Property,2323
+2022Q2,2022,Dublin,Drug Offences,1767
+2022Q2,2022,Dublin,Fraud,1125
+2022Q2,2022,Dublin,Theft,9030
+2022Q2,2022,Galway,Assault,297
+2022Q2,2022,Galway,Burglary,73
+2022Q2,2022,Galway,Damage to Property,200
+2022Q2,2022,Galway,Drug Offences,147
+2022Q2,2022,Galway,Fraud,140
+2022Q2,2022,Galway,Theft,499
+2022Q2,2022,Kerry,Assault,191
+2022Q2,2022,Kerry,Burglary,36
+2022Q2,2022,Kerry,Damage to Property,126
+2022Q2,2022,Kerry,Drug Offences,169
+2022Q2,2022,Kerry,Fraud,52
+2022Q2,2022,Kerry,Theft,266
+2022Q2,2022,Kildare,Assault,234
+2022Q2,2022,Kildare,Burglary,126
+2022Q2,2022,Kildare,Damage to Property,207
+2022Q2,2022,Kildare,Drug Offences,246
+2022Q2,2022,Kildare,Fraud,82
+2022Q2,2022,Kildare,Theft,656
+2022Q2,2022,Kilkenny,Assault,72
+2022Q2,2022,Kilkenny,Burglary,37
+2022Q2,2022,Kilkenny,Damage to Property,54
+2022Q2,2022,Kilkenny,Drug Offences,52
+2022Q2,2022,Kilkenny,Fraud,31
+2022Q2,2022,Kilkenny,Theft,164
+2022Q2,2022,Laois,Assault,96
+2022Q2,2022,Laois,Burglary,42
+2022Q2,2022,Laois,Damage to Property,92
+2022Q2,2022,Laois,Drug Offences,54
+2022Q2,2022,Laois,Fraud,39
+2022Q2,2022,Laois,Theft,194
+2022Q2,2022,Leitrim,Assault,48
+2022Q2,2022,Leitrim,Burglary,14
+2022Q2,2022,Leitrim,Damage to Property,38
+2022Q2,2022,Leitrim,Drug Offences,34
+2022Q2,2022,Leitrim,Fraud,21
+2022Q2,2022,Leitrim,Theft,87
+2022Q2,2022,Limerick,Assault,302
+2022Q2,2022,Limerick,Burglary,122
+2022Q2,2022,Limerick,Damage to Property,249
+2022Q2,2022,Limerick,Drug Offences,111
+2022Q2,2022,Limerick,Fraud,97
+2022Q2,2022,Limerick,Theft,1027
+2022Q2,2022,Longford,Assault,60
+2022Q2,2022,Longford,Burglary,17
+2022Q2,2022,Longford,Damage to Property,40
+2022Q2,2022,Longford,Drug Offences,27
+2022Q2,2022,Longford,Fraud,24
+2022Q2,2022,Longford,Theft,72
+2022Q2,2022,Louth,Assault,183
+2022Q2,2022,Louth,Burglary,88
+2022Q2,2022,Louth,Damage to Property,207
+2022Q2,2022,Louth,Drug Offences,137
+2022Q2,2022,Louth,Fraud,83
+2022Q2,2022,Louth,Theft,330
+2022Q2,2022,Mayo,Assault,121
+2022Q2,2022,Mayo,Burglary,24
+2022Q2,2022,Mayo,Damage to Property,83
+2022Q2,2022,Mayo,Drug Offences,33
+2022Q2,2022,Mayo,Fraud,61
+2022Q2,2022,Mayo,Theft,118
+2022Q2,2022,Meath,Assault,145
+2022Q2,2022,Meath,Burglary,127
+2022Q2,2022,Meath,Damage to Property,157
+2022Q2,2022,Meath,Drug Offences,90
+2022Q2,2022,Meath,Fraud,91
+2022Q2,2022,Meath,Theft,513
+2022Q2,2022,Monaghan,Assault,96
+2022Q2,2022,Monaghan,Burglary,22
+2022Q2,2022,Monaghan,Damage to Property,62
+2022Q2,2022,Monaghan,Drug Offences,39
+2022Q2,2022,Monaghan,Fraud,42
+2022Q2,2022,Monaghan,Theft,91
+2022Q2,2022,Offaly,Assault,96
+2022Q2,2022,Offaly,Burglary,42
+2022Q2,2022,Offaly,Damage to Property,92
+2022Q2,2022,Offaly,Drug Offences,54
+2022Q2,2022,Offaly,Fraud,39
+2022Q2,2022,Offaly,Theft,194
+2022Q2,2022,Roscommon,Assault,60
+2022Q2,2022,Roscommon,Burglary,17
+2022Q2,2022,Roscommon,Damage to Property,40
+2022Q2,2022,Roscommon,Drug Offences,27
+2022Q2,2022,Roscommon,Fraud,24
+2022Q2,2022,Roscommon,Theft,72
+2022Q2,2022,Sligo,Assault,48
+2022Q2,2022,Sligo,Burglary,14
+2022Q2,2022,Sligo,Damage to Property,38
+2022Q2,2022,Sligo,Drug Offences,34
+2022Q2,2022,Sligo,Fraud,21
+2022Q2,2022,Sligo,Theft,87
+2022Q2,2022,Tipperary,Assault,151
+2022Q2,2022,Tipperary,Burglary,69
+2022Q2,2022,Tipperary,Damage to Property,109
+2022Q2,2022,Tipperary,Drug Offences,115
+2022Q2,2022,Tipperary,Fraud,58
+2022Q2,2022,Tipperary,Theft,314
+2022Q2,2022,Waterford,Assault,210
+2022Q2,2022,Waterford,Burglary,55
+2022Q2,2022,Waterford,Damage to Property,155
+2022Q2,2022,Waterford,Drug Offences,194
+2022Q2,2022,Waterford,Fraud,66
+2022Q2,2022,Waterford,Theft,453
+2022Q2,2022,Westmeath,Assault,122
+2022Q2,2022,Westmeath,Burglary,67
+2022Q2,2022,Westmeath,Damage to Property,85
+2022Q2,2022,Westmeath,Drug Offences,300
+2022Q2,2022,Westmeath,Fraud,60
+2022Q2,2022,Westmeath,Theft,268
+2022Q2,2022,Wexford,Assault,213
+2022Q2,2022,Wexford,Burglary,84
+2022Q2,2022,Wexford,Damage to Property,180
+2022Q2,2022,Wexford,Drug Offences,79
+2022Q2,2022,Wexford,Fraud,78
+2022Q2,2022,Wexford,Theft,334
+2022Q2,2022,Wicklow,Assault,95
+2022Q2,2022,Wicklow,Burglary,101
+2022Q2,2022,Wicklow,Damage to Property,141
+2022Q2,2022,Wicklow,Drug Offences,144
+2022Q2,2022,Wicklow,Fraud,50
+2022Q2,2022,Wicklow,Theft,338
+2022Q3,2022,Carlow,Assault,71
+2022Q3,2022,Carlow,Burglary,26
+2022Q3,2022,Carlow,Damage to Property,68
+2022Q3,2022,Carlow,Drug Offences,59
+2022Q3,2022,Carlow,Fraud,24
+2022Q3,2022,Carlow,Theft,169
+2022Q3,2022,Cavan,Assault,112
+2022Q3,2022,Cavan,Burglary,30
+2022Q3,2022,Cavan,Damage to Property,66
+2022Q3,2022,Cavan,Drug Offences,43
+2022Q3,2022,Cavan,Fraud,38
+2022Q3,2022,Cavan,Theft,114
+2022Q3,2022,Clare,Assault,101
+2022Q3,2022,Clare,Burglary,37
+2022Q3,2022,Clare,Damage to Property,104
+2022Q3,2022,Clare,Drug Offences,43
+2022Q3,2022,Clare,Fraud,56
+2022Q3,2022,Clare,Theft,231
+2022Q3,2022,Cork,Assault,658
+2022Q3,2022,Cork,Burglary,122
+2022Q3,2022,Cork,Damage to Property,575
+2022Q3,2022,Cork,Drug Offences,584
+2022Q3,2022,Cork,Fraud,269
+2022Q3,2022,Cork,Theft,1471
+2022Q3,2022,Donegal,Assault,226
+2022Q3,2022,Donegal,Burglary,43
+2022Q3,2022,Donegal,Damage to Property,142
+2022Q3,2022,Donegal,Drug Offences,105
+2022Q3,2022,Donegal,Fraud,48
+2022Q3,2022,Donegal,Theft,209
+2022Q3,2022,Dublin,Assault,1970
+2022Q3,2022,Dublin,Burglary,947
+2022Q3,2022,Dublin,Damage to Property,2259
+2022Q3,2022,Dublin,Drug Offences,1821
+2022Q3,2022,Dublin,Fraud,1096
+2022Q3,2022,Dublin,Theft,9428
+2022Q3,2022,Galway,Assault,263
+2022Q3,2022,Galway,Burglary,76
+2022Q3,2022,Galway,Damage to Property,215
+2022Q3,2022,Galway,Drug Offences,136
+2022Q3,2022,Galway,Fraud,143
+2022Q3,2022,Galway,Theft,597
+2022Q3,2022,Kerry,Assault,254
+2022Q3,2022,Kerry,Burglary,58
+2022Q3,2022,Kerry,Damage to Property,132
+2022Q3,2022,Kerry,Drug Offences,193
+2022Q3,2022,Kerry,Fraud,64
+2022Q3,2022,Kerry,Theft,328
+2022Q3,2022,Kildare,Assault,229
+2022Q3,2022,Kildare,Burglary,112
+2022Q3,2022,Kildare,Damage to Property,170
+2022Q3,2022,Kildare,Drug Offences,228
+2022Q3,2022,Kildare,Fraud,85
+2022Q3,2022,Kildare,Theft,661
+2022Q3,2022,Kilkenny,Assault,71
+2022Q3,2022,Kilkenny,Burglary,26
+2022Q3,2022,Kilkenny,Damage to Property,68
+2022Q3,2022,Kilkenny,Drug Offences,59
+2022Q3,2022,Kilkenny,Fraud,24
+2022Q3,2022,Kilkenny,Theft,169
+2022Q3,2022,Laois,Assault,117
+2022Q3,2022,Laois,Burglary,40
+2022Q3,2022,Laois,Damage to Property,100
+2022Q3,2022,Laois,Drug Offences,214
+2022Q3,2022,Laois,Fraud,37
+2022Q3,2022,Laois,Theft,236
+2022Q3,2022,Leitrim,Assault,58
+2022Q3,2022,Leitrim,Burglary,18
+2022Q3,2022,Leitrim,Damage to Property,44
+2022Q3,2022,Leitrim,Drug Offences,28
+2022Q3,2022,Leitrim,Fraud,20
+2022Q3,2022,Leitrim,Theft,78
+2022Q3,2022,Limerick,Assault,283
+2022Q3,2022,Limerick,Burglary,83
+2022Q3,2022,Limerick,Damage to Property,283
+2022Q3,2022,Limerick,Drug Offences,137
+2022Q3,2022,Limerick,Fraud,116
+2022Q3,2022,Limerick,Theft,941
+2022Q3,2022,Longford,Assault,68
+2022Q3,2022,Longford,Burglary,22
+2022Q3,2022,Longford,Damage to Property,42
+2022Q3,2022,Longford,Drug Offences,16
+2022Q3,2022,Longford,Fraud,32
+2022Q3,2022,Longford,Theft,86
+2022Q3,2022,Louth,Assault,229
+2022Q3,2022,Louth,Burglary,65
+2022Q3,2022,Louth,Damage to Property,196
+2022Q3,2022,Louth,Drug Offences,130
+2022Q3,2022,Louth,Fraud,64
+2022Q3,2022,Louth,Theft,493
+2022Q3,2022,Mayo,Assault,132
+2022Q3,2022,Mayo,Burglary,39
+2022Q3,2022,Mayo,Damage to Property,68
+2022Q3,2022,Mayo,Drug Offences,39
+2022Q3,2022,Mayo,Fraud,43
+2022Q3,2022,Mayo,Theft,184
+2022Q3,2022,Meath,Assault,173
+2022Q3,2022,Meath,Burglary,75
+2022Q3,2022,Meath,Damage to Property,170
+2022Q3,2022,Meath,Drug Offences,103
+2022Q3,2022,Meath,Fraud,78
+2022Q3,2022,Meath,Theft,489
+2022Q3,2022,Monaghan,Assault,112
+2022Q3,2022,Monaghan,Burglary,30
+2022Q3,2022,Monaghan,Damage to Property,66
+2022Q3,2022,Monaghan,Drug Offences,43
+2022Q3,2022,Monaghan,Fraud,38
+2022Q3,2022,Monaghan,Theft,114
+2022Q3,2022,Offaly,Assault,117
+2022Q3,2022,Offaly,Burglary,40
+2022Q3,2022,Offaly,Damage to Property,100
+2022Q3,2022,Offaly,Drug Offences,214
+2022Q3,2022,Offaly,Fraud,37
+2022Q3,2022,Offaly,Theft,236
+2022Q3,2022,Roscommon,Assault,68
+2022Q3,2022,Roscommon,Burglary,22
+2022Q3,2022,Roscommon,Damage to Property,42
+2022Q3,2022,Roscommon,Drug Offences,16
+2022Q3,2022,Roscommon,Fraud,32
+2022Q3,2022,Roscommon,Theft,86
+2022Q3,2022,Sligo,Assault,58
+2022Q3,2022,Sligo,Burglary,18
+2022Q3,2022,Sligo,Damage to Property,44
+2022Q3,2022,Sligo,Drug Offences,28
+2022Q3,2022,Sligo,Fraud,20
+2022Q3,2022,Sligo,Theft,78
+2022Q3,2022,Tipperary,Assault,168
+2022Q3,2022,Tipperary,Burglary,56
+2022Q3,2022,Tipperary,Damage to Property,132
+2022Q3,2022,Tipperary,Drug Offences,146
+2022Q3,2022,Tipperary,Fraud,61
+2022Q3,2022,Tipperary,Theft,337
+2022Q3,2022,Waterford,Assault,214
+2022Q3,2022,Waterford,Burglary,60
+2022Q3,2022,Waterford,Damage to Property,182
+2022Q3,2022,Waterford,Drug Offences,380
+2022Q3,2022,Waterford,Fraud,72
+2022Q3,2022,Waterford,Theft,460
+2022Q3,2022,Westmeath,Assault,139
+2022Q3,2022,Westmeath,Burglary,50
+2022Q3,2022,Westmeath,Damage to Property,86
+2022Q3,2022,Westmeath,Drug Offences,59
+2022Q3,2022,Westmeath,Fraud,34
+2022Q3,2022,Westmeath,Theft,302
+2022Q3,2022,Wexford,Assault,190
+2022Q3,2022,Wexford,Burglary,57
+2022Q3,2022,Wexford,Damage to Property,158
+2022Q3,2022,Wexford,Drug Offences,119
+2022Q3,2022,Wexford,Fraud,47
+2022Q3,2022,Wexford,Theft,405
+2022Q3,2022,Wicklow,Assault,107
+2022Q3,2022,Wicklow,Burglary,54
+2022Q3,2022,Wicklow,Damage to Property,155
+2022Q3,2022,Wicklow,Drug Offences,82
+2022Q3,2022,Wicklow,Fraud,70
+2022Q3,2022,Wicklow,Theft,283
+2022Q4,2022,Carlow,Assault,60
+2022Q4,2022,Carlow,Burglary,22
+2022Q4,2022,Carlow,Damage to Property,62
+2022Q4,2022,Carlow,Drug Offences,60
+2022Q4,2022,Carlow,Fraud,21
+2022Q4,2022,Carlow,Theft,144
+2022Q4,2022,Cavan,Assault,102
+2022Q4,2022,Cavan,Burglary,28
+2022Q4,2022,Cavan,Damage to Property,70
+2022Q4,2022,Cavan,Drug Offences,38
+2022Q4,2022,Cavan,Fraud,36
+2022Q4,2022,Cavan,Theft,88
+2022Q4,2022,Clare,Assault,105
+2022Q4,2022,Clare,Burglary,40
+2022Q4,2022,Clare,Damage to Property,109
+2022Q4,2022,Clare,Drug Offences,48
+2022Q4,2022,Clare,Fraud,49
+2022Q4,2022,Clare,Theft,202
+2022Q4,2022,Cork,Assault,628
+2022Q4,2022,Cork,Burglary,90
+2022Q4,2022,Cork,Damage to Property,440
+2022Q4,2022,Cork,Drug Offences,436
+2022Q4,2022,Cork,Fraud,207
+2022Q4,2022,Cork,Theft,1278
+2022Q4,2022,Donegal,Assault,205
+2022Q4,2022,Donegal,Burglary,29
+2022Q4,2022,Donegal,Damage to Property,186
+2022Q4,2022,Donegal,Drug Offences,58
+2022Q4,2022,Donegal,Fraud,47
+2022Q4,2022,Donegal,Theft,163
+2022Q4,2022,Dublin,Assault,1820
+2022Q4,2022,Dublin,Burglary,976
+2022Q4,2022,Dublin,Damage to Property,2348
+2022Q4,2022,Dublin,Drug Offences,1457
+2022Q4,2022,Dublin,Fraud,994
+2022Q4,2022,Dublin,Theft,9064
+2022Q4,2022,Galway,Assault,277
+2022Q4,2022,Galway,Burglary,80
+2022Q4,2022,Galway,Damage to Property,218
+2022Q4,2022,Galway,Drug Offences,145
+2022Q4,2022,Galway,Fraud,118
+2022Q4,2022,Galway,Theft,618
+2022Q4,2022,Kerry,Assault,179
+2022Q4,2022,Kerry,Burglary,35
+2022Q4,2022,Kerry,Damage to Property,90
+2022Q4,2022,Kerry,Drug Offences,86
+2022Q4,2022,Kerry,Fraud,54
+2022Q4,2022,Kerry,Theft,259
+2022Q4,2022,Kildare,Assault,216
+2022Q4,2022,Kildare,Burglary,126
+2022Q4,2022,Kildare,Damage to Property,187
+2022Q4,2022,Kildare,Drug Offences,212
+2022Q4,2022,Kildare,Fraud,112
+2022Q4,2022,Kildare,Theft,574
+2022Q4,2022,Kilkenny,Assault,60
+2022Q4,2022,Kilkenny,Burglary,22
+2022Q4,2022,Kilkenny,Damage to Property,62
+2022Q4,2022,Kilkenny,Drug Offences,60
+2022Q4,2022,Kilkenny,Fraud,21
+2022Q4,2022,Kilkenny,Theft,144
+2022Q4,2022,Laois,Assault,122
+2022Q4,2022,Laois,Burglary,32
+2022Q4,2022,Laois,Damage to Property,88
+2022Q4,2022,Laois,Drug Offences,54
+2022Q4,2022,Laois,Fraud,30
+2022Q4,2022,Laois,Theft,180
+2022Q4,2022,Leitrim,Assault,62
+2022Q4,2022,Leitrim,Burglary,17
+2022Q4,2022,Leitrim,Damage to Property,38
+2022Q4,2022,Leitrim,Drug Offences,14
+2022Q4,2022,Leitrim,Fraud,20
+2022Q4,2022,Leitrim,Theft,71
+2022Q4,2022,Limerick,Assault,275
+2022Q4,2022,Limerick,Burglary,93
+2022Q4,2022,Limerick,Damage to Property,224
+2022Q4,2022,Limerick,Drug Offences,141
+2022Q4,2022,Limerick,Fraud,113
+2022Q4,2022,Limerick,Theft,798
+2022Q4,2022,Longford,Assault,66
+2022Q4,2022,Longford,Burglary,12
+2022Q4,2022,Longford,Damage to Property,36
+2022Q4,2022,Longford,Drug Offences,15
+2022Q4,2022,Longford,Fraud,20
+2022Q4,2022,Longford,Theft,80
+2022Q4,2022,Louth,Assault,214
+2022Q4,2022,Louth,Burglary,87
+2022Q4,2022,Louth,Damage to Property,178
+2022Q4,2022,Louth,Drug Offences,101
+2022Q4,2022,Louth,Fraud,76
+2022Q4,2022,Louth,Theft,425
+2022Q4,2022,Mayo,Assault,147
+2022Q4,2022,Mayo,Burglary,39
+2022Q4,2022,Mayo,Damage to Property,86
+2022Q4,2022,Mayo,Drug Offences,24
+2022Q4,2022,Mayo,Fraud,44
+2022Q4,2022,Mayo,Theft,167
+2022Q4,2022,Meath,Assault,186
+2022Q4,2022,Meath,Burglary,102
+2022Q4,2022,Meath,Damage to Property,131
+2022Q4,2022,Meath,Drug Offences,107
+2022Q4,2022,Meath,Fraud,70
+2022Q4,2022,Meath,Theft,503
+2022Q4,2022,Monaghan,Assault,102
+2022Q4,2022,Monaghan,Burglary,28
+2022Q4,2022,Monaghan,Damage to Property,70
+2022Q4,2022,Monaghan,Drug Offences,38
+2022Q4,2022,Monaghan,Fraud,36
+2022Q4,2022,Monaghan,Theft,88
+2022Q4,2022,Offaly,Assault,122
+2022Q4,2022,Offaly,Burglary,32
+2022Q4,2022,Offaly,Damage to Property,88
+2022Q4,2022,Offaly,Drug Offences,54
+2022Q4,2022,Offaly,Fraud,30
+2022Q4,2022,Offaly,Theft,180
+2022Q4,2022,Roscommon,Assault,66
+2022Q4,2022,Roscommon,Burglary,12
+2022Q4,2022,Roscommon,Damage to Property,36
+2022Q4,2022,Roscommon,Drug Offences,15
+2022Q4,2022,Roscommon,Fraud,20
+2022Q4,2022,Roscommon,Theft,80
+2022Q4,2022,Sligo,Assault,62
+2022Q4,2022,Sligo,Burglary,17
+2022Q4,2022,Sligo,Damage to Property,38
+2022Q4,2022,Sligo,Drug Offences,14
+2022Q4,2022,Sligo,Fraud,20
+2022Q4,2022,Sligo,Theft,71
+2022Q4,2022,Tipperary,Assault,163
+2022Q4,2022,Tipperary,Burglary,55
+2022Q4,2022,Tipperary,Damage to Property,102
+2022Q4,2022,Tipperary,Drug Offences,138
+2022Q4,2022,Tipperary,Fraud,61
+2022Q4,2022,Tipperary,Theft,327
+2022Q4,2022,Waterford,Assault,203
+2022Q4,2022,Waterford,Burglary,49
+2022Q4,2022,Waterford,Damage to Property,145
+2022Q4,2022,Waterford,Drug Offences,208
+2022Q4,2022,Waterford,Fraud,60
+2022Q4,2022,Waterford,Theft,386
+2022Q4,2022,Westmeath,Assault,144
+2022Q4,2022,Westmeath,Burglary,41
+2022Q4,2022,Westmeath,Damage to Property,95
+2022Q4,2022,Westmeath,Drug Offences,55
+2022Q4,2022,Westmeath,Fraud,51
+2022Q4,2022,Westmeath,Theft,299
+2022Q4,2022,Wexford,Assault,195
+2022Q4,2022,Wexford,Burglary,93
+2022Q4,2022,Wexford,Damage to Property,173
+2022Q4,2022,Wexford,Drug Offences,99
+2022Q4,2022,Wexford,Fraud,46
+2022Q4,2022,Wexford,Theft,323
+2022Q4,2022,Wicklow,Assault,120
+2022Q4,2022,Wicklow,Burglary,58
+2022Q4,2022,Wicklow,Damage to Property,107
+2022Q4,2022,Wicklow,Drug Offences,103
+2022Q4,2022,Wicklow,Fraud,51
+2022Q4,2022,Wicklow,Theft,266
+2023Q1,2023,Carlow,Assault,60
+2023Q1,2023,Carlow,Burglary,31
+2023Q1,2023,Carlow,Damage to Property,62
+2023Q1,2023,Carlow,Drug Offences,56
+2023Q1,2023,Carlow,Fraud,29
+2023Q1,2023,Carlow,Theft,140
+2023Q1,2023,Cavan,Assault,89
+2023Q1,2023,Cavan,Burglary,26
+2023Q1,2023,Cavan,Damage to Property,58
+2023Q1,2023,Cavan,Drug Offences,36
+2023Q1,2023,Cavan,Fraud,34
+2023Q1,2023,Cavan,Theft,94
+2023Q1,2023,Clare,Assault,101
+2023Q1,2023,Clare,Burglary,45
+2023Q1,2023,Clare,Damage to Property,108
+2023Q1,2023,Clare,Drug Offences,41
+2023Q1,2023,Clare,Fraud,58
+2023Q1,2023,Clare,Theft,191
+2023Q1,2023,Cork,Assault,590
+2023Q1,2023,Cork,Burglary,98
+2023Q1,2023,Cork,Damage to Property,464
+2023Q1,2023,Cork,Drug Offences,495
+2023Q1,2023,Cork,Fraud,254
+2023Q1,2023,Cork,Theft,1424
+2023Q1,2023,Donegal,Assault,173
+2023Q1,2023,Donegal,Burglary,25
+2023Q1,2023,Donegal,Damage to Property,150
+2023Q1,2023,Donegal,Drug Offences,69
+2023Q1,2023,Donegal,Fraud,59
+2023Q1,2023,Donegal,Theft,196
+2023Q1,2023,Dublin,Assault,1804
+2023Q1,2023,Dublin,Burglary,983
+2023Q1,2023,Dublin,Damage to Property,2361
+2023Q1,2023,Dublin,Drug Offences,1806
+2023Q1,2023,Dublin,Fraud,1149
+2023Q1,2023,Dublin,Theft,9131
+2023Q1,2023,Galway,Assault,270
+2023Q1,2023,Galway,Burglary,131
+2023Q1,2023,Galway,Damage to Property,190
+2023Q1,2023,Galway,Drug Offences,172
+2023Q1,2023,Galway,Fraud,128
+2023Q1,2023,Galway,Theft,601
+2023Q1,2023,Kerry,Assault,167
+2023Q1,2023,Kerry,Burglary,30
+2023Q1,2023,Kerry,Damage to Property,90
+2023Q1,2023,Kerry,Drug Offences,100
+2023Q1,2023,Kerry,Fraud,72
+2023Q1,2023,Kerry,Theft,318
+2023Q1,2023,Kildare,Assault,216
+2023Q1,2023,Kildare,Burglary,135
+2023Q1,2023,Kildare,Damage to Property,214
+2023Q1,2023,Kildare,Drug Offences,212
+2023Q1,2023,Kildare,Fraud,124
+2023Q1,2023,Kildare,Theft,654
+2023Q1,2023,Kilkenny,Assault,60
+2023Q1,2023,Kilkenny,Burglary,31
+2023Q1,2023,Kilkenny,Damage to Property,62
+2023Q1,2023,Kilkenny,Drug Offences,56
+2023Q1,2023,Kilkenny,Fraud,29
+2023Q1,2023,Kilkenny,Theft,140
+2023Q1,2023,Laois,Assault,120
+2023Q1,2023,Laois,Burglary,40
+2023Q1,2023,Laois,Damage to Property,80
+2023Q1,2023,Laois,Drug Offences,56
+2023Q1,2023,Laois,Fraud,36
+2023Q1,2023,Laois,Theft,169
+2023Q1,2023,Leitrim,Assault,56
+2023Q1,2023,Leitrim,Burglary,27
+2023Q1,2023,Leitrim,Damage to Property,50
+2023Q1,2023,Leitrim,Drug Offences,18
+2023Q1,2023,Leitrim,Fraud,22
+2023Q1,2023,Leitrim,Theft,69
+2023Q1,2023,Limerick,Assault,269
+2023Q1,2023,Limerick,Burglary,113
+2023Q1,2023,Limerick,Damage to Property,299
+2023Q1,2023,Limerick,Drug Offences,192
+2023Q1,2023,Limerick,Fraud,90
+2023Q1,2023,Limerick,Theft,846
+2023Q1,2023,Longford,Assault,65
+2023Q1,2023,Longford,Burglary,30
+2023Q1,2023,Longford,Damage to Property,38
+2023Q1,2023,Longford,Drug Offences,11
+2023Q1,2023,Longford,Fraud,31
+2023Q1,2023,Longford,Theft,66
+2023Q1,2023,Louth,Assault,189
+2023Q1,2023,Louth,Burglary,106
+2023Q1,2023,Louth,Damage to Property,220
+2023Q1,2023,Louth,Drug Offences,120
+2023Q1,2023,Louth,Fraud,62
+2023Q1,2023,Louth,Theft,488
+2023Q1,2023,Mayo,Assault,123
+2023Q1,2023,Mayo,Burglary,46
+2023Q1,2023,Mayo,Damage to Property,80
+2023Q1,2023,Mayo,Drug Offences,31
+2023Q1,2023,Mayo,Fraud,59
+2023Q1,2023,Mayo,Theft,158
+2023Q1,2023,Meath,Assault,165
+2023Q1,2023,Meath,Burglary,87
+2023Q1,2023,Meath,Damage to Property,142
+2023Q1,2023,Meath,Drug Offences,101
+2023Q1,2023,Meath,Fraud,93
+2023Q1,2023,Meath,Theft,551
+2023Q1,2023,Monaghan,Assault,89
+2023Q1,2023,Monaghan,Burglary,26
+2023Q1,2023,Monaghan,Damage to Property,58
+2023Q1,2023,Monaghan,Drug Offences,36
+2023Q1,2023,Monaghan,Fraud,34
+2023Q1,2023,Monaghan,Theft,94
+2023Q1,2023,Offaly,Assault,120
+2023Q1,2023,Offaly,Burglary,40
+2023Q1,2023,Offaly,Damage to Property,80
+2023Q1,2023,Offaly,Drug Offences,56
+2023Q1,2023,Offaly,Fraud,36
+2023Q1,2023,Offaly,Theft,169
+2023Q1,2023,Roscommon,Assault,65
+2023Q1,2023,Roscommon,Burglary,30
+2023Q1,2023,Roscommon,Damage to Property,38
+2023Q1,2023,Roscommon,Drug Offences,11
+2023Q1,2023,Roscommon,Fraud,31
+2023Q1,2023,Roscommon,Theft,66
+2023Q1,2023,Sligo,Assault,56
+2023Q1,2023,Sligo,Burglary,27
+2023Q1,2023,Sligo,Damage to Property,50
+2023Q1,2023,Sligo,Drug Offences,18
+2023Q1,2023,Sligo,Fraud,22
+2023Q1,2023,Sligo,Theft,69
+2023Q1,2023,Tipperary,Assault,148
+2023Q1,2023,Tipperary,Burglary,61
+2023Q1,2023,Tipperary,Damage to Property,136
+2023Q1,2023,Tipperary,Drug Offences,119
+2023Q1,2023,Tipperary,Fraud,76
+2023Q1,2023,Tipperary,Theft,297
+2023Q1,2023,Waterford,Assault,152
+2023Q1,2023,Waterford,Burglary,44
+2023Q1,2023,Waterford,Damage to Property,184
+2023Q1,2023,Waterford,Drug Offences,183
+2023Q1,2023,Waterford,Fraud,71
+2023Q1,2023,Waterford,Theft,440
+2023Q1,2023,Westmeath,Assault,137
+2023Q1,2023,Westmeath,Burglary,42
+2023Q1,2023,Westmeath,Damage to Property,101
+2023Q1,2023,Westmeath,Drug Offences,72
+2023Q1,2023,Westmeath,Fraud,44
+2023Q1,2023,Westmeath,Theft,354
+2023Q1,2023,Wexford,Assault,160
+2023Q1,2023,Wexford,Burglary,72
+2023Q1,2023,Wexford,Damage to Property,162
+2023Q1,2023,Wexford,Drug Offences,107
+2023Q1,2023,Wexford,Fraud,67
+2023Q1,2023,Wexford,Theft,322
+2023Q1,2023,Wicklow,Assault,114
+2023Q1,2023,Wicklow,Burglary,54
+2023Q1,2023,Wicklow,Damage to Property,125
+2023Q1,2023,Wicklow,Drug Offences,53
+2023Q1,2023,Wicklow,Fraud,63
+2023Q1,2023,Wicklow,Theft,329
+2023Q2,2023,Carlow,Assault,65
+2023Q2,2023,Carlow,Burglary,28
+2023Q2,2023,Carlow,Damage to Property,70
+2023Q2,2023,Carlow,Drug Offences,54
+2023Q2,2023,Carlow,Fraud,40
+2023Q2,2023,Carlow,Theft,178
+2023Q2,2023,Cavan,Assault,112
+2023Q2,2023,Cavan,Burglary,36
+2023Q2,2023,Cavan,Damage to Property,70
+2023Q2,2023,Cavan,Drug Offences,46
+2023Q2,2023,Cavan,Fraud,42
+2023Q2,2023,Cavan,Theft,133
+2023Q2,2023,Clare,Assault,141
+2023Q2,2023,Clare,Burglary,46
+2023Q2,2023,Clare,Damage to Property,122
+2023Q2,2023,Clare,Drug Offences,54
+2023Q2,2023,Clare,Fraud,52
+2023Q2,2023,Clare,Theft,332
+2023Q2,2023,Cork,Assault,673
+2023Q2,2023,Cork,Burglary,135
+2023Q2,2023,Cork,Damage to Property,462
+2023Q2,2023,Cork,Drug Offences,486
+2023Q2,2023,Cork,Fraud,278
+2023Q2,2023,Cork,Theft,1386
+2023Q2,2023,Donegal,Assault,247
+2023Q2,2023,Donegal,Burglary,53
+2023Q2,2023,Donegal,Damage to Property,205
+2023Q2,2023,Donegal,Drug Offences,124
+2023Q2,2023,Donegal,Fraud,60
+2023Q2,2023,Donegal,Theft,232
+2023Q2,2023,Dublin,Assault,1992
+2023Q2,2023,Dublin,Burglary,899
+2023Q2,2023,Dublin,Damage to Property,2245
+2023Q2,2023,Dublin,Drug Offences,1713
+2023Q2,2023,Dublin,Fraud,1054
+2023Q2,2023,Dublin,Theft,9394
+2023Q2,2023,Galway,Assault,295
+2023Q2,2023,Galway,Burglary,76
+2023Q2,2023,Galway,Damage to Property,203
+2023Q2,2023,Galway,Drug Offences,202
+2023Q2,2023,Galway,Fraud,127
+2023Q2,2023,Galway,Theft,717
+2023Q2,2023,Kerry,Assault,223
+2023Q2,2023,Kerry,Burglary,33
+2023Q2,2023,Kerry,Damage to Property,114
+2023Q2,2023,Kerry,Drug Offences,143
+2023Q2,2023,Kerry,Fraud,51
+2023Q2,2023,Kerry,Theft,328
+2023Q2,2023,Kildare,Assault,242
+2023Q2,2023,Kildare,Burglary,83
+2023Q2,2023,Kildare,Damage to Property,192
+2023Q2,2023,Kildare,Drug Offences,321
+2023Q2,2023,Kildare,Fraud,119
+2023Q2,2023,Kildare,Theft,656
+2023Q2,2023,Kilkenny,Assault,65
+2023Q2,2023,Kilkenny,Burglary,28
+2023Q2,2023,Kilkenny,Damage to Property,70
+2023Q2,2023,Kilkenny,Drug Offences,54
+2023Q2,2023,Kilkenny,Fraud,40
+2023Q2,2023,Kilkenny,Theft,178
+2023Q2,2023,Laois,Assault,110
+2023Q2,2023,Laois,Burglary,38
+2023Q2,2023,Laois,Damage to Property,84
+2023Q2,2023,Laois,Drug Offences,84
+2023Q2,2023,Laois,Fraud,50
+2023Q2,2023,Laois,Theft,171
+2023Q2,2023,Leitrim,Assault,45
+2023Q2,2023,Leitrim,Burglary,19
+2023Q2,2023,Leitrim,Damage to Property,60
+2023Q2,2023,Leitrim,Drug Offences,20
+2023Q2,2023,Leitrim,Fraud,20
+2023Q2,2023,Leitrim,Theft,84
+2023Q2,2023,Limerick,Assault,298
+2023Q2,2023,Limerick,Burglary,110
+2023Q2,2023,Limerick,Damage to Property,308
+2023Q2,2023,Limerick,Drug Offences,172
+2023Q2,2023,Limerick,Fraud,113
+2023Q2,2023,Limerick,Theft,1005
+2023Q2,2023,Longford,Assault,68
+2023Q2,2023,Longford,Burglary,19
+2023Q2,2023,Longford,Damage to Property,47
+2023Q2,2023,Longford,Drug Offences,23
+2023Q2,2023,Longford,Fraud,31
+2023Q2,2023,Longford,Theft,99
+2023Q2,2023,Louth,Assault,217
+2023Q2,2023,Louth,Burglary,89
+2023Q2,2023,Louth,Damage to Property,246
+2023Q2,2023,Louth,Drug Offences,104
+2023Q2,2023,Louth,Fraud,75
+2023Q2,2023,Louth,Theft,538
+2023Q2,2023,Mayo,Assault,156
+2023Q2,2023,Mayo,Burglary,31
+2023Q2,2023,Mayo,Damage to Property,82
+2023Q2,2023,Mayo,Drug Offences,29
+2023Q2,2023,Mayo,Fraud,50
+2023Q2,2023,Mayo,Theft,176
+2023Q2,2023,Meath,Assault,179
+2023Q2,2023,Meath,Burglary,100
+2023Q2,2023,Meath,Damage to Property,153
+2023Q2,2023,Meath,Drug Offences,112
+2023Q2,2023,Meath,Fraud,107
+2023Q2,2023,Meath,Theft,624
+2023Q2,2023,Monaghan,Assault,112
+2023Q2,2023,Monaghan,Burglary,36
+2023Q2,2023,Monaghan,Damage to Property,70
+2023Q2,2023,Monaghan,Drug Offences,46
+2023Q2,2023,Monaghan,Fraud,42
+2023Q2,2023,Monaghan,Theft,133
+2023Q2,2023,Offaly,Assault,110
+2023Q2,2023,Offaly,Burglary,38
+2023Q2,2023,Offaly,Damage to Property,84
+2023Q2,2023,Offaly,Drug Offences,84
+2023Q2,2023,Offaly,Fraud,50
+2023Q2,2023,Offaly,Theft,171
+2023Q2,2023,Roscommon,Assault,68
+2023Q2,2023,Roscommon,Burglary,19
+2023Q2,2023,Roscommon,Damage to Property,47
+2023Q2,2023,Roscommon,Drug Offences,23
+2023Q2,2023,Roscommon,Fraud,31
+2023Q2,2023,Roscommon,Theft,99
+2023Q2,2023,Sligo,Assault,45
+2023Q2,2023,Sligo,Burglary,19
+2023Q2,2023,Sligo,Damage to Property,60
+2023Q2,2023,Sligo,Drug Offences,20
+2023Q2,2023,Sligo,Fraud,20
+2023Q2,2023,Sligo,Theft,84
+2023Q2,2023,Tipperary,Assault,186
+2023Q2,2023,Tipperary,Burglary,52
+2023Q2,2023,Tipperary,Damage to Property,180
+2023Q2,2023,Tipperary,Drug Offences,122
+2023Q2,2023,Tipperary,Fraud,61
+2023Q2,2023,Tipperary,Theft,393
+2023Q2,2023,Waterford,Assault,210
+2023Q2,2023,Waterford,Burglary,44
+2023Q2,2023,Waterford,Damage to Property,178
+2023Q2,2023,Waterford,Drug Offences,173
+2023Q2,2023,Waterford,Fraud,68
+2023Q2,2023,Waterford,Theft,495
+2023Q2,2023,Westmeath,Assault,146
+2023Q2,2023,Westmeath,Burglary,71
+2023Q2,2023,Westmeath,Damage to Property,122
+2023Q2,2023,Westmeath,Drug Offences,187
+2023Q2,2023,Westmeath,Fraud,53
+2023Q2,2023,Westmeath,Theft,453
+2023Q2,2023,Wexford,Assault,188
+2023Q2,2023,Wexford,Burglary,68
+2023Q2,2023,Wexford,Damage to Property,153
+2023Q2,2023,Wexford,Drug Offences,82
+2023Q2,2023,Wexford,Fraud,60
+2023Q2,2023,Wexford,Theft,346
+2023Q2,2023,Wicklow,Assault,97
+2023Q2,2023,Wicklow,Burglary,57
+2023Q2,2023,Wicklow,Damage to Property,135
+2023Q2,2023,Wicklow,Drug Offences,124
+2023Q2,2023,Wicklow,Fraud,68
+2023Q2,2023,Wicklow,Theft,361
+2023Q3,2023,Carlow,Assault,62
+2023Q3,2023,Carlow,Burglary,31
+2023Q3,2023,Carlow,Damage to Property,55
+2023Q3,2023,Carlow,Drug Offences,50
+2023Q3,2023,Carlow,Fraud,0
+2023Q3,2023,Carlow,Theft,184
+2023Q3,2023,Cavan,Assault,100
+2023Q3,2023,Cavan,Burglary,24
+2023Q3,2023,Cavan,Damage to Property,52
+2023Q3,2023,Cavan,Drug Offences,45
+2023Q3,2023,Cavan,Fraud,0
+2023Q3,2023,Cavan,Theft,123
+2023Q3,2023,Clare,Assault,141
+2023Q3,2023,Clare,Burglary,65
+2023Q3,2023,Clare,Damage to Property,110
+2023Q3,2023,Clare,Drug Offences,38
+2023Q3,2023,Clare,Fraud,0
+2023Q3,2023,Clare,Theft,296
+2023Q3,2023,Cork,Assault,695
+2023Q3,2023,Cork,Burglary,139
+2023Q3,2023,Cork,Damage to Property,471
+2023Q3,2023,Cork,Drug Offences,493
+2023Q3,2023,Cork,Fraud,0
+2023Q3,2023,Cork,Theft,1383
+2023Q3,2023,Donegal,Assault,214
+2023Q3,2023,Donegal,Burglary,36
+2023Q3,2023,Donegal,Damage to Property,152
+2023Q3,2023,Donegal,Drug Offences,68
+2023Q3,2023,Donegal,Fraud,0
+2023Q3,2023,Donegal,Theft,258
+2023Q3,2023,Dublin,Assault,2021
+2023Q3,2023,Dublin,Burglary,868
+2023Q3,2023,Dublin,Damage to Property,2119
+2023Q3,2023,Dublin,Drug Offences,1687
+2023Q3,2023,Dublin,Fraud,0
+2023Q3,2023,Dublin,Theft,9587
+2023Q3,2023,Galway,Assault,310
+2023Q3,2023,Galway,Burglary,95
+2023Q3,2023,Galway,Damage to Property,218
+2023Q3,2023,Galway,Drug Offences,183
+2023Q3,2023,Galway,Fraud,0
+2023Q3,2023,Galway,Theft,702
+2023Q3,2023,Kerry,Assault,228
+2023Q3,2023,Kerry,Burglary,37
+2023Q3,2023,Kerry,Damage to Property,104
+2023Q3,2023,Kerry,Drug Offences,132
+2023Q3,2023,Kerry,Fraud,0
+2023Q3,2023,Kerry,Theft,311
+2023Q3,2023,Kildare,Assault,232
+2023Q3,2023,Kildare,Burglary,131
+2023Q3,2023,Kildare,Damage to Property,217
+2023Q3,2023,Kildare,Drug Offences,189
+2023Q3,2023,Kildare,Fraud,0
+2023Q3,2023,Kildare,Theft,716
+2023Q3,2023,Kilkenny,Assault,62
+2023Q3,2023,Kilkenny,Burglary,31
+2023Q3,2023,Kilkenny,Damage to Property,55
+2023Q3,2023,Kilkenny,Drug Offences,50
+2023Q3,2023,Kilkenny,Fraud,0
+2023Q3,2023,Kilkenny,Theft,184
+2023Q3,2023,Laois,Assault,110
+2023Q3,2023,Laois,Burglary,46
+2023Q3,2023,Laois,Damage to Property,83
+2023Q3,2023,Laois,Drug Offences,254
+2023Q3,2023,Laois,Fraud,0
+2023Q3,2023,Laois,Theft,204
+2023Q3,2023,Leitrim,Assault,58
+2023Q3,2023,Leitrim,Burglary,12
+2023Q3,2023,Leitrim,Damage to Property,37
+2023Q3,2023,Leitrim,Drug Offences,24
+2023Q3,2023,Leitrim,Fraud,0
+2023Q3,2023,Leitrim,Theft,89
+2023Q3,2023,Limerick,Assault,263
+2023Q3,2023,Limerick,Burglary,134
+2023Q3,2023,Limerick,Damage to Property,337
+2023Q3,2023,Limerick,Drug Offences,226
+2023Q3,2023,Limerick,Fraud,0
+2023Q3,2023,Limerick,Theft,989
+2023Q3,2023,Longford,Assault,55
+2023Q3,2023,Longford,Burglary,28
+2023Q3,2023,Longford,Damage to Property,57
+2023Q3,2023,Longford,Drug Offences,23
+2023Q3,2023,Longford,Fraud,0
+2023Q3,2023,Longford,Theft,92
+2023Q3,2023,Louth,Assault,215
+2023Q3,2023,Louth,Burglary,56
+2023Q3,2023,Louth,Damage to Property,184
+2023Q3,2023,Louth,Drug Offences,124
+2023Q3,2023,Louth,Fraud,0
+2023Q3,2023,Louth,Theft,537
+2023Q3,2023,Mayo,Assault,143
+2023Q3,2023,Mayo,Burglary,54
+2023Q3,2023,Mayo,Damage to Property,110
+2023Q3,2023,Mayo,Drug Offences,39
+2023Q3,2023,Mayo,Fraud,0
+2023Q3,2023,Mayo,Theft,178
+2023Q3,2023,Meath,Assault,152
+2023Q3,2023,Meath,Burglary,80
+2023Q3,2023,Meath,Damage to Property,165
+2023Q3,2023,Meath,Drug Offences,97
+2023Q3,2023,Meath,Fraud,0
+2023Q3,2023,Meath,Theft,644
+2023Q3,2023,Monaghan,Assault,100
+2023Q3,2023,Monaghan,Burglary,24
+2023Q3,2023,Monaghan,Damage to Property,52
+2023Q3,2023,Monaghan,Drug Offences,45
+2023Q3,2023,Monaghan,Fraud,0
+2023Q3,2023,Monaghan,Theft,123
+2023Q3,2023,Offaly,Assault,110
+2023Q3,2023,Offaly,Burglary,46
+2023Q3,2023,Offaly,Damage to Property,83
+2023Q3,2023,Offaly,Drug Offences,254
+2023Q3,2023,Offaly,Fraud,0
+2023Q3,2023,Offaly,Theft,204
+2023Q3,2023,Roscommon,Assault,55
+2023Q3,2023,Roscommon,Burglary,28
+2023Q3,2023,Roscommon,Damage to Property,57
+2023Q3,2023,Roscommon,Drug Offences,23
+2023Q3,2023,Roscommon,Fraud,0
+2023Q3,2023,Roscommon,Theft,92
+2023Q3,2023,Sligo,Assault,58
+2023Q3,2023,Sligo,Burglary,12
+2023Q3,2023,Sligo,Damage to Property,37
+2023Q3,2023,Sligo,Drug Offences,24
+2023Q3,2023,Sligo,Fraud,0
+2023Q3,2023,Sligo,Theft,89
+2023Q3,2023,Tipperary,Assault,157
+2023Q3,2023,Tipperary,Burglary,80
+2023Q3,2023,Tipperary,Damage to Property,157
+2023Q3,2023,Tipperary,Drug Offences,140
+2023Q3,2023,Tipperary,Fraud,0
+2023Q3,2023,Tipperary,Theft,409
+2023Q3,2023,Waterford,Assault,169
+2023Q3,2023,Waterford,Burglary,49
+2023Q3,2023,Waterford,Damage to Property,197
+2023Q3,2023,Waterford,Drug Offences,377
+2023Q3,2023,Waterford,Fraud,0
+2023Q3,2023,Waterford,Theft,483
+2023Q3,2023,Westmeath,Assault,133
+2023Q3,2023,Westmeath,Burglary,47
+2023Q3,2023,Westmeath,Damage to Property,128
+2023Q3,2023,Westmeath,Drug Offences,44
+2023Q3,2023,Westmeath,Fraud,0
+2023Q3,2023,Westmeath,Theft,407
+2023Q3,2023,Wexford,Assault,189
+2023Q3,2023,Wexford,Burglary,73
+2023Q3,2023,Wexford,Damage to Property,149
+2023Q3,2023,Wexford,Drug Offences,73
+2023Q3,2023,Wexford,Fraud,0
+2023Q3,2023,Wexford,Theft,404
+2023Q3,2023,Wicklow,Assault,101
+2023Q3,2023,Wicklow,Burglary,56
+2023Q3,2023,Wicklow,Damage to Property,111
+2023Q3,2023,Wicklow,Drug Offences,83
+2023Q3,2023,Wicklow,Fraud,0
+2023Q3,2023,Wicklow,Theft,414
+2023Q4,2023,Carlow,Assault,61
+2023Q4,2023,Carlow,Burglary,27
+2023Q4,2023,Carlow,Damage to Property,54
+2023Q4,2023,Carlow,Drug Offences,66
+2023Q4,2023,Carlow,Fraud,0
+2023Q4,2023,Carlow,Theft,160
+2023Q4,2023,Cavan,Assault,82
+2023Q4,2023,Cavan,Burglary,30
+2023Q4,2023,Cavan,Damage to Property,58
+2023Q4,2023,Cavan,Drug Offences,37
+2023Q4,2023,Cavan,Fraud,0
+2023Q4,2023,Cavan,Theft,92
+2023Q4,2023,Clare,Assault,137
+2023Q4,2023,Clare,Burglary,44
+2023Q4,2023,Clare,Damage to Property,110
+2023Q4,2023,Clare,Drug Offences,30
+2023Q4,2023,Clare,Fraud,0
+2023Q4,2023,Clare,Theft,212
+2023Q4,2023,Cork,Assault,626
+2023Q4,2023,Cork,Burglary,156
+2023Q4,2023,Cork,Damage to Property,504
+2023Q4,2023,Cork,Drug Offences,386
+2023Q4,2023,Cork,Fraud,0
+2023Q4,2023,Cork,Theft,1379
+2023Q4,2023,Donegal,Assault,198
+2023Q4,2023,Donegal,Burglary,44
+2023Q4,2023,Donegal,Damage to Property,111
+2023Q4,2023,Donegal,Drug Offences,70
+2023Q4,2023,Donegal,Fraud,0
+2023Q4,2023,Donegal,Theft,175
+2023Q4,2023,Dublin,Assault,2016
+2023Q4,2023,Dublin,Burglary,1144
+2023Q4,2023,Dublin,Damage to Property,2366
+2023Q4,2023,Dublin,Drug Offences,1386
+2023Q4,2023,Dublin,Fraud,0
+2023Q4,2023,Dublin,Theft,9673
+2023Q4,2023,Galway,Assault,300
+2023Q4,2023,Galway,Burglary,112
+2023Q4,2023,Galway,Damage to Property,178
+2023Q4,2023,Galway,Drug Offences,126
+2023Q4,2023,Galway,Fraud,0
+2023Q4,2023,Galway,Theft,629
+2023Q4,2023,Kerry,Assault,195
+2023Q4,2023,Kerry,Burglary,38
+2023Q4,2023,Kerry,Damage to Property,108
+2023Q4,2023,Kerry,Drug Offences,90
+2023Q4,2023,Kerry,Fraud,0
+2023Q4,2023,Kerry,Theft,271
+2023Q4,2023,Kildare,Assault,234
+2023Q4,2023,Kildare,Burglary,102
+2023Q4,2023,Kildare,Damage to Property,207
+2023Q4,2023,Kildare,Drug Offences,175
+2023Q4,2023,Kildare,Fraud,0
+2023Q4,2023,Kildare,Theft,693
+2023Q4,2023,Kilkenny,Assault,61
+2023Q4,2023,Kilkenny,Burglary,27
+2023Q4,2023,Kilkenny,Damage to Property,54
+2023Q4,2023,Kilkenny,Drug Offences,66
+2023Q4,2023,Kilkenny,Fraud,0
+2023Q4,2023,Kilkenny,Theft,160
+2023Q4,2023,Laois,Assault,96
+2023Q4,2023,Laois,Burglary,46
+2023Q4,2023,Laois,Damage to Property,70
+2023Q4,2023,Laois,Drug Offences,48
+2023Q4,2023,Laois,Fraud,0
+2023Q4,2023,Laois,Theft,180
+2023Q4,2023,Leitrim,Assault,52
+2023Q4,2023,Leitrim,Burglary,15
+2023Q4,2023,Leitrim,Damage to Property,50
+2023Q4,2023,Leitrim,Drug Offences,26
+2023Q4,2023,Leitrim,Fraud,0
+2023Q4,2023,Leitrim,Theft,88
+2023Q4,2023,Limerick,Assault,284
+2023Q4,2023,Limerick,Burglary,106
+2023Q4,2023,Limerick,Damage to Property,315
+2023Q4,2023,Limerick,Drug Offences,180
+2023Q4,2023,Limerick,Fraud,0
+2023Q4,2023,Limerick,Theft,996
+2023Q4,2023,Longford,Assault,54
+2023Q4,2023,Longford,Burglary,33
+2023Q4,2023,Longford,Damage to Property,48
+2023Q4,2023,Longford,Drug Offences,22
+2023Q4,2023,Longford,Fraud,0
+2023Q4,2023,Longford,Theft,87
+2023Q4,2023,Louth,Assault,162
+2023Q4,2023,Louth,Burglary,69
+2023Q4,2023,Louth,Damage to Property,201
+2023Q4,2023,Louth,Drug Offences,102
+2023Q4,2023,Louth,Fraud,0
+2023Q4,2023,Louth,Theft,468
+2023Q4,2023,Mayo,Assault,117
+2023Q4,2023,Mayo,Burglary,46
+2023Q4,2023,Mayo,Damage to Property,78
+2023Q4,2023,Mayo,Drug Offences,26
+2023Q4,2023,Mayo,Fraud,0
+2023Q4,2023,Mayo,Theft,148
+2023Q4,2023,Meath,Assault,158
+2023Q4,2023,Meath,Burglary,135
+2023Q4,2023,Meath,Damage to Property,148
+2023Q4,2023,Meath,Drug Offences,112
+2023Q4,2023,Meath,Fraud,0
+2023Q4,2023,Meath,Theft,643
+2023Q4,2023,Monaghan,Assault,82
+2023Q4,2023,Monaghan,Burglary,30
+2023Q4,2023,Monaghan,Damage to Property,58
+2023Q4,2023,Monaghan,Drug Offences,37
+2023Q4,2023,Monaghan,Fraud,0
+2023Q4,2023,Monaghan,Theft,92
+2023Q4,2023,Offaly,Assault,96
+2023Q4,2023,Offaly,Burglary,46
+2023Q4,2023,Offaly,Damage to Property,70
+2023Q4,2023,Offaly,Drug Offences,48
+2023Q4,2023,Offaly,Fraud,0
+2023Q4,2023,Offaly,Theft,180
+2023Q4,2023,Roscommon,Assault,54
+2023Q4,2023,Roscommon,Burglary,33
+2023Q4,2023,Roscommon,Damage to Property,48
+2023Q4,2023,Roscommon,Drug Offences,22
+2023Q4,2023,Roscommon,Fraud,0
+2023Q4,2023,Roscommon,Theft,87
+2023Q4,2023,Sligo,Assault,52
+2023Q4,2023,Sligo,Burglary,15
+2023Q4,2023,Sligo,Damage to Property,50
+2023Q4,2023,Sligo,Drug Offences,26
+2023Q4,2023,Sligo,Fraud,0
+2023Q4,2023,Sligo,Theft,88
+2023Q4,2023,Tipperary,Assault,173
+2023Q4,2023,Tipperary,Burglary,94
+2023Q4,2023,Tipperary,Damage to Property,159
+2023Q4,2023,Tipperary,Drug Offences,125
+2023Q4,2023,Tipperary,Fraud,0
+2023Q4,2023,Tipperary,Theft,417
+2023Q4,2023,Waterford,Assault,176
+2023Q4,2023,Waterford,Burglary,51
+2023Q4,2023,Waterford,Damage to Property,186
+2023Q4,2023,Waterford,Drug Offences,175
+2023Q4,2023,Waterford,Fraud,0
+2023Q4,2023,Waterford,Theft,494
+2023Q4,2023,Westmeath,Assault,131
+2023Q4,2023,Westmeath,Burglary,85
+2023Q4,2023,Westmeath,Damage to Property,99
+2023Q4,2023,Westmeath,Drug Offences,27
+2023Q4,2023,Westmeath,Fraud,0
+2023Q4,2023,Westmeath,Theft,373
+2023Q4,2023,Wexford,Assault,206
+2023Q4,2023,Wexford,Burglary,83
+2023Q4,2023,Wexford,Damage to Property,152
+2023Q4,2023,Wexford,Drug Offences,103
+2023Q4,2023,Wexford,Fraud,0
+2023Q4,2023,Wexford,Theft,396
+2023Q4,2023,Wicklow,Assault,109
+2023Q4,2023,Wicklow,Burglary,68
+2023Q4,2023,Wicklow,Damage to Property,101
+2023Q4,2023,Wicklow,Drug Offences,102
+2023Q4,2023,Wicklow,Fraud,0
+2023Q4,2023,Wicklow,Theft,346
+2024Q1,2024,Carlow,Assault,58
+2024Q1,2024,Carlow,Burglary,34
+2024Q1,2024,Carlow,Damage to Property,55
+2024Q1,2024,Carlow,Drug Offences,38
+2024Q1,2024,Carlow,Fraud,0
+2024Q1,2024,Carlow,Theft,168
+2024Q1,2024,Cavan,Assault,76
+2024Q1,2024,Cavan,Burglary,33
+2024Q1,2024,Cavan,Damage to Property,54
+2024Q1,2024,Cavan,Drug Offences,20
+2024Q1,2024,Cavan,Fraud,0
+2024Q1,2024,Cavan,Theft,108
+2024Q1,2024,Clare,Assault,95
+2024Q1,2024,Clare,Burglary,69
+2024Q1,2024,Clare,Damage to Property,97
+2024Q1,2024,Clare,Drug Offences,46
+2024Q1,2024,Clare,Fraud,0
+2024Q1,2024,Clare,Theft,213
+2024Q1,2024,Cork,Assault,593
+2024Q1,2024,Cork,Burglary,140
+2024Q1,2024,Cork,Damage to Property,485
+2024Q1,2024,Cork,Drug Offences,426
+2024Q1,2024,Cork,Fraud,0
+2024Q1,2024,Cork,Theft,1559
+2024Q1,2024,Donegal,Assault,212
+2024Q1,2024,Donegal,Burglary,37
+2024Q1,2024,Donegal,Damage to Property,130
+2024Q1,2024,Donegal,Drug Offences,79
+2024Q1,2024,Donegal,Fraud,0
+2024Q1,2024,Donegal,Theft,242
+2024Q1,2024,Dublin,Assault,1919
+2024Q1,2024,Dublin,Burglary,1034
+2024Q1,2024,Dublin,Damage to Property,2323
+2024Q1,2024,Dublin,Drug Offences,1646
+2024Q1,2024,Dublin,Fraud,0
+2024Q1,2024,Dublin,Theft,9752
+2024Q1,2024,Galway,Assault,277
+2024Q1,2024,Galway,Burglary,103
+2024Q1,2024,Galway,Damage to Property,196
+2024Q1,2024,Galway,Drug Offences,105
+2024Q1,2024,Galway,Fraud,0
+2024Q1,2024,Galway,Theft,607
+2024Q1,2024,Kerry,Assault,172
+2024Q1,2024,Kerry,Burglary,34
+2024Q1,2024,Kerry,Damage to Property,79
+2024Q1,2024,Kerry,Drug Offences,79
+2024Q1,2024,Kerry,Fraud,0
+2024Q1,2024,Kerry,Theft,260
+2024Q1,2024,Kildare,Assault,226
+2024Q1,2024,Kildare,Burglary,120
+2024Q1,2024,Kildare,Damage to Property,209
+2024Q1,2024,Kildare,Drug Offences,173
+2024Q1,2024,Kildare,Fraud,0
+2024Q1,2024,Kildare,Theft,728
+2024Q1,2024,Kilkenny,Assault,58
+2024Q1,2024,Kilkenny,Burglary,34
+2024Q1,2024,Kilkenny,Damage to Property,55
+2024Q1,2024,Kilkenny,Drug Offences,38
+2024Q1,2024,Kilkenny,Fraud,0
+2024Q1,2024,Kilkenny,Theft,168
+2024Q1,2024,Laois,Assault,86
+2024Q1,2024,Laois,Burglary,45
+2024Q1,2024,Laois,Damage to Property,77
+2024Q1,2024,Laois,Drug Offences,48
+2024Q1,2024,Laois,Fraud,0
+2024Q1,2024,Laois,Theft,237
+2024Q1,2024,Leitrim,Assault,58
+2024Q1,2024,Leitrim,Burglary,23
+2024Q1,2024,Leitrim,Damage to Property,38
+2024Q1,2024,Leitrim,Drug Offences,26
+2024Q1,2024,Leitrim,Fraud,0
+2024Q1,2024,Leitrim,Theft,106
+2024Q1,2024,Limerick,Assault,257
+2024Q1,2024,Limerick,Burglary,133
+2024Q1,2024,Limerick,Damage to Property,303
+2024Q1,2024,Limerick,Drug Offences,142
+2024Q1,2024,Limerick,Fraud,0
+2024Q1,2024,Limerick,Theft,1004
+2024Q1,2024,Longford,Assault,58
+2024Q1,2024,Longford,Burglary,37
+2024Q1,2024,Longford,Damage to Property,41
+2024Q1,2024,Longford,Drug Offences,26
+2024Q1,2024,Longford,Fraud,0
+2024Q1,2024,Longford,Theft,68
+2024Q1,2024,Louth,Assault,173
+2024Q1,2024,Louth,Burglary,100
+2024Q1,2024,Louth,Damage to Property,212
+2024Q1,2024,Louth,Drug Offences,118
+2024Q1,2024,Louth,Fraud,0
+2024Q1,2024,Louth,Theft,572
+2024Q1,2024,Mayo,Assault,100
+2024Q1,2024,Mayo,Burglary,38
+2024Q1,2024,Mayo,Damage to Property,78
+2024Q1,2024,Mayo,Drug Offences,38
+2024Q1,2024,Mayo,Fraud,0
+2024Q1,2024,Mayo,Theft,162
+2024Q1,2024,Meath,Assault,170
+2024Q1,2024,Meath,Burglary,108
+2024Q1,2024,Meath,Damage to Property,134
+2024Q1,2024,Meath,Drug Offences,139
+2024Q1,2024,Meath,Fraud,0
+2024Q1,2024,Meath,Theft,536
+2024Q1,2024,Monaghan,Assault,76
+2024Q1,2024,Monaghan,Burglary,33
+2024Q1,2024,Monaghan,Damage to Property,54
+2024Q1,2024,Monaghan,Drug Offences,20
+2024Q1,2024,Monaghan,Fraud,0
+2024Q1,2024,Monaghan,Theft,108
+2024Q1,2024,Offaly,Assault,86
+2024Q1,2024,Offaly,Burglary,45
+2024Q1,2024,Offaly,Damage to Property,77
+2024Q1,2024,Offaly,Drug Offences,48
+2024Q1,2024,Offaly,Fraud,0
+2024Q1,2024,Offaly,Theft,237
+2024Q1,2024,Roscommon,Assault,58
+2024Q1,2024,Roscommon,Burglary,37
+2024Q1,2024,Roscommon,Damage to Property,41
+2024Q1,2024,Roscommon,Drug Offences,26
+2024Q1,2024,Roscommon,Fraud,0
+2024Q1,2024,Roscommon,Theft,68
+2024Q1,2024,Sligo,Assault,58
+2024Q1,2024,Sligo,Burglary,23
+2024Q1,2024,Sligo,Damage to Property,38
+2024Q1,2024,Sligo,Drug Offences,26
+2024Q1,2024,Sligo,Fraud,0
+2024Q1,2024,Sligo,Theft,106
+2024Q1,2024,Tipperary,Assault,146
+2024Q1,2024,Tipperary,Burglary,92
+2024Q1,2024,Tipperary,Damage to Property,122
+2024Q1,2024,Tipperary,Drug Offences,120
+2024Q1,2024,Tipperary,Fraud,0
+2024Q1,2024,Tipperary,Theft,362
+2024Q1,2024,Waterford,Assault,178
+2024Q1,2024,Waterford,Burglary,54
+2024Q1,2024,Waterford,Damage to Property,185
+2024Q1,2024,Waterford,Drug Offences,177
+2024Q1,2024,Waterford,Fraud,0
+2024Q1,2024,Waterford,Theft,346
+2024Q1,2024,Westmeath,Assault,136
+2024Q1,2024,Westmeath,Burglary,76
+2024Q1,2024,Westmeath,Damage to Property,98
+2024Q1,2024,Westmeath,Drug Offences,41
+2024Q1,2024,Westmeath,Fraud,0
+2024Q1,2024,Westmeath,Theft,356
+2024Q1,2024,Wexford,Assault,198
+2024Q1,2024,Wexford,Burglary,67
+2024Q1,2024,Wexford,Damage to Property,162
+2024Q1,2024,Wexford,Drug Offences,86
+2024Q1,2024,Wexford,Fraud,0
+2024Q1,2024,Wexford,Theft,381
+2024Q1,2024,Wicklow,Assault,102
+2024Q1,2024,Wicklow,Burglary,77
+2024Q1,2024,Wicklow,Damage to Property,135
+2024Q1,2024,Wicklow,Drug Offences,73
+2024Q1,2024,Wicklow,Fraud,0
+2024Q1,2024,Wicklow,Theft,416
+2024Q2,2024,Carlow,Assault,77
+2024Q2,2024,Carlow,Burglary,20
+2024Q2,2024,Carlow,Damage to Property,52
+2024Q2,2024,Carlow,Drug Offences,39
+2024Q2,2024,Carlow,Fraud,0
+2024Q2,2024,Carlow,Theft,181
+2024Q2,2024,Cavan,Assault,87
+2024Q2,2024,Cavan,Burglary,31
+2024Q2,2024,Cavan,Damage to Property,63
+2024Q2,2024,Cavan,Drug Offences,43
+2024Q2,2024,Cavan,Fraud,0
+2024Q2,2024,Cavan,Theft,104
+2024Q2,2024,Clare,Assault,96
+2024Q2,2024,Clare,Burglary,36
+2024Q2,2024,Clare,Damage to Property,92
+2024Q2,2024,Clare,Drug Offences,43
+2024Q2,2024,Clare,Fraud,0
+2024Q2,2024,Clare,Theft,253
+2024Q2,2024,Cork,Assault,612
+2024Q2,2024,Cork,Burglary,115
+2024Q2,2024,Cork,Damage to Property,400
+2024Q2,2024,Cork,Drug Offences,460
+2024Q2,2024,Cork,Fraud,0
+2024Q2,2024,Cork,Theft,1537
+2024Q2,2024,Donegal,Assault,226
+2024Q2,2024,Donegal,Burglary,30
+2024Q2,2024,Donegal,Damage to Property,150
+2024Q2,2024,Donegal,Drug Offences,102
+2024Q2,2024,Donegal,Fraud,0
+2024Q2,2024,Donegal,Theft,206
+2024Q2,2024,Dublin,Assault,2240
+2024Q2,2024,Dublin,Burglary,842
+2024Q2,2024,Dublin,Damage to Property,2295
+2024Q2,2024,Dublin,Drug Offences,1787
+2024Q2,2024,Dublin,Fraud,0
+2024Q2,2024,Dublin,Theft,9923
+2024Q2,2024,Galway,Assault,277
+2024Q2,2024,Galway,Burglary,75
+2024Q2,2024,Galway,Damage to Property,194
+2024Q2,2024,Galway,Drug Offences,119
+2024Q2,2024,Galway,Fraud,0
+2024Q2,2024,Galway,Theft,633
+2024Q2,2024,Kerry,Assault,207
+2024Q2,2024,Kerry,Burglary,52
+2024Q2,2024,Kerry,Damage to Property,108
+2024Q2,2024,Kerry,Drug Offences,85
+2024Q2,2024,Kerry,Fraud,0
+2024Q2,2024,Kerry,Theft,273
+2024Q2,2024,Kildare,Assault,253
+2024Q2,2024,Kildare,Burglary,115
+2024Q2,2024,Kildare,Damage to Property,199
+2024Q2,2024,Kildare,Drug Offences,245
+2024Q2,2024,Kildare,Fraud,0
+2024Q2,2024,Kildare,Theft,683
+2024Q2,2024,Kilkenny,Assault,77
+2024Q2,2024,Kilkenny,Burglary,20
+2024Q2,2024,Kilkenny,Damage to Property,52
+2024Q2,2024,Kilkenny,Drug Offences,39
+2024Q2,2024,Kilkenny,Fraud,0
+2024Q2,2024,Kilkenny,Theft,181
+2024Q2,2024,Laois,Assault,122
+2024Q2,2024,Laois,Burglary,40
+2024Q2,2024,Laois,Damage to Property,84
+2024Q2,2024,Laois,Drug Offences,64
+2024Q2,2024,Laois,Fraud,0
+2024Q2,2024,Laois,Theft,206
+2024Q2,2024,Leitrim,Assault,57
+2024Q2,2024,Leitrim,Burglary,17
+2024Q2,2024,Leitrim,Damage to Property,46
+2024Q2,2024,Leitrim,Drug Offences,24
+2024Q2,2024,Leitrim,Fraud,0
+2024Q2,2024,Leitrim,Theft,90
+2024Q2,2024,Limerick,Assault,251
+2024Q2,2024,Limerick,Burglary,183
+2024Q2,2024,Limerick,Damage to Property,268
+2024Q2,2024,Limerick,Drug Offences,135
+2024Q2,2024,Limerick,Fraud,0
+2024Q2,2024,Limerick,Theft,1035
+2024Q2,2024,Longford,Assault,64
+2024Q2,2024,Longford,Burglary,30
+2024Q2,2024,Longford,Damage to Property,34
+2024Q2,2024,Longford,Drug Offences,38
+2024Q2,2024,Longford,Fraud,0
+2024Q2,2024,Longford,Theft,84
+2024Q2,2024,Louth,Assault,180
+2024Q2,2024,Louth,Burglary,90
+2024Q2,2024,Louth,Damage to Property,246
+2024Q2,2024,Louth,Drug Offences,125
+2024Q2,2024,Louth,Fraud,0
+2024Q2,2024,Louth,Theft,639
+2024Q2,2024,Mayo,Assault,124
+2024Q2,2024,Mayo,Burglary,33
+2024Q2,2024,Mayo,Damage to Property,101
+2024Q2,2024,Mayo,Drug Offences,41
+2024Q2,2024,Mayo,Fraud,0
+2024Q2,2024,Mayo,Theft,146
+2024Q2,2024,Meath,Assault,151
+2024Q2,2024,Meath,Burglary,79
+2024Q2,2024,Meath,Damage to Property,147
+2024Q2,2024,Meath,Drug Offences,98
+2024Q2,2024,Meath,Fraud,0
+2024Q2,2024,Meath,Theft,612
+2024Q2,2024,Monaghan,Assault,87
+2024Q2,2024,Monaghan,Burglary,31
+2024Q2,2024,Monaghan,Damage to Property,63
+2024Q2,2024,Monaghan,Drug Offences,43
+2024Q2,2024,Monaghan,Fraud,0
+2024Q2,2024,Monaghan,Theft,104
+2024Q2,2024,Offaly,Assault,122
+2024Q2,2024,Offaly,Burglary,40
+2024Q2,2024,Offaly,Damage to Property,84
+2024Q2,2024,Offaly,Drug Offences,64
+2024Q2,2024,Offaly,Fraud,0
+2024Q2,2024,Offaly,Theft,206
+2024Q2,2024,Roscommon,Assault,64
+2024Q2,2024,Roscommon,Burglary,30
+2024Q2,2024,Roscommon,Damage to Property,34
+2024Q2,2024,Roscommon,Drug Offences,38
+2024Q2,2024,Roscommon,Fraud,0
+2024Q2,2024,Roscommon,Theft,84
+2024Q2,2024,Sligo,Assault,57
+2024Q2,2024,Sligo,Burglary,17
+2024Q2,2024,Sligo,Damage to Property,46
+2024Q2,2024,Sligo,Drug Offences,24
+2024Q2,2024,Sligo,Fraud,0
+2024Q2,2024,Sligo,Theft,90
+2024Q2,2024,Tipperary,Assault,179
+2024Q2,2024,Tipperary,Burglary,87
+2024Q2,2024,Tipperary,Damage to Property,144
+2024Q2,2024,Tipperary,Drug Offences,128
+2024Q2,2024,Tipperary,Fraud,0
+2024Q2,2024,Tipperary,Theft,358
+2024Q2,2024,Waterford,Assault,205
+2024Q2,2024,Waterford,Burglary,25
+2024Q2,2024,Waterford,Damage to Property,204
+2024Q2,2024,Waterford,Drug Offences,166
+2024Q2,2024,Waterford,Fraud,0
+2024Q2,2024,Waterford,Theft,462
+2024Q2,2024,Westmeath,Assault,165
+2024Q2,2024,Westmeath,Burglary,64
+2024Q2,2024,Westmeath,Damage to Property,106
+2024Q2,2024,Westmeath,Drug Offences,55
+2024Q2,2024,Westmeath,Fraud,0
+2024Q2,2024,Westmeath,Theft,339
+2024Q2,2024,Wexford,Assault,222
+2024Q2,2024,Wexford,Burglary,79
+2024Q2,2024,Wexford,Damage to Property,165
+2024Q2,2024,Wexford,Drug Offences,86
+2024Q2,2024,Wexford,Fraud,0
+2024Q2,2024,Wexford,Theft,476
+2024Q2,2024,Wicklow,Assault,108
+2024Q2,2024,Wicklow,Burglary,80
+2024Q2,2024,Wicklow,Damage to Property,131
+2024Q2,2024,Wicklow,Drug Offences,86
+2024Q2,2024,Wicklow,Fraud,0
+2024Q2,2024,Wicklow,Theft,452
+2024Q3,2024,Carlow,Assault,73
+2024Q3,2024,Carlow,Burglary,44
+2024Q3,2024,Carlow,Damage to Property,48
+2024Q3,2024,Carlow,Drug Offences,52
+2024Q3,2024,Carlow,Fraud,0
+2024Q3,2024,Carlow,Theft,189
+2024Q3,2024,Cavan,Assault,86
+2024Q3,2024,Cavan,Burglary,44
+2024Q3,2024,Cavan,Damage to Property,64
+2024Q3,2024,Cavan,Drug Offences,44
+2024Q3,2024,Cavan,Fraud,0
+2024Q3,2024,Cavan,Theft,93
+2024Q3,2024,Clare,Assault,123
+2024Q3,2024,Clare,Burglary,60
+2024Q3,2024,Clare,Damage to Property,115
+2024Q3,2024,Clare,Drug Offences,46
+2024Q3,2024,Clare,Fraud,0
+2024Q3,2024,Clare,Theft,274
+2024Q3,2024,Cork,Assault,680
+2024Q3,2024,Cork,Burglary,117
+2024Q3,2024,Cork,Damage to Property,483
+2024Q3,2024,Cork,Drug Offences,447
+2024Q3,2024,Cork,Fraud,0
+2024Q3,2024,Cork,Theft,1705
+2024Q3,2024,Donegal,Assault,240
+2024Q3,2024,Donegal,Burglary,45
+2024Q3,2024,Donegal,Damage to Property,164
+2024Q3,2024,Donegal,Drug Offences,73
+2024Q3,2024,Donegal,Fraud,0
+2024Q3,2024,Donegal,Theft,169
+2024Q3,2024,Dublin,Assault,2231
+2024Q3,2024,Dublin,Burglary,915
+2024Q3,2024,Dublin,Damage to Property,2352
+2024Q3,2024,Dublin,Drug Offences,1661
+2024Q3,2024,Dublin,Fraud,0
+2024Q3,2024,Dublin,Theft,10068
+2024Q3,2024,Galway,Assault,288
+2024Q3,2024,Galway,Burglary,88
+2024Q3,2024,Galway,Damage to Property,202
+2024Q3,2024,Galway,Drug Offences,160
+2024Q3,2024,Galway,Fraud,0
+2024Q3,2024,Galway,Theft,675
+2024Q3,2024,Kerry,Assault,252
+2024Q3,2024,Kerry,Burglary,30
+2024Q3,2024,Kerry,Damage to Property,107
+2024Q3,2024,Kerry,Drug Offences,113
+2024Q3,2024,Kerry,Fraud,0
+2024Q3,2024,Kerry,Theft,270
+2024Q3,2024,Kildare,Assault,231
+2024Q3,2024,Kildare,Burglary,125
+2024Q3,2024,Kildare,Damage to Property,228
+2024Q3,2024,Kildare,Drug Offences,385
+2024Q3,2024,Kildare,Fraud,0
+2024Q3,2024,Kildare,Theft,842
+2024Q3,2024,Kilkenny,Assault,73
+2024Q3,2024,Kilkenny,Burglary,44
+2024Q3,2024,Kilkenny,Damage to Property,48
+2024Q3,2024,Kilkenny,Drug Offences,52
+2024Q3,2024,Kilkenny,Fraud,0
+2024Q3,2024,Kilkenny,Theft,189
+2024Q3,2024,Laois,Assault,104
+2024Q3,2024,Laois,Burglary,38
+2024Q3,2024,Laois,Damage to Property,88
+2024Q3,2024,Laois,Drug Offences,258
+2024Q3,2024,Laois,Fraud,0
+2024Q3,2024,Laois,Theft,214
+2024Q3,2024,Leitrim,Assault,62
+2024Q3,2024,Leitrim,Burglary,22
+2024Q3,2024,Leitrim,Damage to Property,41
+2024Q3,2024,Leitrim,Drug Offences,20
+2024Q3,2024,Leitrim,Fraud,0
+2024Q3,2024,Leitrim,Theft,97
+2024Q3,2024,Limerick,Assault,300
+2024Q3,2024,Limerick,Burglary,151
+2024Q3,2024,Limerick,Damage to Property,284
+2024Q3,2024,Limerick,Drug Offences,140
+2024Q3,2024,Limerick,Fraud,0
+2024Q3,2024,Limerick,Theft,989
+2024Q3,2024,Longford,Assault,57
+2024Q3,2024,Longford,Burglary,38
+2024Q3,2024,Longford,Damage to Property,45
+2024Q3,2024,Longford,Drug Offences,40
+2024Q3,2024,Longford,Fraud,0
+2024Q3,2024,Longford,Theft,62
+2024Q3,2024,Louth,Assault,239
+2024Q3,2024,Louth,Burglary,88
+2024Q3,2024,Louth,Damage to Property,191
+2024Q3,2024,Louth,Drug Offences,107
+2024Q3,2024,Louth,Fraud,0
+2024Q3,2024,Louth,Theft,668
+2024Q3,2024,Mayo,Assault,125
+2024Q3,2024,Mayo,Burglary,20
+2024Q3,2024,Mayo,Damage to Property,79
+2024Q3,2024,Mayo,Drug Offences,31
+2024Q3,2024,Mayo,Fraud,0
+2024Q3,2024,Mayo,Theft,146
+2024Q3,2024,Meath,Assault,188
+2024Q3,2024,Meath,Burglary,85
+2024Q3,2024,Meath,Damage to Property,181
+2024Q3,2024,Meath,Drug Offences,80
+2024Q3,2024,Meath,Fraud,0
+2024Q3,2024,Meath,Theft,655
+2024Q3,2024,Monaghan,Assault,86
+2024Q3,2024,Monaghan,Burglary,44
+2024Q3,2024,Monaghan,Damage to Property,64
+2024Q3,2024,Monaghan,Drug Offences,44
+2024Q3,2024,Monaghan,Fraud,0
+2024Q3,2024,Monaghan,Theft,93
+2024Q3,2024,Offaly,Assault,104
+2024Q3,2024,Offaly,Burglary,38
+2024Q3,2024,Offaly,Damage to Property,88
+2024Q3,2024,Offaly,Drug Offences,258
+2024Q3,2024,Offaly,Fraud,0
+2024Q3,2024,Offaly,Theft,214
+2024Q3,2024,Roscommon,Assault,57
+2024Q3,2024,Roscommon,Burglary,38
+2024Q3,2024,Roscommon,Damage to Property,45
+2024Q3,2024,Roscommon,Drug Offences,40
+2024Q3,2024,Roscommon,Fraud,0
+2024Q3,2024,Roscommon,Theft,62
+2024Q3,2024,Sligo,Assault,62
+2024Q3,2024,Sligo,Burglary,22
+2024Q3,2024,Sligo,Damage to Property,41
+2024Q3,2024,Sligo,Drug Offences,20
+2024Q3,2024,Sligo,Fraud,0
+2024Q3,2024,Sligo,Theft,97
+2024Q3,2024,Tipperary,Assault,191
+2024Q3,2024,Tipperary,Burglary,98
+2024Q3,2024,Tipperary,Damage to Property,137
+2024Q3,2024,Tipperary,Drug Offences,139
+2024Q3,2024,Tipperary,Fraud,0
+2024Q3,2024,Tipperary,Theft,453
+2024Q3,2024,Waterford,Assault,210
+2024Q3,2024,Waterford,Burglary,61
+2024Q3,2024,Waterford,Damage to Property,199
+2024Q3,2024,Waterford,Drug Offences,277
+2024Q3,2024,Waterford,Fraud,0
+2024Q3,2024,Waterford,Theft,426
+2024Q3,2024,Westmeath,Assault,159
+2024Q3,2024,Westmeath,Burglary,48
+2024Q3,2024,Westmeath,Damage to Property,120
+2024Q3,2024,Westmeath,Drug Offences,50
+2024Q3,2024,Westmeath,Fraud,0
+2024Q3,2024,Westmeath,Theft,409
+2024Q3,2024,Wexford,Assault,196
+2024Q3,2024,Wexford,Burglary,62
+2024Q3,2024,Wexford,Damage to Property,150
+2024Q3,2024,Wexford,Drug Offences,60
+2024Q3,2024,Wexford,Fraud,0
+2024Q3,2024,Wexford,Theft,388
+2024Q3,2024,Wicklow,Assault,117
+2024Q3,2024,Wicklow,Burglary,77
+2024Q3,2024,Wicklow,Damage to Property,108
+2024Q3,2024,Wicklow,Drug Offences,69
+2024Q3,2024,Wicklow,Fraud,0
+2024Q3,2024,Wicklow,Theft,480
+2024Q4,2024,Carlow,Assault,87
+2024Q4,2024,Carlow,Burglary,39
+2024Q4,2024,Carlow,Damage to Property,58
+2024Q4,2024,Carlow,Drug Offences,40
+2024Q4,2024,Carlow,Fraud,0
+2024Q4,2024,Carlow,Theft,150
+2024Q4,2024,Cavan,Assault,84
+2024Q4,2024,Cavan,Burglary,36
+2024Q4,2024,Cavan,Damage to Property,68
+2024Q4,2024,Cavan,Drug Offences,40
+2024Q4,2024,Cavan,Fraud,0
+2024Q4,2024,Cavan,Theft,98
+2024Q4,2024,Clare,Assault,96
+2024Q4,2024,Clare,Burglary,36
+2024Q4,2024,Clare,Damage to Property,79
+2024Q4,2024,Clare,Drug Offences,39
+2024Q4,2024,Clare,Fraud,0
+2024Q4,2024,Clare,Theft,194
+2024Q4,2024,Cork,Assault,591
+2024Q4,2024,Cork,Burglary,126
+2024Q4,2024,Cork,Damage to Property,439
+2024Q4,2024,Cork,Drug Offences,304
+2024Q4,2024,Cork,Fraud,0
+2024Q4,2024,Cork,Theft,1566
+2024Q4,2024,Donegal,Assault,230
+2024Q4,2024,Donegal,Burglary,29
+2024Q4,2024,Donegal,Damage to Property,149
+2024Q4,2024,Donegal,Drug Offences,71
+2024Q4,2024,Donegal,Fraud,0
+2024Q4,2024,Donegal,Theft,174
+2024Q4,2024,Dublin,Assault,2199
+2024Q4,2024,Dublin,Burglary,989
+2024Q4,2024,Dublin,Damage to Property,2280
+2024Q4,2024,Dublin,Drug Offences,1455
+2024Q4,2024,Dublin,Fraud,0
+2024Q4,2024,Dublin,Theft,9051
+2024Q4,2024,Galway,Assault,305
+2024Q4,2024,Galway,Burglary,78
+2024Q4,2024,Galway,Damage to Property,209
+2024Q4,2024,Galway,Drug Offences,142
+2024Q4,2024,Galway,Fraud,0
+2024Q4,2024,Galway,Theft,515
+2024Q4,2024,Kerry,Assault,206
+2024Q4,2024,Kerry,Burglary,25
+2024Q4,2024,Kerry,Damage to Property,101
+2024Q4,2024,Kerry,Drug Offences,123
+2024Q4,2024,Kerry,Fraud,0
+2024Q4,2024,Kerry,Theft,284
+2024Q4,2024,Kildare,Assault,241
+2024Q4,2024,Kildare,Burglary,110
+2024Q4,2024,Kildare,Damage to Property,212
+2024Q4,2024,Kildare,Drug Offences,153
+2024Q4,2024,Kildare,Fraud,0
+2024Q4,2024,Kildare,Theft,790
+2024Q4,2024,Kilkenny,Assault,87
+2024Q4,2024,Kilkenny,Burglary,39
+2024Q4,2024,Kilkenny,Damage to Property,58
+2024Q4,2024,Kilkenny,Drug Offences,40
+2024Q4,2024,Kilkenny,Fraud,0
+2024Q4,2024,Kilkenny,Theft,150
+2024Q4,2024,Laois,Assault,92
+2024Q4,2024,Laois,Burglary,55
+2024Q4,2024,Laois,Damage to Property,72
+2024Q4,2024,Laois,Drug Offences,62
+2024Q4,2024,Laois,Fraud,0
+2024Q4,2024,Laois,Theft,174
+2024Q4,2024,Leitrim,Assault,62
+2024Q4,2024,Leitrim,Burglary,10
+2024Q4,2024,Leitrim,Damage to Property,41
+2024Q4,2024,Leitrim,Drug Offences,20
+2024Q4,2024,Leitrim,Fraud,0
+2024Q4,2024,Leitrim,Theft,68
+2024Q4,2024,Limerick,Assault,253
+2024Q4,2024,Limerick,Burglary,112
+2024Q4,2024,Limerick,Damage to Property,259
+2024Q4,2024,Limerick,Drug Offences,161
+2024Q4,2024,Limerick,Fraud,0
+2024Q4,2024,Limerick,Theft,958
+2024Q4,2024,Longford,Assault,54
+2024Q4,2024,Longford,Burglary,26
+2024Q4,2024,Longford,Damage to Property,51
+2024Q4,2024,Longford,Drug Offences,28
+2024Q4,2024,Longford,Fraud,0
+2024Q4,2024,Longford,Theft,79
+2024Q4,2024,Louth,Assault,208
+2024Q4,2024,Louth,Burglary,89
+2024Q4,2024,Louth,Damage to Property,224
+2024Q4,2024,Louth,Drug Offences,88
+2024Q4,2024,Louth,Fraud,0
+2024Q4,2024,Louth,Theft,624
+2024Q4,2024,Mayo,Assault,119
+2024Q4,2024,Mayo,Burglary,27
+2024Q4,2024,Mayo,Damage to Property,69
+2024Q4,2024,Mayo,Drug Offences,41
+2024Q4,2024,Mayo,Fraud,0
+2024Q4,2024,Mayo,Theft,117
+2024Q4,2024,Meath,Assault,182
+2024Q4,2024,Meath,Burglary,82
+2024Q4,2024,Meath,Damage to Property,118
+2024Q4,2024,Meath,Drug Offences,51
+2024Q4,2024,Meath,Fraud,0
+2024Q4,2024,Meath,Theft,471
+2024Q4,2024,Monaghan,Assault,84
+2024Q4,2024,Monaghan,Burglary,36
+2024Q4,2024,Monaghan,Damage to Property,68
+2024Q4,2024,Monaghan,Drug Offences,40
+2024Q4,2024,Monaghan,Fraud,0
+2024Q4,2024,Monaghan,Theft,98
+2024Q4,2024,Offaly,Assault,92
+2024Q4,2024,Offaly,Burglary,55
+2024Q4,2024,Offaly,Damage to Property,72
+2024Q4,2024,Offaly,Drug Offences,62
+2024Q4,2024,Offaly,Fraud,0
+2024Q4,2024,Offaly,Theft,174
+2024Q4,2024,Roscommon,Assault,54
+2024Q4,2024,Roscommon,Burglary,26
+2024Q4,2024,Roscommon,Damage to Property,51
+2024Q4,2024,Roscommon,Drug Offences,28
+2024Q4,2024,Roscommon,Fraud,0
+2024Q4,2024,Roscommon,Theft,79
+2024Q4,2024,Sligo,Assault,62
+2024Q4,2024,Sligo,Burglary,10
+2024Q4,2024,Sligo,Damage to Property,41
+2024Q4,2024,Sligo,Drug Offences,20
+2024Q4,2024,Sligo,Fraud,0
+2024Q4,2024,Sligo,Theft,68
+2024Q4,2024,Tipperary,Assault,145
+2024Q4,2024,Tipperary,Burglary,82
+2024Q4,2024,Tipperary,Damage to Property,208
+2024Q4,2024,Tipperary,Drug Offences,113
+2024Q4,2024,Tipperary,Fraud,0
+2024Q4,2024,Tipperary,Theft,343
+2024Q4,2024,Waterford,Assault,174
+2024Q4,2024,Waterford,Burglary,41
+2024Q4,2024,Waterford,Damage to Property,150
+2024Q4,2024,Waterford,Drug Offences,156
+2024Q4,2024,Waterford,Fraud,0
+2024Q4,2024,Waterford,Theft,358
+2024Q4,2024,Westmeath,Assault,155
+2024Q4,2024,Westmeath,Burglary,66
+2024Q4,2024,Westmeath,Damage to Property,129
+2024Q4,2024,Westmeath,Drug Offences,58
+2024Q4,2024,Westmeath,Fraud,0
+2024Q4,2024,Westmeath,Theft,352
+2024Q4,2024,Wexford,Assault,252
+2024Q4,2024,Wexford,Burglary,87
+2024Q4,2024,Wexford,Damage to Property,133
+2024Q4,2024,Wexford,Drug Offences,60
+2024Q4,2024,Wexford,Fraud,0
+2024Q4,2024,Wexford,Theft,386
+2024Q4,2024,Wicklow,Assault,122
+2024Q4,2024,Wicklow,Burglary,109
+2024Q4,2024,Wicklow,Damage to Property,100
+2024Q4,2024,Wicklow,Drug Offences,66
+2024Q4,2024,Wicklow,Fraud,0
+2024Q4,2024,Wicklow,Theft,418
+2025Q1,2025,Carlow,Assault,70
+2025Q1,2025,Carlow,Burglary,29
+2025Q1,2025,Carlow,Damage to Property,62
+2025Q1,2025,Carlow,Drug Offences,50
+2025Q1,2025,Carlow,Fraud,0
+2025Q1,2025,Carlow,Theft,127
+2025Q1,2025,Cavan,Assault,84
+2025Q1,2025,Cavan,Burglary,35
+2025Q1,2025,Cavan,Damage to Property,40
+2025Q1,2025,Cavan,Drug Offences,34
+2025Q1,2025,Cavan,Fraud,0
+2025Q1,2025,Cavan,Theft,92
+2025Q1,2025,Clare,Assault,98
+2025Q1,2025,Clare,Burglary,34
+2025Q1,2025,Clare,Damage to Property,97
+2025Q1,2025,Clare,Drug Offences,48
+2025Q1,2025,Clare,Fraud,0
+2025Q1,2025,Clare,Theft,239
+2025Q1,2025,Cork,Assault,534
+2025Q1,2025,Cork,Burglary,113
+2025Q1,2025,Cork,Damage to Property,388
+2025Q1,2025,Cork,Drug Offences,323
+2025Q1,2025,Cork,Fraud,0
+2025Q1,2025,Cork,Theft,1293
+2025Q1,2025,Donegal,Assault,243
+2025Q1,2025,Donegal,Burglary,22
+2025Q1,2025,Donegal,Damage to Property,122
+2025Q1,2025,Donegal,Drug Offences,86
+2025Q1,2025,Donegal,Fraud,0
+2025Q1,2025,Donegal,Theft,185
+2025Q1,2025,Dublin,Assault,2037
+2025Q1,2025,Dublin,Burglary,989
+2025Q1,2025,Dublin,Damage to Property,2002
+2025Q1,2025,Dublin,Drug Offences,1767
+2025Q1,2025,Dublin,Fraud,0
+2025Q1,2025,Dublin,Theft,8696
+2025Q1,2025,Galway,Assault,274
+2025Q1,2025,Galway,Burglary,56
+2025Q1,2025,Galway,Damage to Property,181
+2025Q1,2025,Galway,Drug Offences,202
+2025Q1,2025,Galway,Fraud,0
+2025Q1,2025,Galway,Theft,462
+2025Q1,2025,Kerry,Assault,168
+2025Q1,2025,Kerry,Burglary,24
+2025Q1,2025,Kerry,Damage to Property,89
+2025Q1,2025,Kerry,Drug Offences,103
+2025Q1,2025,Kerry,Fraud,0
+2025Q1,2025,Kerry,Theft,212
+2025Q1,2025,Kildare,Assault,179
+2025Q1,2025,Kildare,Burglary,117
+2025Q1,2025,Kildare,Damage to Property,157
+2025Q1,2025,Kildare,Drug Offences,187
+2025Q1,2025,Kildare,Fraud,0
+2025Q1,2025,Kildare,Theft,653
+2025Q1,2025,Kilkenny,Assault,70
+2025Q1,2025,Kilkenny,Burglary,29
+2025Q1,2025,Kilkenny,Damage to Property,62
+2025Q1,2025,Kilkenny,Drug Offences,50
+2025Q1,2025,Kilkenny,Fraud,0
+2025Q1,2025,Kilkenny,Theft,127
+2025Q1,2025,Laois,Assault,89
+2025Q1,2025,Laois,Burglary,29
+2025Q1,2025,Laois,Damage to Property,66
+2025Q1,2025,Laois,Drug Offences,66
+2025Q1,2025,Laois,Fraud,0
+2025Q1,2025,Laois,Theft,210
+2025Q1,2025,Leitrim,Assault,63
+2025Q1,2025,Leitrim,Burglary,7
+2025Q1,2025,Leitrim,Damage to Property,46
+2025Q1,2025,Leitrim,Drug Offences,40
+2025Q1,2025,Leitrim,Fraud,0
+2025Q1,2025,Leitrim,Theft,70
+2025Q1,2025,Limerick,Assault,200
+2025Q1,2025,Limerick,Burglary,94
+2025Q1,2025,Limerick,Damage to Property,238
+2025Q1,2025,Limerick,Drug Offences,149
+2025Q1,2025,Limerick,Fraud,0
+2025Q1,2025,Limerick,Theft,845
+2025Q1,2025,Longford,Assault,57
+2025Q1,2025,Longford,Burglary,14
+2025Q1,2025,Longford,Damage to Property,26
+2025Q1,2025,Longford,Drug Offences,22
+2025Q1,2025,Longford,Fraud,0
+2025Q1,2025,Longford,Theft,77
+2025Q1,2025,Louth,Assault,223
+2025Q1,2025,Louth,Burglary,110
+2025Q1,2025,Louth,Damage to Property,172
+2025Q1,2025,Louth,Drug Offences,82
+2025Q1,2025,Louth,Fraud,0
+2025Q1,2025,Louth,Theft,524
+2025Q1,2025,Mayo,Assault,136
+2025Q1,2025,Mayo,Burglary,11
+2025Q1,2025,Mayo,Damage to Property,73
+2025Q1,2025,Mayo,Drug Offences,26
+2025Q1,2025,Mayo,Fraud,0
+2025Q1,2025,Mayo,Theft,110
+2025Q1,2025,Meath,Assault,149
+2025Q1,2025,Meath,Burglary,72
+2025Q1,2025,Meath,Damage to Property,109
+2025Q1,2025,Meath,Drug Offences,78
+2025Q1,2025,Meath,Fraud,0
+2025Q1,2025,Meath,Theft,454
+2025Q1,2025,Monaghan,Assault,84
+2025Q1,2025,Monaghan,Burglary,35
+2025Q1,2025,Monaghan,Damage to Property,40
+2025Q1,2025,Monaghan,Drug Offences,34
+2025Q1,2025,Monaghan,Fraud,0
+2025Q1,2025,Monaghan,Theft,92
+2025Q1,2025,Offaly,Assault,89
+2025Q1,2025,Offaly,Burglary,29
+2025Q1,2025,Offaly,Damage to Property,66
+2025Q1,2025,Offaly,Drug Offences,66
+2025Q1,2025,Offaly,Fraud,0
+2025Q1,2025,Offaly,Theft,210
+2025Q1,2025,Roscommon,Assault,57
+2025Q1,2025,Roscommon,Burglary,14
+2025Q1,2025,Roscommon,Damage to Property,26
+2025Q1,2025,Roscommon,Drug Offences,22
+2025Q1,2025,Roscommon,Fraud,0
+2025Q1,2025,Roscommon,Theft,77
+2025Q1,2025,Sligo,Assault,63
+2025Q1,2025,Sligo,Burglary,7
+2025Q1,2025,Sligo,Damage to Property,46
+2025Q1,2025,Sligo,Drug Offences,40
+2025Q1,2025,Sligo,Fraud,0
+2025Q1,2025,Sligo,Theft,70
+2025Q1,2025,Tipperary,Assault,140
+2025Q1,2025,Tipperary,Burglary,69
+2025Q1,2025,Tipperary,Damage to Property,147
+2025Q1,2025,Tipperary,Drug Offences,115
+2025Q1,2025,Tipperary,Fraud,0
+2025Q1,2025,Tipperary,Theft,350
+2025Q1,2025,Waterford,Assault,189
+2025Q1,2025,Waterford,Burglary,40
+2025Q1,2025,Waterford,Damage to Property,155
+2025Q1,2025,Waterford,Drug Offences,147
+2025Q1,2025,Waterford,Fraud,0
+2025Q1,2025,Waterford,Theft,320
+2025Q1,2025,Westmeath,Assault,143
+2025Q1,2025,Westmeath,Burglary,44
+2025Q1,2025,Westmeath,Damage to Property,108
+2025Q1,2025,Westmeath,Drug Offences,67
+2025Q1,2025,Westmeath,Fraud,0
+2025Q1,2025,Westmeath,Theft,333
+2025Q1,2025,Wexford,Assault,206
+2025Q1,2025,Wexford,Burglary,62
+2025Q1,2025,Wexford,Damage to Property,146
+2025Q1,2025,Wexford,Drug Offences,87
+2025Q1,2025,Wexford,Fraud,0
+2025Q1,2025,Wexford,Theft,370
+2025Q1,2025,Wicklow,Assault,133
+2025Q1,2025,Wicklow,Burglary,121
+2025Q1,2025,Wicklow,Damage to Property,108
+2025Q1,2025,Wicklow,Drug Offences,74
+2025Q1,2025,Wicklow,Fraud,0
+2025Q1,2025,Wicklow,Theft,411
+2025Q2,2025,Carlow,Assault,84
+2025Q2,2025,Carlow,Burglary,28
+2025Q2,2025,Carlow,Damage to Property,61
+2025Q2,2025,Carlow,Drug Offences,65
+2025Q2,2025,Carlow,Fraud,0
+2025Q2,2025,Carlow,Theft,220
+2025Q2,2025,Cavan,Assault,106
+2025Q2,2025,Cavan,Burglary,22
+2025Q2,2025,Cavan,Damage to Property,66
+2025Q2,2025,Cavan,Drug Offences,38
+2025Q2,2025,Cavan,Fraud,0
+2025Q2,2025,Cavan,Theft,98
+2025Q2,2025,Clare,Assault,106
+2025Q2,2025,Clare,Burglary,29
+2025Q2,2025,Clare,Damage to Property,91
+2025Q2,2025,Clare,Drug Offences,57
+2025Q2,2025,Clare,Fraud,0
+2025Q2,2025,Clare,Theft,226
+2025Q2,2025,Cork,Assault,637
+2025Q2,2025,Cork,Burglary,109
+2025Q2,2025,Cork,Damage to Property,482
+2025Q2,2025,Cork,Drug Offences,296
+2025Q2,2025,Cork,Fraud,0
+2025Q2,2025,Cork,Theft,1605
+2025Q2,2025,Donegal,Assault,277
+2025Q2,2025,Donegal,Burglary,30
+2025Q2,2025,Donegal,Damage to Property,159
+2025Q2,2025,Donegal,Drug Offences,80
+2025Q2,2025,Donegal,Fraud,0
+2025Q2,2025,Donegal,Theft,171
+2025Q2,2025,Dublin,Assault,2312
+2025Q2,2025,Dublin,Burglary,1009
+2025Q2,2025,Dublin,Damage to Property,2128
+2025Q2,2025,Dublin,Drug Offences,1797
+2025Q2,2025,Dublin,Fraud,0
+2025Q2,2025,Dublin,Theft,10068
+2025Q2,2025,Galway,Assault,272
+2025Q2,2025,Galway,Burglary,59
+2025Q2,2025,Galway,Damage to Property,191
+2025Q2,2025,Galway,Drug Offences,163
+2025Q2,2025,Galway,Fraud,0
+2025Q2,2025,Galway,Theft,585
+2025Q2,2025,Kerry,Assault,229
+2025Q2,2025,Kerry,Burglary,43
+2025Q2,2025,Kerry,Damage to Property,89
+2025Q2,2025,Kerry,Drug Offences,96
+2025Q2,2025,Kerry,Fraud,0
+2025Q2,2025,Kerry,Theft,300
+2025Q2,2025,Kildare,Assault,212
+2025Q2,2025,Kildare,Burglary,100
+2025Q2,2025,Kildare,Damage to Property,141
+2025Q2,2025,Kildare,Drug Offences,138
+2025Q2,2025,Kildare,Fraud,0
+2025Q2,2025,Kildare,Theft,776
+2025Q2,2025,Kilkenny,Assault,84
+2025Q2,2025,Kilkenny,Burglary,28
+2025Q2,2025,Kilkenny,Damage to Property,61
+2025Q2,2025,Kilkenny,Drug Offences,65
+2025Q2,2025,Kilkenny,Fraud,0
+2025Q2,2025,Kilkenny,Theft,220
+2025Q2,2025,Laois,Assault,94
+2025Q2,2025,Laois,Burglary,23
+2025Q2,2025,Laois,Damage to Property,82
+2025Q2,2025,Laois,Drug Offences,66
+2025Q2,2025,Laois,Fraud,0
+2025Q2,2025,Laois,Theft,206
+2025Q2,2025,Leitrim,Assault,51
+2025Q2,2025,Leitrim,Burglary,12
+2025Q2,2025,Leitrim,Damage to Property,45
+2025Q2,2025,Leitrim,Drug Offences,32
+2025Q2,2025,Leitrim,Fraud,0
+2025Q2,2025,Leitrim,Theft,74
+2025Q2,2025,Limerick,Assault,245
+2025Q2,2025,Limerick,Burglary,80
+2025Q2,2025,Limerick,Damage to Property,258
+2025Q2,2025,Limerick,Drug Offences,134
+2025Q2,2025,Limerick,Fraud,0
+2025Q2,2025,Limerick,Theft,942
+2025Q2,2025,Longford,Assault,62
+2025Q2,2025,Longford,Burglary,10
+2025Q2,2025,Longford,Damage to Property,48
+2025Q2,2025,Longford,Drug Offences,32
+2025Q2,2025,Longford,Fraud,0
+2025Q2,2025,Longford,Theft,72
+2025Q2,2025,Louth,Assault,216
+2025Q2,2025,Louth,Burglary,83
+2025Q2,2025,Louth,Damage to Property,231
+2025Q2,2025,Louth,Drug Offences,117
+2025Q2,2025,Louth,Fraud,0
+2025Q2,2025,Louth,Theft,639
+2025Q2,2025,Mayo,Assault,123
+2025Q2,2025,Mayo,Burglary,17
+2025Q2,2025,Mayo,Damage to Property,109
+2025Q2,2025,Mayo,Drug Offences,34
+2025Q2,2025,Mayo,Fraud,0
+2025Q2,2025,Mayo,Theft,196
+2025Q2,2025,Meath,Assault,157
+2025Q2,2025,Meath,Burglary,61
+2025Q2,2025,Meath,Damage to Property,102
+2025Q2,2025,Meath,Drug Offences,75
+2025Q2,2025,Meath,Fraud,0
+2025Q2,2025,Meath,Theft,542
+2025Q2,2025,Monaghan,Assault,106
+2025Q2,2025,Monaghan,Burglary,22
+2025Q2,2025,Monaghan,Damage to Property,66
+2025Q2,2025,Monaghan,Drug Offences,38
+2025Q2,2025,Monaghan,Fraud,0
+2025Q2,2025,Monaghan,Theft,98
+2025Q2,2025,Offaly,Assault,94
+2025Q2,2025,Offaly,Burglary,23
+2025Q2,2025,Offaly,Damage to Property,82
+2025Q2,2025,Offaly,Drug Offences,66
+2025Q2,2025,Offaly,Fraud,0
+2025Q2,2025,Offaly,Theft,206
+2025Q2,2025,Roscommon,Assault,62
+2025Q2,2025,Roscommon,Burglary,10
+2025Q2,2025,Roscommon,Damage to Property,48
+2025Q2,2025,Roscommon,Drug Offences,32
+2025Q2,2025,Roscommon,Fraud,0
+2025Q2,2025,Roscommon,Theft,72
+2025Q2,2025,Sligo,Assault,51
+2025Q2,2025,Sligo,Burglary,12
+2025Q2,2025,Sligo,Damage to Property,45
+2025Q2,2025,Sligo,Drug Offences,32
+2025Q2,2025,Sligo,Fraud,0
+2025Q2,2025,Sligo,Theft,74
+2025Q2,2025,Tipperary,Assault,167
+2025Q2,2025,Tipperary,Burglary,51
+2025Q2,2025,Tipperary,Damage to Property,130
+2025Q2,2025,Tipperary,Drug Offences,123
+2025Q2,2025,Tipperary,Fraud,0
+2025Q2,2025,Tipperary,Theft,302
+2025Q2,2025,Waterford,Assault,227
+2025Q2,2025,Waterford,Burglary,47
+2025Q2,2025,Waterford,Damage to Property,171
+2025Q2,2025,Waterford,Drug Offences,141
+2025Q2,2025,Waterford,Fraud,0
+2025Q2,2025,Waterford,Theft,469
+2025Q2,2025,Westmeath,Assault,195
+2025Q2,2025,Westmeath,Burglary,33
+2025Q2,2025,Westmeath,Damage to Property,112
+2025Q2,2025,Westmeath,Drug Offences,52
+2025Q2,2025,Westmeath,Fraud,0
+2025Q2,2025,Westmeath,Theft,390
+2025Q2,2025,Wexford,Assault,220
+2025Q2,2025,Wexford,Burglary,77
+2025Q2,2025,Wexford,Damage to Property,161
+2025Q2,2025,Wexford,Drug Offences,76
+2025Q2,2025,Wexford,Fraud,0
+2025Q2,2025,Wexford,Theft,469
+2025Q2,2025,Wicklow,Assault,121
+2025Q2,2025,Wicklow,Burglary,84
+2025Q2,2025,Wicklow,Damage to Property,88
+2025Q2,2025,Wicklow,Drug Offences,83
+2025Q2,2025,Wicklow,Fraud,0
+2025Q2,2025,Wicklow,Theft,461
+2025Q3,2025,Carlow,Assault,92
+2025Q3,2025,Carlow,Burglary,25
+2025Q3,2025,Carlow,Damage to Property,59
+2025Q3,2025,Carlow,Drug Offences,67
+2025Q3,2025,Carlow,Fraud,0
+2025Q3,2025,Carlow,Theft,214
+2025Q3,2025,Cavan,Assault,96
+2025Q3,2025,Cavan,Burglary,23
+2025Q3,2025,Cavan,Damage to Property,50
+2025Q3,2025,Cavan,Drug Offences,28
+2025Q3,2025,Cavan,Fraud,0
+2025Q3,2025,Cavan,Theft,116
+2025Q3,2025,Clare,Assault,150
+2025Q3,2025,Clare,Burglary,36
+2025Q3,2025,Clare,Damage to Property,100
+2025Q3,2025,Clare,Drug Offences,30
+2025Q3,2025,Clare,Fraud,0
+2025Q3,2025,Clare,Theft,266
+2025Q3,2025,Cork,Assault,682
+2025Q3,2025,Cork,Burglary,114
+2025Q3,2025,Cork,Damage to Property,429
+2025Q3,2025,Cork,Drug Offences,381
+2025Q3,2025,Cork,Fraud,0
+2025Q3,2025,Cork,Theft,1447
+2025Q3,2025,Donegal,Assault,217
+2025Q3,2025,Donegal,Burglary,33
+2025Q3,2025,Donegal,Damage to Property,119
+2025Q3,2025,Donegal,Drug Offences,82
+2025Q3,2025,Donegal,Fraud,0
+2025Q3,2025,Donegal,Theft,223
+2025Q3,2025,Dublin,Assault,2342
+2025Q3,2025,Dublin,Burglary,815
+2025Q3,2025,Dublin,Damage to Property,2178
+2025Q3,2025,Dublin,Drug Offences,1724
+2025Q3,2025,Dublin,Fraud,0
+2025Q3,2025,Dublin,Theft,9914
+2025Q3,2025,Galway,Assault,301
+2025Q3,2025,Galway,Burglary,51
+2025Q3,2025,Galway,Damage to Property,175
+2025Q3,2025,Galway,Drug Offences,175
+2025Q3,2025,Galway,Fraud,0
+2025Q3,2025,Galway,Theft,560
+2025Q3,2025,Kerry,Assault,222
+2025Q3,2025,Kerry,Burglary,51
+2025Q3,2025,Kerry,Damage to Property,104
+2025Q3,2025,Kerry,Drug Offences,127
+2025Q3,2025,Kerry,Fraud,0
+2025Q3,2025,Kerry,Theft,305
+2025Q3,2025,Kildare,Assault,223
+2025Q3,2025,Kildare,Burglary,82
+2025Q3,2025,Kildare,Damage to Property,203
+2025Q3,2025,Kildare,Drug Offences,303
+2025Q3,2025,Kildare,Fraud,0
+2025Q3,2025,Kildare,Theft,800
+2025Q3,2025,Kilkenny,Assault,92
+2025Q3,2025,Kilkenny,Burglary,25
+2025Q3,2025,Kilkenny,Damage to Property,59
+2025Q3,2025,Kilkenny,Drug Offences,67
+2025Q3,2025,Kilkenny,Fraud,0
+2025Q3,2025,Kilkenny,Theft,214
+2025Q3,2025,Laois,Assault,121
+2025Q3,2025,Laois,Burglary,36
+2025Q3,2025,Laois,Damage to Property,83
+2025Q3,2025,Laois,Drug Offences,248
+2025Q3,2025,Laois,Fraud,0
+2025Q3,2025,Laois,Theft,262
+2025Q3,2025,Leitrim,Assault,73
+2025Q3,2025,Leitrim,Burglary,13
+2025Q3,2025,Leitrim,Damage to Property,43
+2025Q3,2025,Leitrim,Drug Offences,45
+2025Q3,2025,Leitrim,Fraud,0
+2025Q3,2025,Leitrim,Theft,84
+2025Q3,2025,Limerick,Assault,243
+2025Q3,2025,Limerick,Burglary,109
+2025Q3,2025,Limerick,Damage to Property,216
+2025Q3,2025,Limerick,Drug Offences,126
+2025Q3,2025,Limerick,Fraud,0
+2025Q3,2025,Limerick,Theft,923
+2025Q3,2025,Longford,Assault,52
+2025Q3,2025,Longford,Burglary,14
+2025Q3,2025,Longford,Damage to Property,38
+2025Q3,2025,Longford,Drug Offences,23
+2025Q3,2025,Longford,Fraud,0
+2025Q3,2025,Longford,Theft,75
+2025Q3,2025,Louth,Assault,211
+2025Q3,2025,Louth,Burglary,90
+2025Q3,2025,Louth,Damage to Property,241
+2025Q3,2025,Louth,Drug Offences,91
+2025Q3,2025,Louth,Fraud,0
+2025Q3,2025,Louth,Theft,650
+2025Q3,2025,Mayo,Assault,100
+2025Q3,2025,Mayo,Burglary,21
+2025Q3,2025,Mayo,Damage to Property,84
+2025Q3,2025,Mayo,Drug Offences,31
+2025Q3,2025,Mayo,Fraud,0
+2025Q3,2025,Mayo,Theft,145
+2025Q3,2025,Meath,Assault,151
+2025Q3,2025,Meath,Burglary,65
+2025Q3,2025,Meath,Damage to Property,111
+2025Q3,2025,Meath,Drug Offences,60
+2025Q3,2025,Meath,Fraud,0
+2025Q3,2025,Meath,Theft,493
+2025Q3,2025,Monaghan,Assault,96
+2025Q3,2025,Monaghan,Burglary,23
+2025Q3,2025,Monaghan,Damage to Property,50
+2025Q3,2025,Monaghan,Drug Offences,28
+2025Q3,2025,Monaghan,Fraud,0
+2025Q3,2025,Monaghan,Theft,116
+2025Q3,2025,Offaly,Assault,121
+2025Q3,2025,Offaly,Burglary,36
+2025Q3,2025,Offaly,Damage to Property,83
+2025Q3,2025,Offaly,Drug Offences,248
+2025Q3,2025,Offaly,Fraud,0
+2025Q3,2025,Offaly,Theft,262
+2025Q3,2025,Roscommon,Assault,52
+2025Q3,2025,Roscommon,Burglary,14
+2025Q3,2025,Roscommon,Damage to Property,38
+2025Q3,2025,Roscommon,Drug Offences,23
+2025Q3,2025,Roscommon,Fraud,0
+2025Q3,2025,Roscommon,Theft,75
+2025Q3,2025,Sligo,Assault,73
+2025Q3,2025,Sligo,Burglary,13
+2025Q3,2025,Sligo,Damage to Property,43
+2025Q3,2025,Sligo,Drug Offences,45
+2025Q3,2025,Sligo,Fraud,0
+2025Q3,2025,Sligo,Theft,84
+2025Q3,2025,Tipperary,Assault,168
+2025Q3,2025,Tipperary,Burglary,68
+2025Q3,2025,Tipperary,Damage to Property,127
+2025Q3,2025,Tipperary,Drug Offences,107
+2025Q3,2025,Tipperary,Fraud,0
+2025Q3,2025,Tipperary,Theft,409
+2025Q3,2025,Waterford,Assault,231
+2025Q3,2025,Waterford,Burglary,34
+2025Q3,2025,Waterford,Damage to Property,154
+2025Q3,2025,Waterford,Drug Offences,171
+2025Q3,2025,Waterford,Fraud,0
+2025Q3,2025,Waterford,Theft,485
+2025Q3,2025,Westmeath,Assault,169
+2025Q3,2025,Westmeath,Burglary,36
+2025Q3,2025,Westmeath,Damage to Property,104
+2025Q3,2025,Westmeath,Drug Offences,67
+2025Q3,2025,Westmeath,Fraud,0
+2025Q3,2025,Westmeath,Theft,365
+2025Q3,2025,Wexford,Assault,277
+2025Q3,2025,Wexford,Burglary,124
+2025Q3,2025,Wexford,Damage to Property,172
+2025Q3,2025,Wexford,Drug Offences,56
+2025Q3,2025,Wexford,Fraud,0
+2025Q3,2025,Wexford,Theft,409
+2025Q3,2025,Wicklow,Assault,125
+2025Q3,2025,Wicklow,Burglary,85
+2025Q3,2025,Wicklow,Damage to Property,133
+2025Q3,2025,Wicklow,Drug Offences,50
+2025Q3,2025,Wicklow,Fraud,0
+2025Q3,2025,Wicklow,Theft,465
+2025Q4,2025,Carlow,Assault,90
+2025Q4,2025,Carlow,Burglary,28
+2025Q4,2025,Carlow,Damage to Property,58
+2025Q4,2025,Carlow,Drug Offences,68
+2025Q4,2025,Carlow,Fraud,0
+2025Q4,2025,Carlow,Theft,207
+2025Q4,2025,Cavan,Assault,67
+2025Q4,2025,Cavan,Burglary,19
+2025Q4,2025,Cavan,Damage to Property,54
+2025Q4,2025,Cavan,Drug Offences,36
+2025Q4,2025,Cavan,Fraud,0
+2025Q4,2025,Cavan,Theft,99
+2025Q4,2025,Clare,Assault,117
+2025Q4,2025,Clare,Burglary,30
+2025Q4,2025,Clare,Damage to Property,99
+2025Q4,2025,Clare,Drug Offences,61
+2025Q4,2025,Clare,Fraud,0
+2025Q4,2025,Clare,Theft,210
+2025Q4,2025,Cork,Assault,663
+2025Q4,2025,Cork,Burglary,130
+2025Q4,2025,Cork,Damage to Property,421
+2025Q4,2025,Cork,Drug Offences,404
+2025Q4,2025,Cork,Fraud,0
+2025Q4,2025,Cork,Theft,1690
+2025Q4,2025,Donegal,Assault,203
+2025Q4,2025,Donegal,Burglary,21
+2025Q4,2025,Donegal,Damage to Property,155
+2025Q4,2025,Donegal,Drug Offences,66
+2025Q4,2025,Donegal,Fraud,0
+2025Q4,2025,Donegal,Theft,182
+2025Q4,2025,Dublin,Assault,2162
+2025Q4,2025,Dublin,Burglary,975
+2025Q4,2025,Dublin,Damage to Property,2155
+2025Q4,2025,Dublin,Drug Offences,1574
+2025Q4,2025,Dublin,Fraud,0
+2025Q4,2025,Dublin,Theft,9046
+2025Q4,2025,Galway,Assault,285
+2025Q4,2025,Galway,Burglary,50
+2025Q4,2025,Galway,Damage to Property,162
+2025Q4,2025,Galway,Drug Offences,183
+2025Q4,2025,Galway,Fraud,0
+2025Q4,2025,Galway,Theft,546
+2025Q4,2025,Kerry,Assault,216
+2025Q4,2025,Kerry,Burglary,34
+2025Q4,2025,Kerry,Damage to Property,85
+2025Q4,2025,Kerry,Drug Offences,108
+2025Q4,2025,Kerry,Fraud,0
+2025Q4,2025,Kerry,Theft,298
+2025Q4,2025,Kildare,Assault,207
+2025Q4,2025,Kildare,Burglary,95
+2025Q4,2025,Kildare,Damage to Property,195
+2025Q4,2025,Kildare,Drug Offences,150
+2025Q4,2025,Kildare,Fraud,0
+2025Q4,2025,Kildare,Theft,673
+2025Q4,2025,Kilkenny,Assault,90
+2025Q4,2025,Kilkenny,Burglary,28
+2025Q4,2025,Kilkenny,Damage to Property,58
+2025Q4,2025,Kilkenny,Drug Offences,68
+2025Q4,2025,Kilkenny,Fraud,0
+2025Q4,2025,Kilkenny,Theft,207
+2025Q4,2025,Laois,Assault,112
+2025Q4,2025,Laois,Burglary,32
+2025Q4,2025,Laois,Damage to Property,80
+2025Q4,2025,Laois,Drug Offences,63
+2025Q4,2025,Laois,Fraud,0
+2025Q4,2025,Laois,Theft,194
+2025Q4,2025,Leitrim,Assault,66
+2025Q4,2025,Leitrim,Burglary,12
+2025Q4,2025,Leitrim,Damage to Property,44
+2025Q4,2025,Leitrim,Drug Offences,67
+2025Q4,2025,Leitrim,Fraud,0
+2025Q4,2025,Leitrim,Theft,81
+2025Q4,2025,Limerick,Assault,213
+2025Q4,2025,Limerick,Burglary,74
+2025Q4,2025,Limerick,Damage to Property,224
+2025Q4,2025,Limerick,Drug Offences,182
+2025Q4,2025,Limerick,Fraud,0
+2025Q4,2025,Limerick,Theft,846
+2025Q4,2025,Longford,Assault,53
+2025Q4,2025,Longford,Burglary,12
+2025Q4,2025,Longford,Damage to Property,42
+2025Q4,2025,Longford,Drug Offences,24
+2025Q4,2025,Longford,Fraud,0
+2025Q4,2025,Longford,Theft,68
+2025Q4,2025,Louth,Assault,187
+2025Q4,2025,Louth,Burglary,67
+2025Q4,2025,Louth,Damage to Property,191
+2025Q4,2025,Louth,Drug Offences,98
+2025Q4,2025,Louth,Fraud,0
+2025Q4,2025,Louth,Theft,558
+2025Q4,2025,Mayo,Assault,124
+2025Q4,2025,Mayo,Burglary,17
+2025Q4,2025,Mayo,Damage to Property,84
+2025Q4,2025,Mayo,Drug Offences,57
+2025Q4,2025,Mayo,Fraud,0
+2025Q4,2025,Mayo,Theft,150
+2025Q4,2025,Meath,Assault,163
+2025Q4,2025,Meath,Burglary,72
+2025Q4,2025,Meath,Damage to Property,114
+2025Q4,2025,Meath,Drug Offences,51
+2025Q4,2025,Meath,Fraud,0
+2025Q4,2025,Meath,Theft,492
+2025Q4,2025,Monaghan,Assault,67
+2025Q4,2025,Monaghan,Burglary,19
+2025Q4,2025,Monaghan,Damage to Property,54
+2025Q4,2025,Monaghan,Drug Offences,36
+2025Q4,2025,Monaghan,Fraud,0
+2025Q4,2025,Monaghan,Theft,99
+2025Q4,2025,Offaly,Assault,112
+2025Q4,2025,Offaly,Burglary,32
+2025Q4,2025,Offaly,Damage to Property,80
+2025Q4,2025,Offaly,Drug Offences,63
+2025Q4,2025,Offaly,Fraud,0
+2025Q4,2025,Offaly,Theft,194
+2025Q4,2025,Roscommon,Assault,53
+2025Q4,2025,Roscommon,Burglary,12
+2025Q4,2025,Roscommon,Damage to Property,42
+2025Q4,2025,Roscommon,Drug Offences,24
+2025Q4,2025,Roscommon,Fraud,0
+2025Q4,2025,Roscommon,Theft,68
+2025Q4,2025,Sligo,Assault,66
+2025Q4,2025,Sligo,Burglary,12
+2025Q4,2025,Sligo,Damage to Property,44
+2025Q4,2025,Sligo,Drug Offences,67
+2025Q4,2025,Sligo,Fraud,0
+2025Q4,2025,Sligo,Theft,81
+2025Q4,2025,Tipperary,Assault,157
+2025Q4,2025,Tipperary,Burglary,67
+2025Q4,2025,Tipperary,Damage to Property,106
+2025Q4,2025,Tipperary,Drug Offences,139
+2025Q4,2025,Tipperary,Fraud,0
+2025Q4,2025,Tipperary,Theft,317
+2025Q4,2025,Waterford,Assault,211
+2025Q4,2025,Waterford,Burglary,38
+2025Q4,2025,Waterford,Damage to Property,145
+2025Q4,2025,Waterford,Drug Offences,144
+2025Q4,2025,Waterford,Fraud,0
+2025Q4,2025,Waterford,Theft,369
+2025Q4,2025,Westmeath,Assault,175
+2025Q4,2025,Westmeath,Burglary,54
+2025Q4,2025,Westmeath,Damage to Property,111
+2025Q4,2025,Westmeath,Drug Offences,60
+2025Q4,2025,Westmeath,Fraud,0
+2025Q4,2025,Westmeath,Theft,416
+2025Q4,2025,Wexford,Assault,181
+2025Q4,2025,Wexford,Burglary,85
+2025Q4,2025,Wexford,Damage to Property,155
+2025Q4,2025,Wexford,Drug Offences,76
+2025Q4,2025,Wexford,Fraud,0
+2025Q4,2025,Wexford,Theft,381
+2025Q4,2025,Wicklow,Assault,125
+2025Q4,2025,Wicklow,Burglary,110
+2025Q4,2025,Wicklow,Damage to Property,130
+2025Q4,2025,Wicklow,Drug Offences,40
+2025Q4,2025,Wicklow,Fraud,0
+2025Q4,2025,Wicklow,Theft,415
