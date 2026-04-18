@@ -189,13 +189,13 @@ def test_auth_me_no_token():
     assert res.status_code == 401
 
 
+@pytest.mark.skipif(SKIP_DB_TESTS, reason="Skipping DB-dependent test in CI")
 def test_reset_password_invalid():
     res = client.post("/auth/reset-password", json={
         "token": "invalid",
         "new_password": "123456"
     })
     assert res.status_code == 400
-
 
 @pytest.mark.skipif(SKIP_DB_TESTS, reason="Skipping DB-dependent test in CI")
 def test_login_and_me():
