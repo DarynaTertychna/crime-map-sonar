@@ -40,7 +40,7 @@ jobs:
           echo "Files in repo root:"
           ls -la ..
 
-          
+
       - name: Start API
         run: |
           uvicorn main:app --host 127.0.0.1 --port 8000 &
@@ -50,6 +50,8 @@ jobs:
         uses: zaproxy/action-baseline@v0.10.0
         with:
           target: "http://127.0.0.1:8000"
+          cmd_options: "-a"
+          artifact_name: "zap-report"
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarqube-scan-action@v2
