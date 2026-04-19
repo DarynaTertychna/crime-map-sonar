@@ -141,9 +141,23 @@ ACCESS_TOKEN_EXPIRE_MINUTES = 60
 
 app = FastAPI(title="Crime API (Prototype)")
 
+FRONTEND_URL = os.getenv("FRONTEND_URL")
+STAGING_FRONTEND_URL = os.getenv("STAGING_FRONTEND_URL")
+
+allowed_origins = [
+    "http://localhost:5173",
+    "http://localhost:5174",
+]
+
+if FRONTEND_URL:
+    allowed_origins.append(FRONTEND_URL)
+
+if STAGING_FRONTEND_URL:
+    allowed_origins.append(STAGING_FRONTEND_URL)
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:5174"],
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

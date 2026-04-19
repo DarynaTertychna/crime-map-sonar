@@ -1,0 +1,29 @@
+[33mcommit 895b35918ebc057f94810bbb917f7a181af08784[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31msonar/master[m[33m, [m[1;31msonar/main[m[33m)[m
+Author: Daryna <x00204831@mytudublin.ie>
+Date:   Sun Apr 19 18:52:27 2026 +0100
+
+    Add stable Playwright e2e tests
+
+[33mcommit f1a6969289fa60ec8ff67d83674826a8e09520ae[m
+Author: Daryna <x00204831@mytudublin.ie>
+Date:   Sun Apr 19 18:22:57 2026 +0100
+
+    tests created
+
+[33mcommit d7b86247820c7445df40f5f169460134eb88bf63[m
+Author: Daryna <x00204831@mytudublin.ie>
+Date:   Sun Apr 19 12:27:16 2026 +0100
+
+    OWASP ZAP scan 5
+
+[33mcommit 22dd4c4edcf98192f852594d29585eeba1d2dc4e[m
+Author: Daryna <x00204831@mytudublin.ie>
+Date:   Sun Apr 19 12:21:33 2026 +0100
+
+    OWASP ZAP scan 4
+
+[33mcommit fae3614326af606e7984f78e1e13beb015dfcf0d[m
+Author: Daryna <x00204831@mytudublin.ie>
+Date:   Sun Apr 19 12:13:48 2026 +0100
+
+    OWASP ZAP scan 3
