@@ -74,8 +74,8 @@ def get_risk_from_count(crime_type: str, count: int):
         "assault": {"medium": 120, "high": 300},
         "fraud": {"medium": 80, "high": 200},
         "burglary": {"medium": 70, "high": 180},
-        DRUG_OFFENCES: {"medium": 90, "high": 220},
-        DAMAGE_TO_PROPERTY: {"medium": 120, "high": 350},
+        DRUG_OFFENCES.lower(): {"medium": 90, "high": 220},
+        DAMAGE_TO_PROPERTY.lower(): {"medium": 120, "high": 350},
     }
 
     rule = thresholds.get(crime, {"medium": 100, "high": 250})
@@ -86,9 +86,6 @@ def get_risk_from_count(crime_type: str, count: int):
         return "Medium"
     else:
         return "Low"
-
-
-
 
 
 
@@ -221,7 +218,6 @@ def create_access_token(data: dict, expires_delta: timedelta | None = None):
     to_encode.update({"exp": expire})
 
     return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
-
 
 
 
