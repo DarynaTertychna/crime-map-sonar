@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from passlib.context import CryptContext
 from fastapi import UploadFile, File, Depends, Header
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, UTC
 from services.news_service import fetch_crime_news, is_cache_fresh
 from stats_service import crime_type_totals, crime_trend, seasonal_pattern
 import pandas as pd
@@ -19,6 +19,13 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from dotenv import load_dotenv
 load_dotenv()
+
+
+LAST_12_MONTHS = "Last 12 months"
+USER_NOT_FOUND = "User not found"
+PASSWORD_TOO_LONG = "Password too long (max 72 bytes)."
+DRUG_OFFENCES = "Drug Offences"
+DAMAGE_TO_PROPERTY = "Damage to Property"
 
 
 CLEANED_CSV_PATH = "data/cleaned_crime_data.csv"
@@ -50,7 +57,7 @@ def get_crime_count_by_period(county: str, crime_type: str, time_period: str):
 
     filtered = filtered.sort_values("Quarter")
 
-    if time_period == "Last 12 months":
+    if time_period == LAST_12_MONTHS:
         recent = filtered.tail(4)
         return int(recent["crime_count"].mean())
     else:
@@ -67,8 +74,8 @@ def get_risk_from_count(crime_type: str, count: int):
         "assault": {"medium": 120, "high": 300},
         "fraud": {"medium": 80, "high": 200},
         "burglary": {"medium": 70, "high": 180},
-        "drug offences": {"medium": 90, "high": 220},
-        "damage to property": {"medium": 120, "high": 350},
+        DRUG_OFFENCES: {"medium": 90, "high": 220},
+        DAMAGE_TO_PROPERTY: {"medium": 120, "high": 350},
     }
 
     rule = thresholds.get(crime, {"medium": 100, "high": 250})
@@ -159,42 +166,6 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 ADMINS = {"darinayg@gmail.com"}
 
-# def get_current_user(authorization: str | None = Header(default=None)):
-#     if not authorization or not authorization.startswith("Bearer "):
-#         raise HTTPException(status_code=401, detail="Not authenticated")
-
-#     token = authorization.split(" ", 1)[1]
-
-#     try:
-#         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-#         email = payload.get("sub")
-
-#         if not email:
-#             raise HTTPException(status_code=401, detail="Invalid token")
-
-#     except JWTError:
-#         raise HTTPException(status_code=401, detail="Invalid token")
-
-#     conn = None
-#     cur = None
-
-#     try:
-#         conn = get_connection()
-#         cur = conn.cursor()
-
-#         cur.execute("SELECT email FROM users WHERE email = %s", (email,))
-#         existing = cur.fetchone()
-
-#         if not existing:
-#             raise HTTPException(status_code=401, detail="User not found")
-
-#         return {"email": existing["email"]}
-
-#     finally:
-#         if cur:
-#             cur.close()
-#         if conn:
-#             conn.close()
 
 def get_current_user(authorization: str | None = Header(default=None)):
 
@@ -225,7 +196,7 @@ def get_current_user(authorization: str | None = Header(default=None)):
         existing = cur.fetchone()
 
         if not existing:
-            raise HTTPException(status_code=401, detail="User not found")
+            raise HTTPException(status_code=401, detail=USER_NOT_FOUND)
 
         return {"email": existing["email"]}
 
@@ -240,9 +211,9 @@ def create_access_token(data: dict, expires_delta: timedelta | None = None):
     to_encode = data.copy()
 
     if expires_delta:
-        expire = datetime.utcnow() + expires_delta
+        expire = datetime.now(UTC) + expires_delta
     else:
-        expire = datetime.utcnow() + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+        expire = datetime.now(UTC) + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
 
     to_encode.update({"exp": expire})
 
@@ -264,7 +235,7 @@ def upload_csv(
     if not file.filename.endswith(".csv"):
         raise HTTPException(400, "CSV files only!!!")
 
-    timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+    timestamp = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     path = f"data/raw/crime_{timestamp}.csv"
 
     contents = file.file.read()
@@ -423,15 +394,15 @@ CRIME_TYPES = [
     "Assault",
     "Fraud",
     "Burglary",
-    "Drug Offences",
-    "Damage to Property"
+    DRUG_OFFENCES,
+    DAMAGE_TO_PROPERTY
 ]
 
 DEFAULT_CHAT_CRIMES = [
     "Theft",
     "Assault",
     "Burglary",
-    "Damage to Property"
+    DAMAGE_TO_PROPERTY
 ]
 
 
@@ -460,13 +431,13 @@ def extract_crime_type_from_text(text: str) -> str | None:
         "fraud": "Fraud",
         "scam": "Fraud",
         "burglary": "Burglary",
-        "drugs": "Drug Offences",
-        "drug": "Drug Offences",
-        "drug offences": "Drug Offences",
-        "damage": "Damage to Property",
-        "damage to property": "Damage to Property",
-        "criminal damage": "Damage to Property",
-        "property damage": "Damage to Property",
+        "drugs": DRUG_OFFENCES,
+        "drug": DRUG_OFFENCES,
+        DRUG_OFFENCES: DRUG_OFFENCES,
+        "damage": DAMAGE_TO_PROPERTY,
+        DAMAGE_TO_PROPERTY: DAMAGE_TO_PROPERTY,
+        "criminal damage": DAMAGE_TO_PROPERTY,
+        "property damage": DAMAGE_TO_PROPERTY,
     }
 
     for key, value in aliases.items():
@@ -576,7 +547,7 @@ def get_crime_news(force_refresh: bool = False):
 @app.post("/auth/register")
 def register(req: RegisterRequest):
     if len(req.password.encode("utf-8")) > 72:
-        raise HTTPException(status_code=400, detail="Password too long (max 72 bytes).")
+        raise HTTPException(status_code=400, detail=PASSWORD_TOO_LONG)
 
     email = req.email.strip().lower()
 
@@ -637,7 +608,7 @@ def register(req: RegisterRequest):
 @app.post("/auth/login")
 def login(req: LoginRequest):
     if len(req.password.encode("utf-8")) > 72:
-        raise HTTPException(status_code=400, detail="Password too long (max 72 bytes).")
+        raise HTTPException(status_code=400, detail=PASSWORD_TOO_LONG)
 
     email = req.email.strip().lower()
 
@@ -712,7 +683,7 @@ def get_my_profile(user=Depends(get_current_user)):
         found_user = cur.fetchone()
 
         if not found_user:
-            raise HTTPException(status_code=404, detail="User not found")
+            raise HTTPException(status_code=404, detail=USER_NOT_FOUND)
 
         return {
             "id": found_user["id"],
@@ -771,7 +742,7 @@ def update_profile(req: UpdateProfileRequest, user=Depends(get_current_user)):
         updated = cur.fetchone()
 
         if not updated:
-            raise HTTPException(status_code=404, detail="User not found")
+            raise HTTPException(status_code=404, detail=USER_NOT_FOUND)
 
         conn.commit()
 
@@ -831,7 +802,7 @@ def forgot_password(req: ForgotPasswordRequest):
             }
 
         token = secrets.token_urlsafe(32)
-        expires_at = datetime.utcnow() + timedelta(minutes=30)
+        expires_at = datetime.now(UTC) + timedelta(minutes=30)
 
         cur.execute(
             """
@@ -879,7 +850,7 @@ def reset_password(req: ResetPasswordRequest):
         raise HTTPException(status_code=400, detail="New password is required")
 
     if len(new_password.encode("utf-8")) > 72:
-        raise HTTPException(status_code=400, detail="Password too long (max 72 bytes).")
+        raise HTTPException(status_code=400, detail=PASSWORD_TOO_LONG)
 
     if len(new_password) < 6:
         raise HTTPException(status_code=400, detail="Password must be at least 6 characters.")
@@ -906,7 +877,7 @@ def reset_password(req: ResetPasswordRequest):
 
         expires_at = user["reset_token_expires"]
 
-        if not expires_at or expires_at < datetime.utcnow():
+        if not expires_at or expires_at < datetime.now(UTC):
             raise HTTPException(status_code=400, detail="Reset token has expired")
 
         new_hash = pwd_context.hash(new_password)
@@ -1028,7 +999,7 @@ def chat_ask(req: ChatRequest):
         raise HTTPException(status_code=400, detail="Message is required")
 
     county = resolve_county_from_chat(req)
-    time_period = (req.timePeriod or "Last 12 months").strip()
+    time_period = (req.timePeriod or LAST_12_MONTHS).strip()
     requested_crime = resolve_crime_type_from_chat(req)
 
     if not county:
@@ -1214,7 +1185,7 @@ def predict(req: PredictRequest):
 
 
 @app.get("/predict/all")
-def predict_all(crime_type: str = "Theft", timePeriod: str = "Last 12 months"):
+def predict_all(crime_type: str = "Theft", timePeriod: str = LAST_12_MONTHS):
     crime = (crime_type or "").strip()
 
     df = load_cleaned_data()
@@ -1261,7 +1232,7 @@ def get_count_by_period_for_county(county: str, crime_type: str, time_period: st
 
     filtered = filtered.sort_values("Quarter")
 
-    if time_period == "Last 12 months":
+    if time_period == LAST_12_MONTHS:
         recent = filtered.tail(4)
         return int(recent["crime_count"].mean())
 

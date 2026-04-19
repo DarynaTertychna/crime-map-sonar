@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, UTC
 from urllib.parse import urljoin
 
 import requests
@@ -47,7 +47,7 @@ def is_cache_fresh() -> bool:
     if not NEWS_CACHE_FILE.exists():
         return False
 
-    age = datetime.utcnow() - datetime.utcfromtimestamp(NEWS_CACHE_FILE.stat().st_mtime)
+    age = datetime.now(UTC) - datetime.utcfromtimestamp(NEWS_CACHE_FILE.stat().st_mtime)
     return age < timedelta(hours=NEWS_CACHE_HOURS)
 
 

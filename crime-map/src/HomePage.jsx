@@ -10,14 +10,14 @@ const crimeTypes = [
   "Assault",
   "Fraud",
   "Burglary",
-  "Drug Offences",
-  "Damage to Property"
+  DRUG_OFFENCES,
+  DAMAGE_TO_PROPERTY
 ];
-const timePeriods = ["Last month", "Last 3 months", "Last 12 months"];
+const timePeriods = ["Last month", "Last 3 months", LAST_12_MONTHS];
 
 export default function HomePage({ user, onLogout }) {
   const [crimeType, setCrimeType] = useState("Theft");
-  const [timePeriod, setTimePeriod] = useState("Last 12 months");
+  const [timePeriod, setTimePeriod] = useState(LAST_12_MONTHS);
   const [locationQuery, setLocationQuery] = useState("");
   const [useMyLocation, setUseMyLocation] = useState(false);
 
@@ -127,7 +127,7 @@ export default function HomePage({ user, onLogout }) {
     setLocationQuery(favorite.locationQuery || "");
     setUseMyLocation(!!favorite.useMyLocation);
     setCrimeType(favorite.crimeType || "Theft");
-    setTimePeriod(favorite.timePeriod || "Last 12 months");
+    setTimePeriod(favorite.timePeriod || LAST_12_MONTHS);
 
     setApiMsg("Favourite loaded. Click Apply to update map + prediction.");
   };
@@ -222,7 +222,7 @@ const loadCrimeTrendChart = async (selectedCrimeType) => {
 const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
   try {
     const crime = encodeURIComponent(selectedCrimeType || "Theft");
-    const period = encodeURIComponent(selectedTimePeriod || "Last 12 months");
+    const period = encodeURIComponent(selectedTimePeriod || LAST_12_MONTHS);
 
     const r = await fetch(
       `${API_BASE}/predict/all?crime_type=${crime}&timePeriod=${period}`
@@ -345,7 +345,7 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
 
   useEffect(() => {
     loadCrimeNews();
-    loadAllCountyRisks("Theft", "Last 12 months");
+    loadAllCountyRisks("Theft", LAST_12_MONTHS);
   }, []);
 
 
@@ -719,7 +719,7 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
                   {" • "}
                   {favorite.crimeType || "Theft"}
                   {" • "}
-                  {favorite.timePeriod || "Last 12 months"}
+                  {favorite.timePeriod || LAST_12_MONTHS}
                 </>
               </div>
               <button onClick={clearFavorite} style={{ marginTop: 6, cursor: "pointer" }}>

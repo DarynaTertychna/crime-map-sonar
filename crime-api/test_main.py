@@ -26,7 +26,7 @@ def test_predict_valid():
     res = client.post("/predict", json={
         "county": "Dublin",
         "crime_type": "Theft",
-        "timePeriod": "Last 12 months"
+        "timePeriod": LAST_12_MONTHS
     })
 
     assert res.status_code == 200
@@ -50,7 +50,7 @@ def test_login_invalid_user():
 def test_filters_invalid():
     res = client.post("/filters/apply", json={
         "crimeType": "All",
-        "timePeriod": "Last 12 months",
+        "timePeriod": LAST_12_MONTHS,
         "locationQuery": "Dublin"
     })
 
@@ -70,7 +70,7 @@ def test_load_data():
 
 
 def test_crime_count():
-    result = get_crime_count_by_period("Dublin", "Theft", "Last 12 months")
+    result = get_crime_count_by_period("Dublin", "Theft", LAST_12_MONTHS)
     assert result is not None
 
 
@@ -148,7 +148,7 @@ def test_predict_empty_values():
     res = client.post("/predict", json={
         "county": "",
         "crime_type": "",
-        "timePeriod": "Last 12 months"
+        "timePeriod": LAST_12_MONTHS
     })
     assert res.status_code == 400
 
@@ -227,7 +227,7 @@ def test_login_and_me():
 def test_chat_valid():
     res = client.post("/chat/ask", json={
         "message": "crime in Dublin theft",
-        "timePeriod": "Last 12 months"
+        "timePeriod": LAST_12_MONTHS
     })
 
     assert res.status_code == 200
