@@ -45,17 +45,25 @@ jobs:
           uvicorn main:app --host 127.0.0.1 --port 8000 &
           sleep 5
 
-      - name: Fix permissions for ZAP
+      - name: Prepare ZAP workspace
         run: |
-          mkdir -p /home/runner/work/_temp/zap
-          chmod -R 777 /home/runner/work/_temp
+          mkdir -p ../zap-output
+          chmod -R 777 ../zap-output
 
-      - name: OWASP ZAP Scan
-        uses: zaproxy/action-baseline@v0.10.0
+      - name: OWASP ZAP Baseline Scan
+        run: |
+          docker run --rm \
+            --network host \
+            -v "${{ github.workspace }}/zap-output:/zap/wrk" \
+            ghcr.io/zaproxy/zaproxy:stable \
+            zap-baseline.py -t http://127.0.0.1:8000 -r zap-report.html -w zap-report.md -J zap-report.json -a
+
+      - name: Upload ZAP report
+        uses: actions/upload-artifact@v4
         with:
-          target: "http://127.0.0.1:8000"
-          cmd_options: "-a -d"
-          fail_action: false
+          name: zap-report
+          path: zap-output/*
+
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarqube-scan-action@v2
