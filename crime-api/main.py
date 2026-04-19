@@ -23,7 +23,6 @@ load_dotenv()
 
 LAST_12_MONTHS = "Last 12 months"
 USER_NOT_FOUND = "User not found"
-PASSWORD_TOO_LONG = "Password too long (max 72 bytes)."
 DRUG_OFFENCES = "Drug Offences"
 DAMAGE_TO_PROPERTY = "Damage to Property"
 
@@ -594,8 +593,6 @@ def get_crime_news(force_refresh: bool = False):
 
 @app.post("/auth/register")
 def register(req: RegisterRequest):
-    if len(req.password.encode("utf-8")) > 72:
-        raise HTTPException(status_code=400, detail=PASSWORD_TOO_LONG)
 
     email = req.email.strip().lower()
 
@@ -655,9 +652,6 @@ def register(req: RegisterRequest):
 
 @app.post("/auth/login")
 def login(req: LoginRequest):
-    if len(req.password.encode("utf-8")) > 72:
-        raise HTTPException(status_code=400, detail=PASSWORD_TOO_LONG)
-
     email = req.email.strip().lower()
 
     conn = None
@@ -896,9 +890,6 @@ def reset_password(req: ResetPasswordRequest):
 
     if not new_password:
         raise HTTPException(status_code=400, detail="New password is required")
-
-    if len(new_password.encode("utf-8")) > 72:
-        raise HTTPException(status_code=400, detail=PASSWORD_TOO_LONG)
 
     if len(new_password) < 6:
         raise HTTPException(status_code=400, detail="Password must be at least 6 characters.")
