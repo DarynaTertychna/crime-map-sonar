@@ -7,6 +7,7 @@ from main import load_cleaned_data
 from main import get_crime_count_by_period
 from main import extract_county_from_text, extract_crime_type_from_text
 from main import load_counties_geojson
+from main import LAST_12_MONTHS
 
 
 

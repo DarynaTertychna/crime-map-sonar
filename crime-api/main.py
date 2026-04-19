@@ -145,8 +145,11 @@ This link expires in 30 minutes!
 
 
 
+SECRET_KEY = os.getenv("SECRET_KEY")
 
-SECRET_KEY = os.getenv("SECRET_KEY", "change-this-in-env-to-a-long-random-secret")
+if not SECRET_KEY:
+    raise ValueError("SECRET_KEY not set")
+
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60
 
@@ -433,9 +436,10 @@ def extract_crime_type_from_text(text: str) -> str | None:
         "burglary": "Burglary",
         "drugs": DRUG_OFFENCES,
         "drug": DRUG_OFFENCES,
-        DRUG_OFFENCES: DRUG_OFFENCES,
+        DRUG_OFFENCES.lower(): DRUG_OFFENCES,
         "damage": DAMAGE_TO_PROPERTY,
-        DAMAGE_TO_PROPERTY: DAMAGE_TO_PROPERTY,
+        "damage to property": DAMAGE_TO_PROPERTY,
+        DAMAGE_TO_PROPERTY.lower(): DAMAGE_TO_PROPERTY,
         "criminal damage": DAMAGE_TO_PROPERTY,
         "property damage": DAMAGE_TO_PROPERTY,
     }
