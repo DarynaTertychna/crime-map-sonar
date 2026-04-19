@@ -141,6 +141,37 @@ ACCESS_TOKEN_EXPIRE_MINUTES = 60
 
 app = FastAPI(title="Crime API (Prototype)")
 
+
+def init_db():
+    conn = None
+    cur = None
+
+    try:
+        conn = get_connection()
+        cur = conn.cursor()
+
+        cur.execute("""
+        CREATE TABLE IF NOT EXISTS users (
+            id SERIAL PRIMARY KEY,
+            email TEXT UNIQUE NOT NULL,
+            password_hash TEXT NOT NULL,
+            name TEXT,
+            favorite_crime_type TEXT,
+            preferred_county TEXT,
+            reset_token TEXT,
+            reset_token_expires TIMESTAMP,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
+        """)
+
+        conn.commit()
+
+    finally:
+        if cur:
+            cur.close()
+        if conn:
+            conn.close()
+
 FRONTEND_URL = os.getenv("FRONTEND_URL")
 STAGING_FRONTEND_URL = os.getenv("STAGING_FRONTEND_URL")
 
@@ -162,6 +193,12 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+@app.on_event("startup")
+def startup():
+    init_db()
+
+
 
 @app.middleware("http")
 async def security_headers(request, call_next):
