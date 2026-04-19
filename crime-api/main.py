@@ -211,7 +211,7 @@ async def security_headers(request, call_next):
     return response
 
 
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+pwd_context = CryptContext(schemes=["pbkdf2_sha256"], deprecated="auto")
 
 
 ADMINS = {"darinayg@gmail.com"}
