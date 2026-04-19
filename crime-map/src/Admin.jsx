@@ -51,12 +51,14 @@ export default function Admin() {
       <h2>Admin CSV Upload</h2>
 
       <input
+        data-testid="admin-file-input"
         type="file"
         accept=".csv"
         onChange={(e) => setFile(e.target.files[0] || null)}
       />
 
       <button
+        data-testid="admin-upload-button"
         onClick={upload}
         style={{ marginLeft: "10px", padding: "6px 12px" }}
         disabled={loading}

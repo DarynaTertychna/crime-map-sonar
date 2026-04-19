@@ -1,6 +1,7 @@
 .env
 crime-api/.env
 crime-map/.env
+crime-map/.env.test
 venv/
 __pycache__/
 node_modules/

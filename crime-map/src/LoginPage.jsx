@@ -311,6 +311,7 @@ export default function LoginPage({ onLogin }) {
           <div style={{ display: "flex", borderBottom: "1px solid #2b3138" }}>
             <button
               type="button"
+              data-testid="tab-sign-in"
               onClick={() => switchMode("login")}
               style={{
                 flex: 1,
@@ -328,6 +329,7 @@ export default function LoginPage({ onLogin }) {
 
             <button
               type="button"
+              data-testid="tab-create-account"
               onClick={() => switchMode("register")}
               style={{
                 flex: 1,
@@ -348,6 +350,7 @@ export default function LoginPage({ onLogin }) {
             {mode === "register" && (
               <div style={{ marginBottom: "14px" }}>
                 <label
+                  htmlFor="register-name"
                   style={{
                     display: "block",
                     marginBottom: "6px",
@@ -358,6 +361,9 @@ export default function LoginPage({ onLogin }) {
                   Name
                 </label>
                 <input
+                  id="register-name"
+                  name="name"
+                  data-testid="register-name"
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
@@ -378,6 +384,7 @@ export default function LoginPage({ onLogin }) {
 
             <div style={{ marginBottom: "14px" }}>
               <label
+                htmlFor="auth-email"
                 style={{
                   display: "block",
                   marginBottom: "6px",
@@ -388,6 +395,9 @@ export default function LoginPage({ onLogin }) {
                 Email
               </label>
               <input
+                id="auth-email"
+                name="email"
+                data-testid="auth-email"
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -407,6 +417,7 @@ export default function LoginPage({ onLogin }) {
 
             <div style={{ marginBottom: "14px" }}>
               <label
+                htmlFor="auth-password"
                 style={{
                   display: "block",
                   marginBottom: "6px",
@@ -427,6 +438,9 @@ export default function LoginPage({ onLogin }) {
                 }}
               >
                 <input
+                  id="auth-password"
+                  name="password"
+                  data-testid="auth-password"
                   type={showPassword ? "text" : "password"}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
@@ -440,6 +454,7 @@ export default function LoginPage({ onLogin }) {
                     color: "#fff",
                   }}
                 />
+
                 <button
                   type="button"
                   onClick={() => setShowPassword((prev) => !prev)}
@@ -461,6 +476,7 @@ export default function LoginPage({ onLogin }) {
             {mode === "register" && (
               <div style={{ marginBottom: "16px" }}>
                 <label
+                  htmlFor="register-confirm-password"
                   style={{
                     display: "block",
                     marginBottom: "6px",
@@ -471,6 +487,9 @@ export default function LoginPage({ onLogin }) {
                   Confirm Password
                 </label>
                 <input
+                  id="register-confirm-password"
+                  name="confirmPassword"
+                  data-testid="register-confirm-password"
                   type={showPassword ? "text" : "password"}
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
@@ -491,6 +510,7 @@ export default function LoginPage({ onLogin }) {
 
             <button
               type="button"
+              data-testid={mode === "login" ? "sign-in-button" : "create-account-button"}
               onClick={submit}
               disabled={loading}
               style={{
@@ -516,6 +536,7 @@ export default function LoginPage({ onLogin }) {
               <div style={{ textAlign: "center" }}>
                 <button
                   type="button"
+                  data-testid="toggle-forgot-password"
                   style={{
                     marginTop: "14px",
                     background: "none",
@@ -552,6 +573,7 @@ export default function LoginPage({ onLogin }) {
 
                 <div style={{ marginBottom: "10px" }}>
                   <label
+                    htmlFor="forgot-email"
                     style={{
                       display: "block",
                       marginBottom: "6px",
@@ -559,8 +581,11 @@ export default function LoginPage({ onLogin }) {
                     }}
                   >
                     Email
-                  </label>
+                  </label> 
                   <input
+                    id="forgot-email"
+                    name="forgotEmail"
+                    data-testid="forgot-email"
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -577,28 +602,25 @@ export default function LoginPage({ onLogin }) {
                   />
                 </div>
 
-                <button
-                  type="button"
-                  onClick={submitForgotPassword}
-                  style={{
-                    width: "100%",
-                    padding: "10px",
-                    border: "none",
-                    borderRadius: "6px",
-                    cursor: "pointer",
-                    background: "#2b3138",
-                    color: "#fff",
-                    marginBottom: "12px",
-                  }}
-                >
-                  Send reset link
-                </button>
+                  <button
+                    type="button"
+                    data-testid="send-reset-link"
+                    onClick={submitForgotPassword}
+                    style={{
+                      width: "100%",
+                      padding: "10px",
+                      border: "none",
+                      borderRadius: "6px",
+                      cursor: "pointer",
+                      background: "#2b3138",
+                      color: "#fff",
+                      marginBottom: "12px",
+                    }}
+                  >
+                    Send reset link
+                  </button>
               </div>
             )}
-
-
-
-
 
 
             {msg && (

@@ -5,6 +5,10 @@ import CrimeChart from "./CrimeChart";
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
 
+const LAST_12_MONTHS = "Last 12 months";
+const DRUG_OFFENCES = "Drug Offences";
+const DAMAGE_TO_PROPERTY = "Damage to Property";
+
 const crimeTypes = [
   "Theft",
   "Assault",
@@ -588,7 +592,9 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
           <h2 style={{ margin: 0 }}>Crime Risk Analysis and Prediction Map</h2>
           <div style={{ fontSize: "0.9rem" }}>
             <span style={{ marginRight: 10 }}>Logged in: {user?.email}</span>
-            <button onClick={onLogout} style={{ cursor: "pointer" }}>Logout</button>
+            <button data-testid="logout-button" onClick={onLogout} style={{ cursor: "pointer" }}>
+              Logout
+            </button>
           </div>
         </div>
       </header>
@@ -623,16 +629,30 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
           <h3 style={{ marginTop: 0 }}>Filters</h3>
 
           <div style={{ marginBottom: "12px" }}>
-            <label style={{ display: "block", marginBottom: "4px" }}>Crime type</label>
-            <select value={crimeType} onChange={(e) => setCrimeType(e.target.value)} style={{ width: "100%" }}>
+            <label htmlFor="crime-type" style={{ display: "block", marginBottom: "4px" }}>
+              Crime type
+            </label>
+            <select
+              id="crime-type"
+              name="crimeType"
+              data-testid="crime-type"
+              value={crimeType}
+              onChange={(e) => setCrimeType(e.target.value)}
+              style={{ width: "100%" }}
+            >
               {crimeTypes.map((c) => <option key={c} value={c}>{c}</option>)}
             </select>
           </div>
 
 
           <div style={{ marginBottom: "12px" }}>
-            <label style={{ display: "block", marginBottom: "4px" }}>Favourite crime type</label>
+            <label htmlFor="favorite-crime-type" style={{ display: "block", marginBottom: "4px" }}>
+              Favourite crime type
+            </label>
             <select
+              id="favorite-crime-type"
+              name="favoriteCrimeType"
+              data-testid="favorite-crime-type"
               value={favoriteCrimeType}
               onChange={(e) => {
                 setFavoriteCrimeType(e.target.value);
@@ -654,15 +674,29 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
           </div>
 
           <div style={{ marginBottom: "12px" }}>
-            <label style={{ display: "block", marginBottom: "4px" }}>Time period</label>
-            <select value={timePeriod} onChange={(e) => setTimePeriod(e.target.value)} style={{ width: "100%" }}>
+            <label htmlFor="time-period" style={{ display: "block", marginBottom: "4px" }}>
+              Time period
+            </label>
+            <select
+              id="time-period"
+              name="timePeriod"
+              data-testid="time-period"
+              value={timePeriod}
+              onChange={(e) => setTimePeriod(e.target.value)}
+              style={{ width: "100%" }}
+            >
               {timePeriods.map((p) => <option key={p} value={p}>{p}</option>)}
             </select>
           </div>
 
           <div style={{ marginBottom: "12px" }}>
-            <label style={{ display: "block", marginBottom: "4px" }}>Enter county (e.g. Cork)</label>
+            <label htmlFor="county-input" style={{ display: "block", marginBottom: "4px" }}>
+              Enter county (e.g. Cork)
+            </label>
             <input
+              id="county-input"
+              name="locationQuery"
+              data-testid="county-input"
               type="text"
               placeholder="Use county for prediction (e.g. Cork)"
               value={locationQuery}
@@ -673,8 +707,11 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
           </div>
 
           <div style={{ marginBottom: "12px" }}>
-            <label style={{ fontSize: "0.9rem" }}>
+            <label htmlFor="use-my-location" style={{ fontSize: "0.9rem" }}>
               <input
+                id="use-my-location"
+                name="useMyLocation"
+                data-testid="use-my-location"
                 type="checkbox"
                 checked={useMyLocation}
                   onChange={(e) => {
@@ -697,10 +734,11 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
           </div>
 
           <div style={{ marginBottom: "12px", display: "flex", gap: 6 }}>
-            <button onClick={saveFavorite} style={{ flex: 1, cursor: "pointer" }}>
+            <button data-testid="save-favorite" onClick={saveFavorite} style={{ flex: 1, cursor: "pointer" }}>
               Save favourite
             </button>
             <button
+              data-testid="load-favorite"
               onClick={loadFavorite}
               style={{ flex: 1, cursor: "pointer" }}
               disabled={!favorite}
@@ -722,13 +760,17 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
                   {favorite.timePeriod || LAST_12_MONTHS}
                 </>
               </div>
-              <button onClick={clearFavorite} style={{ marginTop: 6, cursor: "pointer" }}>
+              <button data-testid="clear-favorite" onClick={clearFavorite} style={{ marginTop: 6, cursor: "pointer" }}>
                 Clear favourite
               </button>
             </div>
           )}
 
-          <button onClick={handleApply} style={{ width: "100%", marginTop: "4px", cursor: "pointer" }}>
+          <button
+            data-testid="apply-filters"
+            onClick={handleApply}
+            style={{ width: "100%", marginTop: "4px", cursor: "pointer" }}
+          >
             Apply filters
           </button>
 
@@ -900,6 +942,7 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
             >
               <span>AI Crime Assistant</span>
               <button
+                data-testid="close-chat"
                 onClick={() => setChatOpen(false)}
                 style={{
                   border: "none",
@@ -949,6 +992,7 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
             >
               <button
                 type="button"
+                data-testid="quick-question-safe"
                 onClick={() =>
                   sendQuickQuestion(`Is ${locationQuery || "Dublin"} safe?`)
                 }
@@ -963,6 +1007,7 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
 
               <button
                 type="button"
+                data-testid="quick-question-risks"
                 onClick={() =>
                   sendQuickQuestion(
                     `What risks are there in ${locationQuery || "Dublin"}?`
@@ -979,6 +1024,7 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
 
               <button
                 type="button"
+                data-testid="quick-question-crime-risk"
                 onClick={() =>
                   sendQuickQuestion(
                     `Is ${crimeType.toLowerCase()} high in ${locationQuery || "Dublin"}?`
@@ -1069,6 +1115,9 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
               }}
             >
               <input
+                id="chat-input"
+                name="chatInput"
+                data-testid="chat-input"
                 type="text"
                 placeholder="Ask about areas or risk..."
                 value={chatInput}
@@ -1082,6 +1131,7 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
                 style={{ flex: 1, padding: "6px", fontSize: "0.9rem" }}
               />
               <button
+                data-testid="chat-send"
                 onClick={handleSendMessage}
                 style={{ padding: "6px 10px", fontSize: "0.9rem", cursor: "pointer" }}
               >
@@ -1091,6 +1141,7 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
           </div>
         ) : (
           <button
+            data-testid="open-chat"
             onClick={() => setChatOpen(true)}
             style={{
               width: "60px",

@@ -130,18 +130,6 @@ This link expires in 30 minutes!
     server.sendmail(smtp_user, to_email, msg.as_string())
     server.quit()
 
-
-
-
-
-
-
-
-
-
-
-
-
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 if not SECRET_KEY:
@@ -151,7 +139,7 @@ ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60
 
 
-app = FastAPI(title="Crime API (Student Prototype)")
+app = FastAPI(title="Crime API (Prototype)")
 
 app.add_middleware(
     CORSMiddleware,
@@ -160,6 +148,18 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+@app.middleware("http")
+async def security_headers(request, call_next):
+    response = await call_next(request)
+    response.headers["X-Content-Type-Options"] = "nosniff"
+    response.headers["Cross-Origin-Resource-Policy"] = "same-origin"
+    response.headers["Cache-Control"] = "no-store"
+    response.headers["X-Frame-Options"] = "DENY"
+    response.headers["X-XSS-Protection"] = "1; mode=block"
+    response.headers["Referrer-Policy"] = "no-referrer"
+    return response
+
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
