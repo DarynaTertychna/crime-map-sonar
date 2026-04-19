@@ -256,15 +256,12 @@ def upload_csv(
         raise HTTPException(status_code=400, detail=f"Invalid CSV: {str(e)}")
 
 
-    cleaned_path = "data/cleaned_crime_data.csv"
-    df.to_csv(cleaned_path, index=False)
-
 
     return {
-        "status": "uploaded_and_applied",
+        "status": "uploaded_only",
         "file": path,
         "rows": len(df),
-        "message": "New dataset is now active"
+        "message": "CSV uploaded successfully. Active dataset was not changed."
     }
 
 
