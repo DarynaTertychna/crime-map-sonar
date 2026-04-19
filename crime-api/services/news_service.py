@@ -47,7 +47,7 @@ def is_cache_fresh() -> bool:
     if not NEWS_CACHE_FILE.exists():
         return False
 
-    age = datetime.now(UTC) - datetime.utcfromtimestamp(NEWS_CACHE_FILE.stat().st_mtime)
+    age = datetime.now(UTC) - datetime.fromtimestamp(NEWS_CACHE_FILE.stat().st_mtime, UTC)
     return age < timedelta(hours=NEWS_CACHE_HOURS)
 
 
