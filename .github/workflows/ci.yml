@@ -56,7 +56,7 @@ jobs:
             --network host \
             -v "${{ github.workspace }}/zap-output:/zap/wrk" \
             ghcr.io/zaproxy/zaproxy:stable \
-            zap-baseline.py -t http://127.0.0.1:8000 -r zap-report.html -w zap-report.md -J zap-report.json -a
+            zap-baseline.py -t http://127.0.0.1:8000 -r zap-report.html -w zap-report.md -J zap-report.json -a -I
 
       - name: Upload ZAP report
         uses: actions/upload-artifact@v4
