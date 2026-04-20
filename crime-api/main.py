@@ -966,9 +966,8 @@ def apply_filters(req: FilterRequest):
     if not county:
         raise HTTPException(status_code=400, detail="County is required")
 
-    if not req.crimeType or req.crimeType == "All":
-        raise HTTPException(status_code=400, detail="Pick a specific crime type")
-
+    if not req.crimeType:
+        raise HTTPException(status_code=400, detail="Pick a crime type")
     count = get_count_by_period_for_county(county, req.crimeType, req.timePeriod)
 
     if count is None:

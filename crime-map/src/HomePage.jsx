@@ -80,6 +80,19 @@ export default function HomePage({ user, onLogout }) {
 
   const [favoriteCrimeType, setFavoriteCrimeType] = useState("");
 
+
+  // mobile
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [countyRiskLoading, setCountyRiskLoading] = useState(false);
+
+  useEffect(() => {
+    const onResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
+
+
+
   const saveFavorite = async () => {
     const fav = {
       locationQuery,
@@ -224,6 +237,8 @@ const loadCrimeTrendChart = async (selectedCrimeType) => {
 
 
 const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
+  setCountyRiskLoading(true);
+
   try {
     const crime = encodeURIComponent(selectedCrimeType || "Theft");
     const period = encodeURIComponent(selectedTimePeriod || LAST_12_MONTHS);
@@ -245,6 +260,8 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
     setCountyRiskMap(mapped);
   } catch (e) {
     console.error("County risk load error:", e);
+  } finally {
+    setCountyRiskLoading(false);
   }
 };
 
@@ -348,8 +365,11 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
 
 
   useEffect(() => {
-    loadCrimeNews();
-    loadAllCountyRisks("Theft", LAST_12_MONTHS);
+    const timer = setTimeout(() => {
+      loadCrimeNews();
+    }, 2000);
+
+    return () => clearTimeout(timer);
   }, []);
 
 
@@ -422,36 +442,25 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
 
 
 
-
-
-
-  
-
   useEffect(() => {
-    if (crimeType && crimeType !== "All") {
+    if (crimeType) {
       loadCrimeTrendChart(crimeType);
       loadAllCountyRisks(crimeType, timePeriod);
     } else {
       setChartData([]);
     }
-  }, [crimeType]);
+  }, [crimeType, timePeriod]);
 
-
-  useEffect(() => {
-    if (crimeType && crimeType !== "All") {
-      loadAllCountyRisks(crimeType, timePeriod);
-    }
-  }, [timePeriod]);
 
 
   const markNewsAsSeen = (link) => {
   if (!link) return;
 
-    setSeenNewsLinks((prev) => {
+  setSeenNewsLinks((prev) => {
       if (prev.includes(link)) return prev;
       const updated = [...prev, link];
       localStorage.setItem("seenCrimeNewsLinks", JSON.stringify(updated));
-      return updated;
+        return updated;
     });
   };
 
@@ -467,11 +476,6 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
     setRiskLevel(null);
 
     const raw = (locationQuery || "").trim();
-
-    if (crimeType === "All") {
-      setApiMsg("Pick a crime type (not 'All') to get a prediction.");
-      return;
-    }
 
     let county = "";
 
@@ -599,8 +603,21 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
         </div>
       </header>
 
-      <div style={{ display: "flex", flexDirection: "row", flex: 1, height: "100%" }}>
-        <main style={{ flex: 1, height: "calc(100vh - 57px)" }}>
+      <div
+          style={{
+            display: "flex",
+            flexDirection: isMobile ? "column" : "row",
+            flex: 1,
+            height: "100%",
+          }}
+        >
+        <main
+            style={{
+              flex: 1,
+              height: isMobile ? "42vh" : "calc(100vh - 57px)",
+              minHeight: isMobile ? "300px" : "auto",
+            }}
+          >
           <MapView
             riskColor={riskColor}
             lng={mapPos.lng}
@@ -617,15 +634,18 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
           />
         </main>
 
-        <aside style={{
-          width: "300px",
-          padding: "16px",
-          borderLeft: "1px solid #ddd",
-          backgroundColor: "#f5f5f5",
-          boxSizing: "border-box",
-          flexShrink: 0,
-          color: "#333",
-        }}>
+          <aside
+            style={{
+              width: isMobile ? "100%" : "300px",
+              padding: "16px",
+              borderLeft: isMobile ? "none" : "1px solid #ddd",
+              borderTop: isMobile ? "1px solid #ddd" : "none",
+              backgroundColor: "#f5f5f5",
+              boxSizing: "border-box",
+              flexShrink: 0,
+              color: "#333",
+            }}
+          >
           <h3 style={{ marginTop: 0 }}>Filters</h3>
 
           <div style={{ marginBottom: "12px" }}>
@@ -663,9 +683,7 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
               style={{ width: "100%" }}
             >
               <option value="">None</option>
-              {crimeTypes
-                .filter((c) => c !== "All")
-                .map((c) => (
+              {crimeTypes.map((c) => (
                   <option key={c} value={c}>
                     {c}
                   </option>
@@ -774,6 +792,18 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
             Apply filters
           </button>
 
+
+          {countyRiskLoading && (
+            <div style={{ marginTop: "8px", color: "#666", fontSize: "0.9rem" }}>
+              Loading map data...
+            </div>
+          )}
+
+
+
+
+
+
           <div style={{
             marginTop: "12px",
             padding: "10px",
@@ -878,9 +908,7 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
             }}
           >
             <div style={{ fontWeight: 600, marginBottom: 8 }}>
-              {crimeType === "All"
-                ? "Crime Trend"
-                : `${crimeType} Trend Over Time`}
+              {crimeType} Trend Over Time
             </div>
 
             {chartLoading && <div style={{ color: "#666" }}>Loading chart...</div>}
@@ -915,12 +943,19 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
         </aside>
       </div>
 
-      <div style={{ position: "fixed", bottom: "20px", right: "20px", zIndex: 1000 }}>
+      <div
+          style={{
+            position: "fixed",
+            bottom: isMobile ? "12px" : "20px",
+            right: isMobile ? "12px" : "20px",
+            zIndex: 1000,
+          }}
+        >
         {chatOpen ? (
           <div
             style={{
-              width: "360px",
-              height: "500px",
+              width: isMobile ? "92vw" : "360px",
+              height: isMobile ? "60vh" : "500px",
               backgroundColor: "#ffffff",
               borderRadius: "10px",
               boxShadow: "0 4px 12px rgba(0,0,0,0.25)",
@@ -1144,15 +1179,15 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
             data-testid="open-chat"
             onClick={() => setChatOpen(true)}
             style={{
-              width: "60px",
-              height: "60px",
+              width: isMobile ? "56px" : "60px",
+              height: isMobile ? "56px" : "60px",
               borderRadius: "50%",
               border: "none",
               backgroundColor: "#1976d2",
               color: "#fff",
               cursor: "pointer",
               boxShadow: "0 4px 10px rgba(0,0,0,0.3)",
-              fontSize: "0.8rem",
+              fontSize: isMobile ? "0.75rem" : "0.8rem",
             }}
           >
             Chat
