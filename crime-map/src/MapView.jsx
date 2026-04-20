@@ -165,6 +165,7 @@ export default function MapView({
   countiesGeoJsonUrl = "/ireland_counties.geojson",
   showMarker = false,
   onCountyClick,
+  isMobile,
 }) {
   const containerRef = useRef(null);
   const mapRef = useRef(null);
@@ -332,6 +333,11 @@ export default function MapView({
 
         updateHighlightedRegion(map, countiesRef.current, selectedCounties);
 
+        setTimeout(() => {
+          map.resize();
+        }, 300);
+
+
       } catch (e) {
         console.error(e);
       }
@@ -381,6 +387,27 @@ export default function MapView({
       map.setPaintProperty(HIGHLIGHT_FILL_ID, "fill-color", riskColor);
     }
   }, [riskColor]);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map) return;
+
+    const resizeMap = () => {
+      map.resize();
+    };
+
+    const timer = setTimeout(() => {
+      resizeMap();
+    }, 300);
+
+    window.addEventListener("resize", resizeMap);
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("resize", resizeMap);
+    };
+  }, [isMobile]);
+
 
   return <div data-testid="map-view" ref={containerRef} style={{ width: "100%", height: "100%" }} />;
 }

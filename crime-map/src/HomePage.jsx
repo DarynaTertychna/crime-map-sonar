@@ -592,7 +592,15 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
   return (
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", backgroundColor: "#222" }}>
       <header style={{ padding: "12px 20px", borderBottom: "1px solid #333", backgroundColor: "#1f1f1f", color: "white" }}>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <div
+            style={{
+              display: "flex",
+              flexDirection: isMobile ? "column" : "row",
+              justifyContent: "space-between",
+              alignItems: isMobile ? "flex-start" : "center",
+              gap: isMobile ? "8px" : 0,
+            }}
+          >
           <h2 style={{ margin: 0 }}>Crime Risk Analysis and Prediction Map</h2>
           <div style={{ fontSize: "0.9rem" }}>
             <span style={{ marginRight: 10 }}>Logged in: {user?.email}</span>
@@ -619,6 +627,8 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
             }}
           >
           <MapView
+            key={isMobile ? "mobile-map" : "desktop-map"}
+            isMobile={isMobile}
             riskColor={riskColor}
             lng={mapPos.lng}
             lat={mapPos.lat}
@@ -812,7 +822,7 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
             borderRadius: "8px",
             fontSize: "0.9rem",
           }}>
-            <div style={{ fontWeight: 600, marginBottom: 6 }}>Backend result (prediction)</div>
+            <div style={{ fontWeight: 600, marginBottom: 6 }}>Prediction result: </div>
 
             <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
               <span>Risk level:</span>
@@ -840,7 +850,7 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
         >
           <div style={{ fontWeight: 600, marginBottom: 8, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
             <span>
-              Crime Alerts {unreadNewsCount > 0 ? `(${unreadNewsCount} new)` : ""}
+              Latest crimes {unreadNewsCount > 0 ? `(${unreadNewsCount} new)` : ""}
             </span>
             <button
               onClick={loadCrimeNews}
