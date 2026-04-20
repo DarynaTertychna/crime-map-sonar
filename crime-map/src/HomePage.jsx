@@ -601,7 +601,15 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
               gap: isMobile ? "8px" : 0,
             }}
           >
-          <h2 style={{ margin: 0 }}>Crime Risk Analysis and Prediction Map</h2>
+          <h2
+            style={{
+              margin: 0,
+              fontSize: isMobile ? "1.1rem" : "1.5rem",
+              lineHeight: 1.2,
+            }}
+          >
+            Crime Risk Analysis and Prediction Map
+          </h2>
           <div style={{ fontSize: "0.9rem" }}>
             <span style={{ marginRight: 10 }}>Logged in: {user?.email}</span>
             <button data-testid="logout-button" onClick={onLogout} style={{ cursor: "pointer" }}>
@@ -956,8 +964,8 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
       <div
           style={{
             position: "fixed",
-            bottom: isMobile ? "12px" : "20px",
-            right: isMobile ? "12px" : "20px",
+            bottom: isMobile ? "10px" : "20px",
+            right: isMobile ? "10px" : "20px",
             zIndex: 1000,
           }}
         >
@@ -1189,8 +1197,8 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
             data-testid="open-chat"
             onClick={() => setChatOpen(true)}
             style={{
-              width: isMobile ? "56px" : "60px",
-              height: isMobile ? "56px" : "60px",
+              width: isMobile ? "50px" : "60px",
+              height: isMobile ? "50px" : "60px",
               borderRadius: "50%",
               border: "none",
               backgroundColor: "#1976d2",
