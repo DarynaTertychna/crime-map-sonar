@@ -388,6 +388,9 @@ export default function MapView({
     }
   }, [riskColor]);
 
+
+
+
   useEffect(() => {
     const map = mapRef.current;
     if (!map) return;
@@ -396,18 +399,42 @@ export default function MapView({
       map.resize();
     };
 
-    const timer = setTimeout(() => {
+    const timer1 = setTimeout(() => {
       resizeMap();
-    }, 300);
+    }, 200);
+
+    const timer2 = setTimeout(() => {
+      resizeMap();
+    }, 700);
 
     window.addEventListener("resize", resizeMap);
 
     return () => {
-      clearTimeout(timer);
+      clearTimeout(timer1);
+      clearTimeout(timer2);
       window.removeEventListener("resize", resizeMap);
     };
   }, [isMobile]);
 
 
-  return <div data-testid="map-view" ref={containerRef} style={{ width: "100%", height: "100%" }} />;
+
+
+  return (
+    <div
+      style={{
+        width: "100%",
+        height: isMobile ? "320px" : "100%",
+        minHeight: isMobile ? "320px" : "100%",
+      }}
+    >
+      <div
+        data-testid="map-view"
+        ref={containerRef}
+        style={{
+          width: "100%",
+          height: "100%",
+        }}
+      />
+    </div>
+  );
 }

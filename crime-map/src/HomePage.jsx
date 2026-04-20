@@ -619,11 +619,11 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
             height: "100%",
           }}
         >
-        <main
+          <main
             style={{
               flex: 1,
-              height: isMobile ? "42vh" : "calc(100vh - 57px)",
-              minHeight: isMobile ? "300px" : "auto",
+              height: isMobile ? "320px" : "calc(100vh - 57px)",
+              minHeight: isMobile ? "320px" : "auto",
             }}
           >
           <MapView
