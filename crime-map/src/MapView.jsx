@@ -29,7 +29,7 @@ function normalizeCountyLabel(raw) {
     .replace(/\bconte\b/g, "")
     .replace(/\bcity\b/g, "")
     .replace(/\bcounty\b/g, "")
-    .replace(/\bco\.?\s*/g, "")
+    .replace(/\bco\b\.?\s*/g, "")
     .trim();
 
   return s;
