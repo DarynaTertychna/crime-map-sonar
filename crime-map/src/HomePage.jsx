@@ -132,6 +132,42 @@ export default function HomePage({ user, onLogout }) {
     }
   };
 
+//location
+  const requestCurrentLocation = () => {
+    setGeoError("");
+
+    if (!navigator.geolocation) {
+      setGeoError("Geolocation is not supported by this browser.");
+      setUseMyLocation(false);
+      return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const coords = {
+          lng: position.coords.longitude,
+          lat: position.coords.latitude,
+          zoom: 11.5,
+        };
+
+        setUserCoords(coords);
+        setGeoError("");
+      },
+      (error) => {
+        console.warn("Geolocation error:", error);
+        setGeoError("Enable location in your browser or phone settings.");
+        setUseMyLocation(false);
+        setUserCoords(null);
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 10000,
+        maximumAge: 300000,
+      }
+    );
+  };
+
+
 
 
 
@@ -141,10 +177,21 @@ export default function HomePage({ user, onLogout }) {
       return;
     }
 
-    setLocationQuery(favorite.locationQuery || "");
-    setUseMyLocation(!!favorite.useMyLocation);
+    const savedUseMyLocation = !!favorite.useMyLocation;
+
+    setUseMyLocation(savedUseMyLocation);
     setCrimeType(favorite.crimeType || "Theft");
     setTimePeriod(favorite.timePeriod || LAST_12_MONTHS);
+
+    if (savedUseMyLocation) {
+      setLocationQuery("");
+      setResolvedCounty("");
+      setSelectedCounties([]);
+      requestCurrentLocation();
+    } else {
+      setLocationQuery(favorite.locationQuery || "");
+      setUserCoords(null);
+    }
 
     setApiMsg("Favourite loaded. Click Apply to update map + prediction.");
   };
@@ -372,37 +419,6 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
     return () => clearTimeout(timer);
   }, []);
 
-
-
-
-  //geolocation
-  useEffect(() => {
-    if (!navigator.geolocation) {
-      setGeoError("Geolocation is not supported by this browser.");
-      return;
-    }
-
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        const coords = {
-          lng: position.coords.longitude,
-          lat: position.coords.latitude,
-          zoom: 11.5,
-        };
-
-        setUserCoords(coords);
-      },
-      (error) => {
-        console.warn("Geolocation error:", error);
-        setGeoError("Location permission denied or unavailable.");
-      },
-      {
-        enableHighAccuracy: true,
-        timeout: 10000,
-        maximumAge: 300000,
-      }
-      );
-  }, []);
 
 
 
@@ -750,24 +766,35 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
                 data-testid="use-my-location"
                 type="checkbox"
                 checked={useMyLocation}
-                  onChange={(e) => {
-                    const checked = e.target.checked;
-                    setUseMyLocation(checked);
+                onChange={(e) => {
+                  const checked = e.target.checked;
+                  setUseMyLocation(checked);
+                  setGeoError("");
 
-                    if (checked) {
-                      setLocationQuery("");
-                      setResolvedCounty("");
-                      setSelectedCounties([]);
-                      setApiMsg("");
-                    } else {
-                      setResolvedCounty("");
-                    }
-                  }}
+                  if (checked) {
+                    setLocationQuery("");
+                    setResolvedCounty("");
+                    setSelectedCounties([]);
+                    setApiMsg("");
+                    requestCurrentLocation();
+                  } else {
+                    setResolvedCounty("");
+                    setUserCoords(null);
+                  }
+                }}
                 style={{ marginRight: "6px" }}
               />
               Use my current location
             </label>
           </div>
+
+
+
+          {geoError && (
+            <div style={{ marginBottom: "12px", color: "#b71c1c", fontSize: "0.85rem" }}>
+              {geoError}
+            </div>
+          )}
 
           <div style={{ marginBottom: "12px", display: "flex", gap: 6 }}>
             <button data-testid="save-favorite" onClick={saveFavorite} style={{ flex: 1, cursor: "pointer" }}>
