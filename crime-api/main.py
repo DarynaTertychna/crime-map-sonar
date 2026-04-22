@@ -21,19 +21,21 @@ from email.mime.multipart import MIMEMultipart
 from dotenv import load_dotenv
 load_dotenv()
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 LAST_12_MONTHS = "Last 12 months"
 USER_NOT_FOUND = "User not found"
 DRUG_OFFENCES = "Drug Offences"
 DAMAGE_TO_PROPERTY = "Damage to Property"
 
-MODEL_PATH = "crime_risk_model.pkl"
-COUNTY_ENCODER_PATH = "county_encoder.pkl"
-CRIME_ENCODER_PATH = "crime_encoder.pkl"
 
-CLEANED_CSV_PATH = "data/cleaned_crime_data.csv"
+CLEANED_CSV_PATH = os.path.join(BASE_DIR, "data", "raw", "cleaned_crime_data.csv")
+COUNTIES_GEOJSON_PATH = os.path.join(BASE_DIR, "data", "raw", "ireland_counties.geojson")
 
-
+MODEL_PATH = os.path.join(BASE_DIR, "crime_risk_model.pkl")
+COUNTY_ENCODER_PATH = os.path.join(BASE_DIR, "county_encoder.pkl")
+CRIME_ENCODER_PATH = os.path.join(BASE_DIR, "crime_encoder.pkl")
+PREDICTIONS_PATH = os.path.join(BASE_DIR, "data", "predictions", "latest.json")
 
 model = None
 county_encoder = None
@@ -353,7 +355,7 @@ def upload_csv(
         raise HTTPException(400, "CSV files only!!!")
 
     timestamp = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
-    path = f"data/raw/crime_{timestamp}.csv"
+    path = os.path.join(BASE_DIR, "data", "raw", f"crime_{timestamp}.csv")
 
     contents = file.file.read()
 
@@ -405,7 +407,7 @@ def stats_seasonal():
 @app.get("/predictions/latest")
 def latest_predictions():
     try:
-        with open("data/predictions/latest.json") as f:
+        with open(PREDICTIONS_PATH, encoding="utf-8") as f:
             return json.load(f)
     except FileNotFoundError:
         raise HTTPException(404, "No predictions found")
@@ -655,9 +657,6 @@ def get_previous_year_count(county: str, crime_type: str, year: int):
         return 0
 
     return int(filtered["crime_count"].mean())
-
-
-COUNTIES_GEOJSON_PATH = "data/ireland_counties.geojson"
 
 def load_counties_geojson():
     with open(COUNTIES_GEOJSON_PATH, "r", encoding="utf-8") as f:
