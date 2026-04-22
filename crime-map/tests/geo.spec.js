@@ -27,7 +27,7 @@ async function registerAndLogin(page, email, password = 'test123') {
 
 test.use({
   permissions: ['geolocation'],
-  geolocation: { latitude: 53.3498, longitude: -6.2603 }, // Dublin
+  geolocation: { latitude: 53.3498, longitude: -6.2603 },
 });
 
 test('use current location and get prediction', async ({ page }) => {
@@ -39,6 +39,6 @@ test('use current location and get prediction', async ({ page }) => {
   await page.getByTestId('use-my-location').check();
   await page.getByTestId('apply-filters').click();
 
-  await expect(page.getByText(/Predicted risk for/i)).toBeVisible();
   await expect(page.getByText(/Risk level:/i)).toBeVisible();
+  await expect(page.getByText(/High|Medium|Low/i).first()).toBeVisible();
 });

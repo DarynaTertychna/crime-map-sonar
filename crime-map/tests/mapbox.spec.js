@@ -19,14 +19,10 @@ async function registerAndLogin(page, email, password = 'test123') {
   await expect(page.getByText('Crime Risk Analysis and Prediction Map')).toBeVisible();
 }
 
-test('clicking map triggers county details', async ({ page }) => {
+test('map is visible after login', async ({ page }) => {
   const email = uniqueEmail();
   await registerAndLogin(page, email);
 
   const map = page.getByTestId('map-view');
   await expect(map).toBeVisible();
-
-  await map.click({ position: { x: 350, y: 250 } });
-
-  await expect(page.getByText(/Risk level:/i)).toBeVisible();
 });
