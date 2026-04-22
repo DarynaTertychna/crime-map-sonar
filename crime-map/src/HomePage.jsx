@@ -28,10 +28,6 @@ export default function HomePage({ user, onLogout }) {
   const [riskLevel, setRiskLevel] = useState(null);
   const [apiMsg, setApiMsg] = useState("");
 
-  const [severityBand, setSeverityBand] = useState("");
-  const [percentile, setPercentile] = useState(null);
-
-
   const [newsItems, setNewsItems] = useState([]);
   const [newsLoading, setNewsLoading] = useState(false);
   const [newsError, setNewsError] = useState("");
@@ -351,13 +347,9 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
       });
 
       setRiskLevel(predictData.riskLabel || null);
-      setSeverityBand(predictData.severityBand || "");
-      setPercentile(predictData.percentile ?? null);
     } catch (e) {
       setSelectedCountyDetails(null);
       setDetailsError(String(e?.message || e));
-      setSeverityBand("");
-      setPercentile(null);
     } finally {
       setDetailsLoading(false);
     }
@@ -497,8 +489,6 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
   const handleApply = async () => {
     setApiMsg("");
     setRiskLevel(null);
-    setSeverityBand("");
-    setPercentile(null);
 
     const raw = (locationQuery || "").trim();
 
@@ -566,8 +556,6 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
       if (!r.ok) throw new Error(data.detail || "Predict request failed");
 
       setRiskLevel(data.riskLabel || "Unknown");
-      setSeverityBand(data.severityBand || "");
-      setPercentile(data.percentile ?? null);
       setApiMsg(`Predicted risk for ${county}.`);
       console.log("Predict result:", data);
     } catch (e) {
@@ -874,18 +862,6 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
               <span>Risk level:</span>
               <span style={{ fontWeight: 700, color: riskColor }}>{riskLevel ?? "—"}</span>
             </div>
-
-            {severityBand && (
-              <div style={{ marginTop: 6 }}>
-                Severity: <b>{severityBand}</b>
-              </div>
-            )}
-
-            {percentile !== null && (
-              <div style={{ marginTop: 4 }}>
-                Percentile in {crimeType}: <b>{percentile}</b>
-              </div>
-            )}
 
             {apiMsg && (
               <div style={{ marginTop: 6, color: apiMsg.toLowerCase().includes("fail") ? "#b71c1c" : "#333" }}>
