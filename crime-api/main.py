@@ -1273,6 +1273,7 @@ def predict(req: PredictRequest):
 
     model_result = predict_risk_with_model(county, crime_type, target_year)
     latest_count = get_count_by_period_for_county(county, crime_type, req.timePeriod)
+    percentile, severity_band = get_percentile_for_crime_type(crime_type, latest_count)
 
     return {
         "ok": True,
@@ -1283,6 +1284,8 @@ def predict(req: PredictRequest):
         "riskLabel": model_result["riskLabel"],
         "prevYearCount": model_result["prev_year_count"],
         "probabilities": model_result["probabilities"],
+        "percentile": percentile,
+        "severityBand": severity_band,
         "note": "Risk label is predicted by the trained XGBoost model. Latest crime count is shown as historical context."
     }
 
@@ -1308,6 +1311,7 @@ def predict_all(crime_type: str = "Theft", timePeriod: str = LAST_12_MONTHS):
             continue
 
         model_result = predict_risk_with_model(county, crime, target_year)
+        percentile, severity_band = get_percentile_for_crime_type(crime, count)
 
         items.append({
             "county": county,
@@ -1315,6 +1319,8 @@ def predict_all(crime_type: str = "Theft", timePeriod: str = LAST_12_MONTHS):
             "latestCrimeCount": count,
             "prevYearCount": model_result["prev_year_count"],
             "probabilities": model_result["probabilities"],
+            "percentile": percentile,
+            "severityBand": severity_band,
         })
 
     return {
@@ -1323,6 +1329,39 @@ def predict_all(crime_type: str = "Theft", timePeriod: str = LAST_12_MONTHS):
         "timePeriod": timePeriod,
         "items": items,
     }
+
+
+def get_percentile_for_crime_type(crime_type: str, count: int):
+    df = load_cleaned_data()
+
+    filtered = df[
+        df["crime_type"].str.lower() == crime_type.lower()
+    ].copy()
+
+    if filtered.empty:
+        return None, "Unknown"
+
+    values = filtered["crime_count"].dropna().astype(float)
+
+    if len(values) == 0:
+        return None, "Unknown"
+
+    percentile = round(float((values <= count).mean() * 100), 1)
+
+    if percentile >= 95:
+        severity_band = "Very High"
+    elif percentile >= 66:
+        severity_band = "High"
+    elif percentile >= 33:
+        severity_band = "Medium"
+    else:
+        severity_band = "Low"
+
+    return percentile, severity_band
+
+
+
+
 
 
 def get_count_by_period_for_county(county: str, crime_type: str, time_period: str):
