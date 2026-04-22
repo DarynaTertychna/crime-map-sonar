@@ -10,7 +10,9 @@ pandas
 shapely
 python-dotenv
 httpx
-pytest
-pytest-cov
 psycopg2-binary
 ollama
+joblib
+scikit-learn
+xgboost
+numpy
