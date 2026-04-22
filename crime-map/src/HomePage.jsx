@@ -17,7 +17,7 @@ const crimeTypes = [
   DRUG_OFFENCES,
   DAMAGE_TO_PROPERTY
 ];
-const timePeriods = ["Last month", "Last 3 months", LAST_12_MONTHS];
+const timePeriods = ["Last 3 months", "Last 6 months", LAST_12_MONTHS];
 
 export default function HomePage({ user, onLogout }) {
   const [crimeType, setCrimeType] = useState("Theft");

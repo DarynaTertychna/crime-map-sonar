@@ -11,6 +11,7 @@ import ollama
 from database import get_connection
 from jose import jwt, JWTError
 import os
+import joblib
 import json
 from shapely.geometry import shape, Point
 import secrets
@@ -26,8 +27,26 @@ USER_NOT_FOUND = "User not found"
 DRUG_OFFENCES = "Drug Offences"
 DAMAGE_TO_PROPERTY = "Damage to Property"
 
+MODEL_PATH = "crime_risk_model.pkl"
+COUNTY_ENCODER_PATH = "county_encoder.pkl"
+CRIME_ENCODER_PATH = "crime_encoder.pkl"
 
 CLEANED_CSV_PATH = "data/cleaned_crime_data.csv"
+
+
+
+model = None
+county_encoder = None
+crime_encoder = None
+
+
+def load_prediction_artifacts():
+    global model, county_encoder, crime_encoder
+
+    model = joblib.load(MODEL_PATH)
+    county_encoder = joblib.load(COUNTY_ENCODER_PATH)
+    crime_encoder = joblib.load(CRIME_ENCODER_PATH)
+
 
 # tests
 def load_cleaned_data():
@@ -42,27 +61,51 @@ def load_cleaned_data():
 
 
 
+def predict_risk_with_model(county: str, crime_type: str, year: int):
+    if model is None or county_encoder is None or crime_encoder is None:
+        raise HTTPException(status_code=500, detail="Prediction model is not loaded")
 
-def get_crime_count_by_period(county: str, crime_type: str, time_period: str):
-    df = load_cleaned_data()
+    try:
+        county_enc = int(county_encoder.transform([county])[0])
+    except Exception:
+        raise HTTPException(status_code=400, detail=f"Unknown county: {county}")
 
-    filtered = df[
-        (df["county"].str.lower() == county.lower()) &
-        (df["crime_type"].str.lower() == crime_type.lower())
-    ].copy()
+    try:
+        crime_enc = int(crime_encoder.transform([crime_type])[0])
+    except Exception:
+        raise HTTPException(status_code=400, detail=f"Unknown crime type: {crime_type}")
 
-    if filtered.empty:
-        return None
+    prev_year_count = get_previous_year_count(county, crime_type, year)
 
-    filtered = filtered.sort_values("Quarter")
+    X = pd.DataFrame([{
+        "county_enc": county_enc,
+        "crime_enc": crime_enc,
+        "prev_year_count": prev_year_count,
+        "year": year,
+    }])
 
-    if time_period == LAST_12_MONTHS:
-        recent = filtered.tail(4)
-        return int(recent["crime_count"].mean())
+    pred_class = int(model.predict(X)[0])
+
+    if hasattr(model, "predict_proba"):
+        probs = model.predict_proba(X)[0]
+        probabilities = {
+            "Low": round(float(probs[0]), 4),
+            "Medium": round(float(probs[1]), 4),
+            "High": round(float(probs[2]), 4),
+        }
     else:
-        recent = filtered.tail(1)
-        return int(recent.iloc[-1]["crime_count"])
-    
+        probabilities = None
+
+    label_map = {0: "Low", 1: "Medium", 2: "High"}
+    risk_label = label_map.get(pred_class, "Low")
+
+    return {
+        "riskLabel": risk_label,
+        "prev_year_count": prev_year_count,
+        "probabilities": probabilities,
+    }
+
+
 
 
 def get_risk_from_count(crime_type: str, count: int):
@@ -196,6 +239,7 @@ app.add_middleware(
 @app.on_event("startup")
 def startup():
     init_db()
+    load_prediction_artifacts()
 
 
 
@@ -525,16 +569,19 @@ def resolve_crime_type_from_chat(req: ChatRequest) -> str | None:
 
 
 def get_prediction_for_chat(county: str, crime_type: str, time_period: str):
-    latest_count = get_crime_count_by_period(county, crime_type, time_period)
+    latest_count = get_count_by_period_for_county(county, crime_type, time_period)
 
     if latest_count is None:
         return None
+
+    target_year = datetime.now().year
+    model_result = predict_risk_with_model(county, crime_type, target_year)
 
     return {
         "county": county,
         "crime_type": crime_type,
         "latestCrimeCount": latest_count,
-        "riskLabel": get_risk_from_count(crime_type, latest_count),
+        "riskLabel": model_result["riskLabel"],
     }
 
 
@@ -553,6 +600,23 @@ def build_chat_summary(question: str, county: str, predictions: list[dict], time
 
     return "\n".join(lines)
 
+
+
+def get_previous_year_count(county: str, crime_type: str, year: int):
+    df = load_cleaned_data()
+
+    previous_year = year - 1
+
+    filtered = df[
+        (df["county"].str.lower() == county.lower()) &
+        (df["crime_type"].str.lower() == crime_type.lower()) &
+        (df["year"] == previous_year)
+    ].copy()
+
+    if filtered.empty:
+        return 0
+
+    return int(filtered["crime_count"].mean())
 
 
 COUNTIES_GEOJSON_PATH = "data/ireland_counties.geojson"
@@ -968,6 +1032,7 @@ def apply_filters(req: FilterRequest):
 
     if not req.crimeType:
         raise HTTPException(status_code=400, detail="Pick a crime type")
+
     count = get_count_by_period_for_county(county, req.crimeType, req.timePeriod)
 
     if count is None:
@@ -976,18 +1041,20 @@ def apply_filters(req: FilterRequest):
             detail=f"No data found for county '{county}' and crime type '{req.crimeType}'"
         )
 
-    risk = get_risk_from_count(req.crimeType, count)
+    target_year = datetime.now().year
+    model_result = predict_risk_with_model(county, req.crimeType, target_year)
 
     return {
         "applied": True,
         "filters": req.model_dump(),
         "result": {
-            "riskLevel": risk,
+            "riskLevel": model_result["riskLabel"],
             "latestCrimeCount": count,
-            "summary": f"Risk based on recent historical {req.crimeType} data for {county}",
+            "prevYearCount": model_result["prev_year_count"],
+            "probabilities": model_result["probabilities"],
+            "summary": f"ML risk prediction for {req.crimeType} in {county}",
         },
     }
-
 
 
 # chat
@@ -1202,23 +1269,21 @@ def predict(req: PredictRequest):
     if not crime_type:
         raise HTTPException(status_code=400, detail="Crime type is required")
 
-    latest_count = get_crime_count_by_period(county, crime_type, req.timePeriod)
+    target_year = req.year or datetime.now().year
 
-    if latest_count is None:
-        raise HTTPException(
-            status_code=404,
-            detail=f"No data found for county '{county}' and crime type '{crime_type}'"
-        )
-
-    risk_label = get_risk_from_count(crime_type, latest_count)
+    model_result = predict_risk_with_model(county, crime_type, target_year)
+    latest_count = get_count_by_period_for_county(county, crime_type, req.timePeriod)
 
     return {
         "ok": True,
         "county": county,
         "crime_type": crime_type,
+        "timePeriod": req.timePeriod,
         "latestCrimeCount": latest_count,
-        "riskLabel": risk_label,
-        "note": "Risk is based on the most recent available historical quarter from the cleaned county-level dataset."
+        "riskLabel": model_result["riskLabel"],
+        "prevYearCount": model_result["prev_year_count"],
+        "probabilities": model_result["probabilities"],
+        "note": "Risk label is predicted by the trained XGBoost model. Latest crime count is shown as historical context."
     }
 
 
@@ -1227,13 +1292,13 @@ def predict_all(crime_type: str = "Theft", timePeriod: str = LAST_12_MONTHS):
     crime = (crime_type or "").strip()
 
     df = load_cleaned_data()
-
     matching = df[df["crime_type"].str.lower() == crime.lower()].copy()
 
     if matching.empty:
         raise HTTPException(status_code=404, detail=f"No data found for crime type: {crime}")
 
     counties = sorted(matching["county"].dropna().unique())
+    target_year = datetime.now().year
 
     items = []
     for county in counties:
@@ -1242,10 +1307,14 @@ def predict_all(crime_type: str = "Theft", timePeriod: str = LAST_12_MONTHS):
         if count is None:
             continue
 
+        model_result = predict_risk_with_model(county, crime, target_year)
+
         items.append({
             "county": county,
-            "riskLabel": get_risk_from_count(crime, count),
-            "latestCrimeCount": count
+            "riskLabel": model_result["riskLabel"],
+            "latestCrimeCount": count,
+            "prevYearCount": model_result["prev_year_count"],
+            "probabilities": model_result["probabilities"],
         })
 
     return {
@@ -1254,7 +1323,6 @@ def predict_all(crime_type: str = "Theft", timePeriod: str = LAST_12_MONTHS):
         "timePeriod": timePeriod,
         "items": items,
     }
-
 
 
 def get_count_by_period_for_county(county: str, crime_type: str, time_period: str):
@@ -1270,21 +1338,16 @@ def get_count_by_period_for_county(county: str, crime_type: str, time_period: st
 
     filtered = filtered.sort_values("Quarter")
 
-    if time_period == LAST_12_MONTHS:
+    if time_period == "Last 12 months":
         recent = filtered.tail(4)
-        return int(recent["crime_count"].mean())
-
-    elif time_period == "Last 3 months":
+    elif time_period == "Last 6 months":
         recent = filtered.tail(2)
-        return int(recent["crime_count"].mean())
-
-    elif time_period == "Last month":
+    elif time_period == "Last 3 months":
         recent = filtered.tail(1)
-        return int(recent.iloc[-1]["crime_count"])
-
     else:
         recent = filtered.tail(1)
-        return int(recent.iloc[-1]["crime_count"])
+
+    return int(recent["crime_count"].sum())
 
 
 @app.get("/test-db")
