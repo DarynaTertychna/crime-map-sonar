@@ -70,17 +70,17 @@ jobs:
           PY
 
       - name: Run tests with coverage
+        working-directory: .
         run: |
-          pytest --cov=. --cov-report=xml:../coverage.xml --cov-report=term
+          pytest --cov=crime-api --cov-report=xml:coverage.xml --cov-report=term crime-api
 
       - name: Check coverage file
+        working-directory: .
         run: |
-          echo "Files in crime-api:"
+          echo "Repo root:"
           ls -la
-          echo "Files in repo root:"
-          ls -la ..
           echo "coverage.xml preview:"
-          head -n 20 ../coverage.xml
+          head -n 20 coverage.xml
 
       - name: Start API
         run: |
