@@ -121,10 +121,25 @@ With coverage:
 
 pytest --cov=. --cov-report=term
 
-![Pytests](docs\screenshots\pytest.png)
+![Pytests](docs/screenshots/pytest.png)
 ![Coverage](docs/screenshots/coverage.png)
-![Playwright (E2E) tests](docs\screenshots\playwright.png)
+![Playwright (E2E) tests](docs/screenshots/playwright.png)
+![CI CD, GitHub Actions](docs/screenshots/cicd.png)
+![Sonar](docs/screenshots/sonar.png)
+![OWASP ZAP](docs/screenshots/owasp.png)
 
+SonarCloud was integrated for static analysis. Some quality gate conditions remained unresolved in the final version, but backend tests, coverage measurement, end to end testing, and OWASP ZAP scanning were completed successfully. 
+
+The analysis identified several maintainability issues, primarily related to:
+
+Missing response documentation in FastAPI endpoints
+Use of generic exception handling
+Naming convention inconsistencies
+Function complexity in specific areas
+
+These issues do not impact the correctness or runtime behaviour of the application. The system is fully tested using unit tests (pytest) and end-to-end tests (Playwright), both of which pass successfully.
+
+All tests were executed locally and through CI to ensure consistency between development and deployment environments.
 
 ### Coverage Includes:
 
@@ -149,11 +164,13 @@ The project uses GitHub Actions for Continuous Integration.
 
 On every push to the `master` branch:
 
-1. Install dependencies
-2. Run tests using pytest
-3. Generate coverage report
-4. Run SonarCloud static analysis
-5. Execute OWASP ZAP security scan
+1. Install Python dependencies
+2. Run backend tests using pytest
+3. Generate coverage report (coverage.xml)
+4. Run SonarCloud static code analysis
+5. Start backend service
+6. Execute OWASP ZAP baseline security scan
+7. Upload security reports as artifacts
 
 ### Deployment
 
