@@ -6,7 +6,8 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 
-NEWS_CACHE_FILE = Path("data/news_cache.json")
+BASE_DIR = Path(__file__).resolve().parent.parent
+NEWS_CACHE_FILE = BASE_DIR / "data" / "news_cache.json"
 NEWS_CACHE_HOURS = 48
 
 CRIME_KEYWORDS = [

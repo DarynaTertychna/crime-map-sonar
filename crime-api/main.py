@@ -29,8 +29,8 @@ DRUG_OFFENCES = "Drug Offences"
 DAMAGE_TO_PROPERTY = "Damage to Property"
 
 
-CLEANED_CSV_PATH = os.path.join(BASE_DIR, "data", "raw", "cleaned_crime_data.csv")
-COUNTIES_GEOJSON_PATH = os.path.join(BASE_DIR, "data", "raw", "ireland_counties.geojson")
+CLEANED_CSV_PATH = os.path.join(BASE_DIR, "data", "cleaned_crime_data.csv")
+COUNTIES_GEOJSON_PATH = os.path.join(BASE_DIR, "data", "ireland_counties.geojson")
 
 MODEL_PATH = os.path.join(BASE_DIR, "crime_risk_model.pkl")
 COUNTY_ENCODER_PATH = os.path.join(BASE_DIR, "county_encoder.pkl")
