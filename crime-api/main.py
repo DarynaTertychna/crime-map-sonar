@@ -104,7 +104,7 @@ def predict_risk_with_model(county: str, crime_type: str, year: int):
     raw_risk_label = label_map.get(pred_class, "Low")
 
     return {
-        "rawRiskLabel": raw_risk_label,
+        "riskLabel": raw_risk_label,
         "prev_year_count": prev_year_count,
         "probabilities": probabilities,
         "mlScore": round(ml_score, 6),
@@ -599,13 +599,27 @@ def get_prediction_for_chat(county: str, crime_type: str, time_period: str):
         return None
 
     target_year = datetime.now().year
-    model_result = predict_risk_with_model(county, crime_type, target_year)
+    single_result = predict_risk_with_model(county, crime_type, target_year)
+
+    df = load_cleaned_data()
+    matching = df[df["crime_type"].str.lower() == crime_type.lower()].copy()
+    counties = sorted(matching["county"].dropna().unique())
+
+    all_scores = []
+    for c in counties:
+        try:
+            result = predict_risk_with_model(c, crime_type, target_year)
+            all_scores.append(result["mlScore"])
+        except Exception:
+            continue
+
+    final_label = classify_score_into_three_bands(single_result["mlScore"], all_scores)
 
     return {
         "county": county,
         "crime_type": crime_type,
         "latestCrimeCount": latest_count,
-        "riskLabel": model_result["riskLabel"],
+        "riskLabel": final_label,
     }
 
 
@@ -1317,7 +1331,8 @@ def predict(req: PredictRequest):
             continue
 
     final_label = classify_score_into_three_bands(single_result["mlScore"], all_scores)
-
+    percentile, severity_band = get_percentile_for_crime_type(crime_type, latest_count)
+    
     return {
         "ok": True,
         "county": county,
@@ -1328,6 +1343,8 @@ def predict(req: PredictRequest):
         "prevYearCount": single_result["prev_year_count"],
         "probabilities": single_result["probabilities"],
         "mlScore": single_result["mlScore"],
+        "percentile": percentile,
+        "severityBand": severity_band,
         "note": "Risk label is based on the model score ranked across counties for the selected crime type."
     }
 
