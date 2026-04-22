@@ -86,6 +86,9 @@ def predict_risk_with_model(county: str, crime_type: str, year: int):
 
     pred_class = int(model.predict(X)[0])
 
+    probabilities = None
+    ml_score = None
+
     if hasattr(model, "predict_proba"):
         probs = model.predict_proba(X)[0]
         probabilities = {
@@ -93,18 +96,19 @@ def predict_risk_with_model(county: str, crime_type: str, year: int):
             "Medium": round(float(probs[1]), 4),
             "High": round(float(probs[2]), 4),
         }
+        ml_score = float(probs[1] + 2 * probs[2])
     else:
-        probabilities = None
+        ml_score = float(pred_class)
 
     label_map = {0: "Low", 1: "Medium", 2: "High"}
-    risk_label = label_map.get(pred_class, "Low")
+    raw_risk_label = label_map.get(pred_class, "Low")
 
     return {
-        "riskLabel": risk_label,
+        "rawRiskLabel": raw_risk_label,
         "prev_year_count": prev_year_count,
         "probabilities": probabilities,
+        "mlScore": round(ml_score, 6),
     }
-
 
 
 
@@ -299,6 +303,26 @@ def get_current_user(authorization: str | None = Header(default=None)):
             cur.close()
         if conn:
             conn.close()
+
+
+def classify_score_into_three_bands(score: float, all_scores: list[float]):
+    if not all_scores:
+        return "Medium"
+
+    s = pd.Series(all_scores, dtype=float)
+
+    q1 = s.quantile(1 / 3)
+    q2 = s.quantile(2 / 3)
+
+    if score <= q1:
+        return "Low"
+    elif score <= q2:
+        return "Medium"
+    else:
+        return "High"
+
+
+
 
 
 def create_access_token(data: dict, expires_delta: timedelta | None = None):
@@ -1270,10 +1294,29 @@ def predict(req: PredictRequest):
         raise HTTPException(status_code=400, detail="Crime type is required")
 
     target_year = req.year or datetime.now().year
-
-    model_result = predict_risk_with_model(county, crime_type, target_year)
     latest_count = get_count_by_period_for_county(county, crime_type, req.timePeriod)
-    percentile, severity_band = get_percentile_for_crime_type(crime_type, latest_count)
+
+    if latest_count is None:
+        raise HTTPException(
+            status_code=404,
+            detail=f"No data found for county '{county}' and crime type '{crime_type}'"
+        )
+
+    single_result = predict_risk_with_model(county, crime_type, target_year)
+
+    df = load_cleaned_data()
+    matching = df[df["crime_type"].str.lower() == crime_type.lower()].copy()
+    counties = sorted(matching["county"].dropna().unique())
+
+    all_scores = []
+    for c in counties:
+        try:
+            result = predict_risk_with_model(c, crime_type, target_year)
+            all_scores.append(result["mlScore"])
+        except Exception:
+            continue
+
+    final_label = classify_score_into_three_bands(single_result["mlScore"], all_scores)
 
     return {
         "ok": True,
@@ -1281,18 +1324,18 @@ def predict(req: PredictRequest):
         "crime_type": crime_type,
         "timePeriod": req.timePeriod,
         "latestCrimeCount": latest_count,
-        "riskLabel": model_result["riskLabel"],
-        "prevYearCount": model_result["prev_year_count"],
-        "probabilities": model_result["probabilities"],
-        "percentile": percentile,
-        "severityBand": severity_band,
-        "note": "Risk label is predicted by the trained XGBoost model. Latest crime count is shown as historical context."
+        "riskLabel": final_label,
+        "prevYearCount": single_result["prev_year_count"],
+        "probabilities": single_result["probabilities"],
+        "mlScore": single_result["mlScore"],
+        "note": "Risk label is based on the model score ranked across counties for the selected crime type."
     }
 
 
 @app.get("/predict/all")
 def predict_all(crime_type: str = "Theft", timePeriod: str = LAST_12_MONTHS):
     crime = (crime_type or "").strip()
+    target_year = datetime.now().year
 
     df = load_cleaned_data()
     matching = df[df["crime_type"].str.lower() == crime.lower()].copy()
@@ -1301,26 +1344,37 @@ def predict_all(crime_type: str = "Theft", timePeriod: str = LAST_12_MONTHS):
         raise HTTPException(status_code=404, detail=f"No data found for crime type: {crime}")
 
     counties = sorted(matching["county"].dropna().unique())
-    target_year = datetime.now().year
 
-    items = []
+    temp_items = []
+
     for county in counties:
         count = get_count_by_period_for_county(county, crime, timePeriod)
-
         if count is None:
             continue
 
         model_result = predict_risk_with_model(county, crime, target_year)
-        percentile, severity_band = get_percentile_for_crime_type(crime, count)
 
-        items.append({
+        temp_items.append({
             "county": county,
-            "riskLabel": model_result["riskLabel"],
             "latestCrimeCount": count,
             "prevYearCount": model_result["prev_year_count"],
             "probabilities": model_result["probabilities"],
-            "percentile": percentile,
-            "severityBand": severity_band,
+            "mlScore": model_result["mlScore"],
+        })
+
+    all_scores = [item["mlScore"] for item in temp_items]
+
+    items = []
+    for item in temp_items:
+        final_label = classify_score_into_three_bands(item["mlScore"], all_scores)
+
+        items.append({
+            "county": item["county"],
+            "riskLabel": final_label,
+            "latestCrimeCount": item["latestCrimeCount"],
+            "prevYearCount": item["prevYearCount"],
+            "probabilities": item["probabilities"],
+            "mlScore": item["mlScore"],
         })
 
     return {
