@@ -1081,17 +1081,35 @@ def apply_filters(req: FilterRequest):
     target_year = datetime.now().year
     model_result = predict_risk_with_model(county, req.crimeType, target_year)
 
+    df = load_cleaned_data()
+    matching = df[df["crime_type"].str.lower() == req.crimeType.lower()].copy()
+    counties = sorted(matching["county"].dropna().unique())
+
+    all_scores = []
+    for c in counties:
+        try:
+            result = predict_risk_with_model(c, req.crimeType, target_year)
+            all_scores.append(result["mlScore"])
+        except Exception:
+            continue
+
+    final_label = classify_score_into_three_bands(
+        model_result["mlScore"],
+        all_scores
+    )
+
     return {
         "applied": True,
         "filters": req.model_dump(),
         "result": {
-            "riskLevel": model_result["riskLabel"],
+            "riskLevel": final_label,
             "latestCrimeCount": count,
             "prevYearCount": model_result["prev_year_count"],
             "probabilities": model_result["probabilities"],
             "summary": f"ML risk prediction for {req.crimeType} in {county}",
         },
     }
+
 
 
 # chat

@@ -268,13 +268,12 @@ export default function MapView({
         });
 
         map.addLayer({
-          id: COUNTIES_LINE_ID,
-          type: "line",
-          source: COUNTIES_SOURCE_ID,
+          id: HIGHLIGHT_FILL_ID,
+          type: "fill",
+          source: HIGHLIGHT_SOURCE_ID,
           paint: {
-            "line-color": "#ffffff",
-            "line-width": 1.2,
-            "line-opacity": 0.45,
+            "fill-color": "#ffffff",
+            "fill-opacity": 0.08,
           },
         });
 
@@ -384,7 +383,7 @@ export default function MapView({
     if (!map) return;
 
     if (map.getLayer(HIGHLIGHT_FILL_ID)) {
-      map.setPaintProperty(HIGHLIGHT_FILL_ID, "fill-color", riskColor);
+      map.setPaintProperty(HIGHLIGHT_FILL_ID, "fill-color", "#ffffff");
     }
   }, [riskColor]);
 
