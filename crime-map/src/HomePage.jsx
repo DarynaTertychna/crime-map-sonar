@@ -262,54 +262,58 @@ export default function HomePage({ user, onLogout }) {
 
 
   //big data csv
-const loadCrimeTrendChart = async (selectedCrimeType) => {
-  setChartLoading(true);
-  setChartError("");
+  const loadCrimeTrendChart = async (selectedCrimeType) => {
+    setChartLoading(true);
+    setChartError("");
 
-  try {
-    const query = encodeURIComponent(selectedCrimeType || "Theft");
-    const r = await fetch(`${API_BASE}/stats/trend?crime_type=${query}`);
-    const data = await r.json();
+    try {
+      const query = encodeURIComponent(selectedCrimeType || "Theft");
+      const r = await fetch(`${API_BASE}/stats/trend?crime_type=${query}`);
+      const data = await r.json();
 
-    if (!r.ok) throw new Error(data.detail || "Failed to load trend chart data");
+      if (!r.ok) throw new Error(data.detail || "Failed to load trend chart data");
 
-    setChartData(data || []);
-  } catch (e) {
-    setChartError(String(e?.message || e));
-  } finally {
-    setChartLoading(false);
-  }
-};
-
-
-const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
-  setCountyRiskLoading(true);
-
-  try {
-    const crime = encodeURIComponent(selectedCrimeType || "Theft");
-    const period = encodeURIComponent(selectedTimePeriod || LAST_12_MONTHS);
-
-    const r = await fetch(
-      `${API_BASE}/predict/all?crime_type=${crime}&timePeriod=${period}`
-    );
-    const data = await r.json();
-
-    if (!r.ok) {
-      throw new Error(data.detail || "Failed to load county risks");
+      setChartData(data || []);
+    } catch (e) {
+      setChartError(String(e?.message || e));
+    } finally {
+      setChartLoading(false);
     }
+  };
 
-    const mapped = {};
-    for (const item of data.items || []) {
-      mapped[item.county] = item.riskLabel;
+
+  const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
+    setCountyRiskLoading(true);
+
+    try {
+      const crime = encodeURIComponent(selectedCrimeType || "Theft");
+      const period = encodeURIComponent(selectedTimePeriod || LAST_12_MONTHS);
+
+      const r = await fetch(
+        `${API_BASE}/predict/all?crime_type=${crime}&timePeriod=${period}`
+      );
+
+      const data = await r.json();
+
+      if (!r.ok) {
+        throw new Error(data.detail || "Failed to load county risks");
+      }
+
+      const mapped = {};
+
+      for (const item of data.items || []) {
+        mapped[item.county] = item.riskLabel;
+      }
+
+      setCountyRiskMap(mapped);
+      return mapped;
+    } catch (e) {
+      console.error("County risk load error:", e);
+      return {};
+    } finally {
+      setCountyRiskLoading(false);
     }
-
-    setCountyRiskMap(mapped);
-  } catch (e) {
-    console.error("County risk load error:", e);
-  } finally {
-    setCountyRiskLoading(false);
-  }
-};
+  };
 
 
 
@@ -346,7 +350,7 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
         timePeriod,
       });
 
-      setRiskLevel(predictData.riskLabel || null);
+      setRiskLevel((current) => current || predictData.riskLabel || null);
     } catch (e) {
       setSelectedCountyDetails(null);
       setDetailsError(String(e?.message || e));
@@ -546,6 +550,7 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
     };
 
     try {
+      const latestRiskMap = await loadAllCountyRisks(crimeType, timePeriod);
       const r = await fetch(`${API_BASE}/predict`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -555,7 +560,9 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
       const data = await r.json();
       if (!r.ok) throw new Error(data.detail || "Predict request failed");
 
-      setRiskLevel(data.riskLabel || "Unknown");
+      const mapRisk = latestRiskMap[county];
+
+      setRiskLevel(mapRisk || data.riskLabel || "Unknown");
       setApiMsg(`Predicted risk for ${county}.`);
       console.log("Predict result:", data);
     } catch (e) {
@@ -662,6 +669,11 @@ const loadAllCountyRisks = async (selectedCrimeType, selectedTimePeriod) => {
               setResolvedCounty(countyName);
               setLocationQuery(countyName);
               setSelectedCounties([countyName]);
+
+              const mapRisk = countyRiskMap[countyName];
+              setRiskLevel(mapRisk || "Unknown");
+              setApiMsg(`Predicted risk for ${countyName}.`);
+
               loadCountyDetails(countyName);
             }}
           />
