@@ -263,7 +263,7 @@ export default function MapView({
               "Unknown", "#666666",
               "#666666",
             ],
-            "fill-opacity": 0.38,
+            "fill-opacity": 0.28,
           },
         });
 
@@ -272,9 +272,9 @@ export default function MapView({
           type: "line",
           source: COUNTIES_SOURCE_ID,
           paint: {
-            "line-color": "#b8b8b8",
-            "line-width": 0.6,
-            "line-opacity": 0.35,
+            "line-color": "#ffffff",
+            "line-width": 1.2,
+            "line-opacity": 0.45,
           },
         });
 
@@ -299,28 +299,30 @@ export default function MapView({
           source: HIGHLIGHT_SOURCE_ID,
           paint: {
             "line-color": "#f2f2f2",
-            "line-width": 1.4,
-            "line-opacity": 0.75,
+            "line-width": 2,
+            "line-opacity": 0.95,
           },
         });
 
-          map.on("click", COUNTIES_FILL_ID, (e) => {
-            const feature = e.features?.[0];
-            if (!feature) return;
+        map.on("click", COUNTIES_FILL_ID, (e) => {
+          const feature = e.features?.[0];
+          if (!feature) return;
 
-            const rawCountyName = getCountyNameFromFeature(feature);
-            const countyName = String(rawCountyName || "").trim();
-            const normalized = normalizeCountyLabel(countyName);
+          const rawCountyName = getCountyNameFromFeature(feature);
+          const countyName = String(rawCountyName || "").trim();
+          const normalized = normalizeCountyLabel(countyName);
 
-            if (!normalized) return;
+          if (!normalized) return;
 
-            const titleCounty =
-              normalized.charAt(0).toUpperCase() + normalized.slice(1);
+          const titleCounty =
+            normalized.charAt(0).toUpperCase() + normalized.slice(1);
 
-            if (onCountyClick) {
-              onCountyClick(titleCounty);
-            }
-          });
+          const clickedRisk = feature.properties?.riskLabel;
+
+          if (onCountyClick) {
+            onCountyClick(titleCounty, clickedRisk);
+          }
+        });
 
         map.on("mouseenter", COUNTIES_FILL_ID, () => {
           map.getCanvas().style.cursor = "pointer";

@@ -350,7 +350,8 @@ export default function HomePage({ user, onLogout }) {
         timePeriod,
       });
 
-      setRiskLevel((current) => current || predictData.riskLabel || null);
+      const mapRisk = countyRiskMap[countyName];
+      setRiskLevel(mapRisk || null);
     } catch (e) {
       setSelectedCountyDetails(null);
       setDetailsError(String(e?.message || e));
@@ -551,18 +552,9 @@ export default function HomePage({ user, onLogout }) {
 
     try {
       const latestRiskMap = await loadAllCountyRisks(crimeType, timePeriod);
-      const r = await fetch(`${API_BASE}/predict`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-
-      const data = await r.json();
-      if (!r.ok) throw new Error(data.detail || "Predict request failed");
-
       const mapRisk = latestRiskMap[county];
 
-      setRiskLevel(mapRisk || data.riskLabel || "Unknown");
+      setRiskLevel(mapRisk || "Unknown");
       setApiMsg(`Predicted risk for ${county}.`);
       console.log("Predict result:", data);
     } catch (e) {
@@ -665,16 +657,12 @@ export default function HomePage({ user, onLogout }) {
             zoom={mapPos.zoom}
             selectedCounties={selectedCounties}
             countyRiskMap={countyRiskMap}
-            onCountyClick={(countyName) => {
+            onCountyClick={(countyName, clickedRisk) => {
               setResolvedCounty(countyName);
               setLocationQuery(countyName);
               setSelectedCounties([countyName]);
-
-              const mapRisk = countyRiskMap[countyName];
-              setRiskLevel(mapRisk || "Unknown");
+              setRiskLevel(clickedRisk);
               setApiMsg(`Predicted risk for ${countyName}.`);
-
-              loadCountyDetails(countyName);
             }}
           />
         </main>
