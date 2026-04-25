@@ -529,7 +529,6 @@ export default function HomePage({ user, onLogout }) {
     setRiskLevel(null);
 
     const raw = (locationQuery || "").trim();
-
     let county = "";
 
     if (useMyLocation) {
@@ -539,27 +538,24 @@ export default function HomePage({ user, onLogout }) {
       }
 
       try {
-        const countyResponse = await fetch(`${API_BASE}/location/resolve-county`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            lat: userCoords.lat,
-            lng: userCoords.lng,
-          }),
-        });
+        const res = await fetch(
+          `https://api.mapbox.com/geocoding/v5/mapbox.places/${userCoords.lng},${userCoords.lat}.json?types=region&access_token=${import.meta.env.VITE_MAPBOX_TOKEN}`
+        );
 
-        const countyData = await countyResponse.json();
+        const data = await res.json();
 
-        if (!countyResponse.ok) {
-          throw new Error(countyData.detail || "Could not resolve county from current location");
+        county = data.features?.[0]?.text || "";
+
+        if (!county) {
+          setApiMsg("Could not detect your county");
+          return;
         }
 
-        county = countyData.county;
         setResolvedCounty(county);
         setSelectedCounties([county]);
         setLocationQuery(county);
       } catch (e) {
-        console.error("Resolve county failed:", e);
+        console.error("Mapbox county detection failed:", e);
         setApiMsg("Could not detect your county");
         return;
       }
@@ -575,14 +571,6 @@ export default function HomePage({ user, onLogout }) {
       setSelectedCounties([county]);
       setLocationQuery(county);
     }
-
-    const payload = {
-      county,
-      crime_type: crimeType,
-      timePeriod,
-      prev_year_count: 0,
-      year: 2023,
-    };
 
     try {
       const latestRiskMap = await loadAllCountyRisks(crimeType, timePeriod);
