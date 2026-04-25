@@ -263,17 +263,18 @@ export default function MapView({
               "Unknown", "#666666",
               "#666666",
             ],
-            "fill-opacity": 0.28,
+            "fill-opacity": 0.38,
           },
         });
 
         map.addLayer({
-          id: HIGHLIGHT_FILL_ID,
-          type: "fill",
-          source: HIGHLIGHT_SOURCE_ID,
+          id: COUNTIES_LINE_ID,
+          type: "line",
+          source: COUNTIES_SOURCE_ID,
           paint: {
-            "fill-color": "#ffffff",
-            "fill-opacity": 0.08,
+            "line-color": "#b8b8b8",
+            "line-width": 0.6,
+            "line-opacity": 0.35,
           },
         });
 
@@ -287,8 +288,8 @@ export default function MapView({
           type: "fill",
           source: HIGHLIGHT_SOURCE_ID,
           paint: {
-            "fill-color": riskColor,
-            "fill-opacity": 0.12,
+            "fill-color": "#ffffff",
+            "fill-opacity": 0.06,
           },
         });
 
@@ -297,9 +298,9 @@ export default function MapView({
           type: "line",
           source: HIGHLIGHT_SOURCE_ID,
           paint: {
-            "line-color": "#ffffff",
-            "line-width": 2,
-            "line-opacity": 0.9,
+            "line-color": "#f2f2f2",
+            "line-width": 1.4,
+            "line-opacity": 0.75,
           },
         });
 
@@ -378,14 +379,14 @@ export default function MapView({
     updateHighlightedRegion(map, countiesRef.current, selectedCounties);
   }, [selectedCounties]);
 
-  useEffect(() => {
-    const map = mapRef.current;
-    if (!map) return;
+  // useEffect(() => {
+  //   const map = mapRef.current;
+  //   if (!map) return;
 
-    if (map.getLayer(HIGHLIGHT_FILL_ID)) {
-      map.setPaintProperty(HIGHLIGHT_FILL_ID, "fill-color", "#ffffff");
-    }
-  }, [riskColor]);
+  //   if (map.getLayer(HIGHLIGHT_FILL_ID)) {
+  //     map.setPaintProperty(HIGHLIGHT_FILL_ID, "fill-color", "#ffffff");
+  //   }
+  // }, [riskColor]);
 
 
 
