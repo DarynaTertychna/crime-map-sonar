@@ -51,6 +51,7 @@ export default function HomePage({ user, onLogout }) {
   //location
   const [userCoords, setUserCoords] = useState(null);
   const [geoError, setGeoError] = useState("");
+  const [geoLoading, setGeoLoading] = useState(false);
 
   // inside component
   const [selectedCounties, setSelectedCounties] = useState([]);
@@ -89,6 +90,28 @@ export default function HomePage({ user, onLogout }) {
     window.addEventListener("resize", onResize);
     return () => window.removeEventListener("resize", onResize);
   }, []);
+
+
+
+  useEffect(() => {
+    if (!userCoords) return;
+
+    setMapPos({
+      lng: userCoords.lng,
+      lat: userCoords.lat,
+      zoom: 11.5,
+    });
+  }, [userCoords]);
+
+
+
+  useEffect(() => {
+    if (useMyLocation && userCoords) {
+      handleApply();
+    }
+  }, [useMyLocation, userCoords]);
+
+
 
 
 
@@ -141,6 +164,8 @@ export default function HomePage({ user, onLogout }) {
       return;
     }
 
+    setGeoLoading(true);
+
     navigator.geolocation.getCurrentPosition(
       (position) => {
         const coords = {
@@ -151,12 +176,14 @@ export default function HomePage({ user, onLogout }) {
 
         setUserCoords(coords);
         setGeoError("");
+        setGeoLoading(false);
       },
       (error) => {
         console.warn("Geolocation error:", error);
         setGeoError("Enable location in your browser or phone settings.");
         setUseMyLocation(false);
         setUserCoords(null);
+        setGeoLoading(false);
       },
       {
         enableHighAccuracy: true,
@@ -427,6 +454,12 @@ export default function HomePage({ user, onLogout }) {
 
 
 
+
+
+
+
+
+
   useEffect(() => {
     const loadProfile = async () => {
       if (!user?.token) return;
@@ -526,7 +559,8 @@ export default function HomePage({ user, onLogout }) {
         setSelectedCounties([county]);
         setLocationQuery(county);
       } catch (e) {
-        setApiMsg(String(e?.message || e));
+        console.error("Resolve county failed:", e);
+        setApiMsg("Could not detect your county");
         return;
       }
     } else {
@@ -794,6 +828,13 @@ export default function HomePage({ user, onLogout }) {
               {geoError}
             </div>
           )}
+
+          {geoLoading && (
+            <div style={{ marginBottom: "12px", color: "#666", fontSize: "0.85rem" }}>
+              Getting your location...
+            </div>
+          )}
+
 
           <div style={{ marginBottom: "12px", display: "flex", gap: 6 }}>
             <button data-testid="save-favorite" onClick={saveFavorite} style={{ flex: 1, cursor: "pointer" }}>
