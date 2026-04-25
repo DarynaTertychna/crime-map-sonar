@@ -154,7 +154,7 @@ function updateHighlightedRegion(map, countiesFC, countiesToHighlight = []) {
     }
   }
 }
-
+// map second option
 export default function MapView({
   riskColor = "#666",
   lng = -6.2603,

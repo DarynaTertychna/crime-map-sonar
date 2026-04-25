@@ -16,7 +16,6 @@ The system allows users to explore crime trends, apply filters, view predictions
 * Machine learning risk prediction (Low / Medium / High)
 * Crime statistics (trend, seasonal, totals)
 * Chatbot for simplified crime queries
-* Admin CSV upload for dataset updates
 
 
 ## Tech Stack
@@ -49,7 +48,7 @@ The system allows users to explore crime trends, apply filters, view predictions
 * Backend API hosted on Render
 * PostgreSQL database stores user data
 * Crime datasets stored as CSV files
-* ML model loaded from `.pkl` files for predictions
+* ML model loaded from .pkl files for predictions
 
 
 ## Data and Prediction Flow
@@ -223,3 +222,11 @@ This project demonstrates a full-stack system combining data processing, machine
 It integrates a React frontend with a FastAPI backend, uses PostgreSQL for user management, and applies an XGBoost model to generate crime risk predictions.
 
 The project also includes CI automation, security scanning, and deployment using modern cloud platforms.
+
+
+
+## Short Video Link - https://drive.google.com/file/d/1L78b0lFxgoL6d_oIkLkV422puFHYJ7Pp/view?usp=sharing
+
+## Long Video Link - 
+
+

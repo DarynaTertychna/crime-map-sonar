@@ -31,7 +31,7 @@ CRIME_KEYWORDS = [
     "shooting",
     "court",
 ]
-
+# second one is optional
 NEWS_SOURCES = [
     {
         "name": "Irish Independent Crime",
