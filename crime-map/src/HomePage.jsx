@@ -556,7 +556,7 @@ export default function HomePage({ user, onLogout }) {
 
       setRiskLevel(mapRisk || "Unknown");
       setApiMsg(`Predicted risk for ${county}.`);
-      console.log("Predict result:", data);
+      console.log("Map risk result:", mapRisk);
     } catch (e) {
       setApiMsg(String(e?.message || e));
     }
