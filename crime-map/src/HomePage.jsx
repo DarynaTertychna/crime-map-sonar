@@ -544,7 +544,7 @@ export default function HomePage({ user, onLogout }) {
 
         const data = await res.json();
 
-        county = data.features?.[0]?.text || "";
+        county = (data.features?.[0]?.text || "").replace(/^County\s+/i, "").trim();
 
         if (!county) {
           setApiMsg("Could not detect your county");
