@@ -35,7 +35,16 @@ export default function App() {
       />
 
       <Route path="/reset-password" element={<ResetPasswordPage />} />
-      <Route path="/admin" element={<Admin />} />
+      <Route
+        path="/admin"
+        element={
+          user?.email === "darinayg@gmail.com" ? (
+            <Admin />
+          ) : (
+            <LoginPage onLogin={onLogin} />
+          )
+        }
+      />
     </Routes>
   );
 }

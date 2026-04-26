@@ -125,6 +125,7 @@ pytest --cov=. --cov-report=term
 ![Playwright (E2E) tests](docs/screenshots/playwright.png)
 ![CI CD, GitHub Actions](docs/screenshots/cicd.png)
 ![Sonar](docs/screenshots/sonar.png)
+![Sonar2](docs/screenshots/sonar2.png)
 ![OWASP ZAP](docs/screenshots/owasp.png)
 
 SonarCloud was integrated for static analysis. Some quality gate conditions remained unresolved in the final version, but backend tests, coverage measurement, end to end testing, and OWASP ZAP scanning were completed successfully. 
@@ -222,11 +223,3 @@ This project demonstrates a full-stack system combining data processing, machine
 It integrates a React frontend with a FastAPI backend, uses PostgreSQL for user management, and applies an XGBoost model to generate crime risk predictions.
 
 The project also includes CI automation, security scanning, and deployment using modern cloud platforms.
-
-
-
-## Short Video Link - https://drive.google.com/file/d/1L78b0lFxgoL6d_oIkLkV422puFHYJ7Pp/view?usp=sharing
-
-## Long Video Link - 
-
-
