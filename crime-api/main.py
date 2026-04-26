@@ -1017,7 +1017,13 @@ def reset_password(req: ResetPasswordRequest):
 
         expires_at = user["reset_token_expires"]
 
-        if not expires_at or expires_at < datetime.now(UTC):
+        if not expires_at:
+            raise HTTPException(status_code=400, detail="Reset token has expired")
+
+        if expires_at.tzinfo is None:
+            expires_at = expires_at.replace(tzinfo=UTC)
+
+        if expires_at < datetime.now(UTC):
             raise HTTPException(status_code=400, detail="Reset token has expired")
 
         new_hash = pwd_context.hash(new_password)
